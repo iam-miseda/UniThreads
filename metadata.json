@@ -1,0 +1,6 @@
+{
+  "name": "UniThread: Campus Wardrobe & Sneaker Swap",
+  "description": "Peer-to-peer campus fashion loop where students exchange clothes and shoes, agree on fabric quality and meetup spots, earn virtual exchange points, and unlock verified peer recommendations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
