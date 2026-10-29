@@ -16,6 +16,25 @@ import {
   Coins
 } from 'lucide-react';
 
+const FALLBACK_GARMENT_SVG = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 24 24" fill="none" stroke="%2394a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="background:%23f1f5f9;"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>`;
+const FALLBACK_AVATAR_SVG = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="%23cbd5e1" style="background:%23f1f5f9;"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>`;
+
+const handleGarmentError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+  const target = e.currentTarget;
+  if (!target.dataset.fallback) {
+    target.dataset.fallback = 'true';
+    target.src = FALLBACK_GARMENT_SVG;
+  }
+};
+
+const handleAvatarError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+  const target = e.currentTarget;
+  if (!target.dataset.fallback) {
+    target.dataset.fallback = 'true';
+    target.src = FALLBACK_AVATAR_SVG;
+  }
+};
+
 interface ActiveSwapsViewProps {
   onOpenReviewModal: (swap: SwapProposal) => void;
 }
@@ -57,19 +76,19 @@ export const ActiveSwapsView: React.FC<ActiveSwapsViewProps> = ({ onOpenReviewMo
   return (
     <div className="space-y-6">
       {/* Top Banner / Explainer */}
-      <div className="p-6 bg-white border border-[#dbdbdb] rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.03)] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <div className="p-6 bg-white dark:bg-[#18181c] border border-[#dbdbdb] dark:border-neutral-800 rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.03)] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 transition-colors duration-200">
         <div>
           <div className="flex items-center gap-2 mb-1">
-            <span className="text-xs font-bold uppercase tracking-wider text-neutral-500">
+            <span className="text-xs font-bold uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
               Campus Wardrobe Exchanges
             </span>
           </div>
-          <h2 className="text-xl font-bold text-neutral-900 flex items-center gap-2">
-            <ArrowLeftRight className="w-5 h-5 text-neutral-900" />
+          <h2 className="text-xl font-bold text-neutral-900 dark:text-white flex items-center gap-2">
+            <ArrowLeftRight className="w-5 h-5 text-neutral-900 dark:text-white" />
             Trade Agreements &amp; Campus Passes
           </h2>
-          <p className="text-xs text-neutral-500 mt-1 max-w-xl">
-            Both Kenyan campus students agree on fabric quality and a safe meetup hub. Completed exchanges reward <strong className="text-neutral-900">+50 Points</strong>, and 5-star peer recommendations unlock bonus point upgrades!
+          <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-1 max-w-xl">
+            Both Kenyan campus students agree on fabric quality and a safe meetup hub. Completed exchanges reward <strong className="text-neutral-900 dark:text-white">+50 Points</strong>, and 5-star peer recommendations unlock bonus point upgrades!
           </p>
         </div>
 
@@ -168,6 +187,7 @@ export const ActiveSwapsView: React.FC<ActiveSwapsViewProps> = ({ onOpenReviewMo
                         <img
                           src={otherUser?.avatar || 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=400&q=80'}
                           alt={otherUser?.name}
+                          onError={handleAvatarError}
                           className="w-10 h-10 rounded-full object-cover"
                         />
                       </div>
@@ -220,7 +240,8 @@ export const ActiveSwapsView: React.FC<ActiveSwapsViewProps> = ({ onOpenReviewMo
                     <img
                       src={myItem?.images[0]}
                       alt={myItem?.title}
-                      className="w-16 h-16 rounded-xl object-cover border border-neutral-200 dark:border-neutral-700 shrink-0"
+                      onError={handleGarmentError}
+                      className="w-16 h-16 rounded-xl object-cover border border-neutral-200 dark:border-neutral-700 shrink-0 bg-neutral-100 dark:bg-neutral-800"
                     />
                     <div className="min-w-0 flex-1">
                       <span className="text-[10px] font-bold text-neutral-500 dark:text-neutral-400 uppercase tracking-wider">You Give</span>
@@ -235,7 +256,8 @@ export const ActiveSwapsView: React.FC<ActiveSwapsViewProps> = ({ onOpenReviewMo
                     <img
                       src={theirItem?.images[0]}
                       alt={theirItem?.title}
-                      className="w-16 h-16 rounded-xl object-cover border border-neutral-200 dark:border-neutral-700 shrink-0"
+                      onError={handleGarmentError}
+                      className="w-16 h-16 rounded-xl object-cover border border-neutral-200 dark:border-neutral-700 shrink-0 bg-neutral-100 dark:bg-neutral-800"
                     />
                     <div className="min-w-0 flex-1">
                       <span className="text-[10px] font-bold text-neutral-900 dark:text-white uppercase tracking-wider">You Receive</span>
@@ -374,7 +396,7 @@ export const ActiveSwapsView: React.FC<ActiveSwapsViewProps> = ({ onOpenReviewMo
                         </p>
                       </div>
 
-                      <div className="px-3.5 py-1.5 bg-white rounded-xl border border-neutral-300 font-mono text-xs text-neutral-900 font-bold shadow-xs">
+                      <div className="px-3.5 py-1.5 bg-white dark:bg-neutral-800 rounded-xl border border-neutral-300 dark:border-neutral-700 font-mono text-xs text-neutral-900 dark:text-white font-bold shadow-xs">
                         Code: {swap.meetupVerificationCode}
                       </div>
                     </div>

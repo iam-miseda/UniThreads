@@ -15,6 +15,16 @@ import {
   AlertCircle
 } from 'lucide-react';
 
+const FALLBACK_GARMENT_SVG = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 24 24" fill="none" stroke="%2394a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="background:%23f1f5f9;"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>`;
+
+const handleGarmentError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+  const target = e.currentTarget;
+  if (!target.dataset.fallback) {
+    target.dataset.fallback = 'true';
+    target.src = FALLBACK_GARMENT_SVG;
+  }
+};
+
 interface ProposeSwapModalProps {
   requestedItem: ClothingItem | null;
   onClose: () => void;
@@ -131,7 +141,8 @@ export const ProposeSwapModal: React.FC<ProposeSwapModalProps> = ({ requestedIte
                   <img
                     src={requestedItem.images[0]}
                     alt={requestedItem.title}
-                    className="w-16 h-16 rounded-xl object-cover border border-neutral-200 dark:border-neutral-700 shrink-0"
+                    onError={handleGarmentError}
+                    className="w-16 h-16 rounded-xl object-cover border border-neutral-200 dark:border-neutral-700 shrink-0 bg-neutral-100 dark:bg-neutral-800"
                   />
                   <div className="min-w-0">
                     <h4 className="text-xs font-bold text-neutral-900 dark:text-white line-clamp-1">
@@ -177,12 +188,13 @@ export const ProposeSwapModal: React.FC<ProposeSwapModalProps> = ({ requestedIte
                         <img
                           src={selectedOfferedItem.images[0]}
                           alt={selectedOfferedItem.title}
-                          className="w-16 h-16 rounded-xl object-cover border border-neutral-200 shrink-0"
+                          onError={handleGarmentError}
+                          className="w-16 h-16 rounded-xl object-cover border border-neutral-200 dark:border-neutral-700 shrink-0 bg-neutral-100 dark:bg-neutral-800"
                         />
                         <div className="min-w-0">
-                          <p className="text-xs font-bold text-neutral-900 line-clamp-1">{selectedOfferedItem.title}</p>
-                          <p className="text-[11px] text-neutral-500 font-mono">{selectedOfferedItem.fabricWeight}</p>
-                          <p className="text-[11px] text-neutral-700 font-bold">Value: KSh {selectedOfferedItem.estMarketValue.toLocaleString()}</p>
+                          <p className="text-xs font-bold text-neutral-900 dark:text-white line-clamp-1">{selectedOfferedItem.title}</p>
+                          <p className="text-[11px] text-neutral-500 dark:text-neutral-400 font-mono">{selectedOfferedItem.fabricWeight}</p>
+                          <p className="text-[11px] text-neutral-700 dark:text-neutral-300 font-bold">Value: KSh {selectedOfferedItem.estMarketValue.toLocaleString()}</p>
                         </div>
                       </div>
                     )}
@@ -193,13 +205,13 @@ export const ProposeSwapModal: React.FC<ProposeSwapModalProps> = ({ requestedIte
           </div>
 
           {/* Add Sweetener: Virtual Exchange Points */}
-          <div className="p-4 bg-amber-50/60 rounded-2xl border border-amber-200/80 space-y-2">
+          <div className="p-4 bg-amber-50/60 dark:bg-amber-950/30 rounded-2xl border border-amber-200/80 dark:border-amber-800/60 space-y-2">
             <div className="flex items-center justify-between text-xs">
-              <span className="font-bold text-amber-950 flex items-center gap-1.5">
-                <Coins className="w-4 h-4 text-amber-600" />
+              <span className="font-bold text-amber-950 dark:text-amber-200 flex items-center gap-1.5">
+                <Coins className="w-4 h-4 text-amber-600 dark:text-amber-400" />
                 Add Virtual Exchange Points (Sweeten Unbalanced Trade)
               </span>
-              <span className="font-mono text-amber-900 font-bold bg-white px-2 py-0.5 rounded-full border border-amber-200">
+              <span className="font-mono text-amber-900 dark:text-amber-300 font-bold bg-white dark:bg-amber-950/60 px-2 py-0.5 rounded-full border border-amber-200 dark:border-amber-800">
                 +{pointsBonus} pts
               </span>
             </div>
@@ -278,19 +290,19 @@ export const ProposeSwapModal: React.FC<ProposeSwapModalProps> = ({ requestedIte
           </div>
 
           {/* Agreement Section: Campus Meetup Spot & Schedule */}
-          <div className="p-4 bg-neutral-50 rounded-2xl border border-neutral-200 space-y-3">
-            <h4 className="text-xs font-bold text-neutral-900 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="p-4 bg-neutral-50 dark:bg-neutral-800/60 rounded-2xl border border-neutral-200 dark:border-neutral-700/60 space-y-3">
+            <h4 className="text-xs font-bold text-neutral-900 dark:text-white uppercase tracking-wider flex items-center gap-1.5">
               <MapPin className="w-4 h-4 text-rose-500" />
               Safe Campus Meetup Agreement
             </h4>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
               <div>
-                <label className="block text-neutral-600 mb-1 font-semibold">Safe Campus Hub</label>
+                <label className="block text-neutral-600 dark:text-neutral-400 mb-1 font-semibold">Safe Campus Hub</label>
                 <select
                   value={meetupSpot}
                   onChange={e => setMeetupSpot(e.target.value)}
-                  className="w-full bg-white border border-neutral-300 text-neutral-900 rounded-xl p-2 text-xs focus:ring-1 focus:ring-black"
+                  className="w-full bg-white dark:bg-[#121216] border border-neutral-300 dark:border-neutral-700 text-neutral-900 dark:text-white rounded-xl p-2 text-xs focus:ring-1 focus:ring-black dark:focus:ring-white"
                 >
                   {campusData.meetupSpots.map(spot => (
                     <option key={spot} value={spot}>{spot}</option>
@@ -299,36 +311,36 @@ export const ProposeSwapModal: React.FC<ProposeSwapModalProps> = ({ requestedIte
               </div>
 
               <div>
-                <label className="block text-neutral-600 mb-1 font-semibold">Proposed Day / Time</label>
+                <label className="block text-neutral-600 dark:text-neutral-400 mb-1 font-semibold">Proposed Day / Time</label>
                 <input
                   type="text"
                   value={meetupTime}
                   onChange={e => setMeetupTime(e.target.value)}
                   placeholder="e.g. Wednesday 3:00 PM"
-                  className="w-full bg-white border border-neutral-300 text-neutral-900 rounded-xl p-2 text-xs focus:ring-1 focus:ring-black"
+                  className="w-full bg-white dark:bg-[#121216] border border-neutral-300 dark:border-neutral-700 text-neutral-900 dark:text-white rounded-xl p-2 text-xs focus:ring-1 focus:ring-black dark:focus:ring-white"
                   required
                 />
               </div>
             </div>
 
             <div>
-              <label className="block text-neutral-600 mb-1 text-xs font-semibold">Swap Note / Meetup Details</label>
+              <label className="block text-neutral-600 dark:text-neutral-400 mb-1 text-xs font-semibold">Swap Note / Meetup Details</label>
               <textarea
                 value={notes}
                 onChange={e => setNotes(e.target.value)}
                 rows={2}
-                className="w-full bg-white border border-neutral-300 text-neutral-900 rounded-xl p-2 text-xs focus:ring-1 focus:ring-black"
+                className="w-full bg-white dark:bg-[#121216] border border-neutral-300 dark:border-neutral-700 text-neutral-900 dark:text-white rounded-xl p-2 text-xs focus:ring-1 focus:ring-black dark:focus:ring-white"
                 placeholder="Include where you'll be seated or your contact info..."
               />
             </div>
           </div>
 
           {/* Submit CTAs */}
-          <div className="flex items-center justify-end gap-3 pt-3 border-t border-neutral-100">
+          <div className="flex items-center justify-end gap-3 pt-3 border-t border-neutral-100 dark:border-neutral-800">
             <button
               type="button"
               onClick={onClose}
-              className="py-2.5 px-4 matte-glass-btn text-xs font-semibold text-neutral-700 rounded-xl"
+              className="py-2.5 px-4 matte-glass-btn text-xs font-semibold text-neutral-700 dark:text-neutral-200 rounded-xl cursor-pointer"
             >
               Cancel
             </button>

@@ -61,7 +61,21 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const [items, setItems] = useState<ClothingItem[]>(() => {
     const saved = localStorage.getItem('unithread_items');
-    return saved ? JSON.parse(saved) : MOCK_ITEMS;
+    if (!saved) return MOCK_ITEMS;
+    try {
+      const parsed: ClothingItem[] = JSON.parse(saved);
+      // Migrate any previously cached broken image URLs
+      return parsed.map(item => ({
+        ...item,
+        images: (item.images || []).map(img =>
+          img.includes('photo-1542272604-780c96856592')
+            ? 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80'
+            : img
+        )
+      }));
+    } catch {
+      return MOCK_ITEMS;
+    }
   });
 
   const [swaps, setSwaps] = useState<SwapProposal[]>(() => {

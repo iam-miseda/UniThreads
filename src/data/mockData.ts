@@ -354,7 +354,7 @@ export const MOCK_ITEMS: ClothingItem[] = [
     washCare: 'Turn inside out, cold gentle wash, hang dry in fresh air.',
     color: 'Medium Vintage Indigo Wash',
     images: [
-      'https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80'
     ],
     estMarketValue: 850,
     lookingFor: 'Oversized knit sweater, platform boots, or corduroy tote bag',

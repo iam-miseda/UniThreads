@@ -11,9 +11,27 @@ import {
   RefreshCw, 
   Compass, 
   Star, 
-  Zap,
-  MapPin
+  Zap
 } from 'lucide-react';
+
+const FALLBACK_GARMENT_SVG = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 24 24" fill="none" stroke="%2394a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="background:%23f1f5f9;"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>`;
+const FALLBACK_AVATAR_SVG = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="%23cbd5e1" style="background:%23f1f5f9;"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>`;
+
+const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+  const target = e.currentTarget;
+  if (!target.dataset.fallback) {
+    target.dataset.fallback = 'true';
+    target.src = FALLBACK_GARMENT_SVG;
+  }
+};
+
+const handleAvatarError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+  const target = e.currentTarget;
+  if (!target.dataset.fallback) {
+    target.dataset.fallback = 'true';
+    target.src = FALLBACK_AVATAR_SVG;
+  }
+};
 
 interface RecommendationsHubProps {
   onInspect: (item: ClothingItem) => void;
@@ -98,17 +116,17 @@ export const RecommendationsHub: React.FC<RecommendationsHubProps> = ({ onInspec
 
   return (
     <div className="space-y-8">
-      {/* Header Banner */}
-      <div className="p-6 bg-white border border-[#dbdbdb] rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.03)] flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      {/* Header Banner with Consistent Dark/Light Theming */}
+      <div className="p-6 bg-white dark:bg-[#18181c] border border-[#dbdbdb] dark:border-neutral-800 rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.03)] flex flex-col md:flex-row items-start md:items-center justify-between gap-4 transition-colors duration-200">
         <div>
-          <span className="text-xs font-bold text-amber-600 uppercase tracking-wider flex items-center gap-1.5 mb-1">
+          <span className="text-xs font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider flex items-center gap-1.5 mb-1">
             <Sparkles className="w-4 h-4 text-amber-500" />
             UniThread Recommendation Engine
           </span>
-          <h2 className="text-xl font-bold text-neutral-900">
+          <h2 className="text-xl font-bold text-neutral-900 dark:text-white">
             Smart Campus Wardrobe Matches &amp; Style Cycle
           </h2>
-          <p className="text-xs text-neutral-500 mt-1 max-w-xl leading-relaxed">
+          <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-1 max-w-xl leading-relaxed">
             Our recommendation algorithm cross-references your closet with what peers at UoN, Strathmore, KU, and JKUAT are searching for. High-compatibility trades maximize point bonuses!
           </p>
         </div>
@@ -116,9 +134,10 @@ export const RecommendationsHub: React.FC<RecommendationsHubProps> = ({ onInspec
         <button
           onClick={fetchAiMatches}
           disabled={isLoadingAi}
-          className="px-4 py-2.5 matte-glass-btn text-neutral-800 text-xs font-bold rounded-2xl flex items-center gap-2 shrink-0"
+          className="px-4 py-2.5 matte-glass-btn text-neutral-800 dark:text-neutral-200 text-xs font-bold rounded-2xl flex items-center gap-2 shrink-0 cursor-pointer disabled:opacity-60 transition-colors"
+          title="Refresh AI Match Suggestions"
         >
-          <RefreshCw className={`w-3.5 h-3.5 text-neutral-700 ${isLoadingAi ? 'animate-spin' : ''}`} />
+          <RefreshCw className={`w-3.5 h-3.5 text-neutral-700 dark:text-neutral-300 ${isLoadingAi ? 'animate-spin' : ''}`} />
           {isLoadingAi ? 'Refreshing AI Matches...' : 'Refresh AI Styling Insights'}
         </button>
       </div>
@@ -165,6 +184,28 @@ export const RecommendationsHub: React.FC<RecommendationsHubProps> = ({ onInspec
         </div>
       </div>
 
+      {/* AI Styling Insight Banner */}
+      {aiSuggestions?.recommendation && (
+        <div className="p-4 bg-purple-50/80 dark:bg-purple-950/30 border border-purple-200/80 dark:border-purple-800/50 rounded-2xl flex items-start gap-3.5 transition-colors duration-200">
+          <div className="p-2 bg-purple-100 dark:bg-purple-900/50 text-purple-600 dark:text-purple-300 rounded-xl shrink-0 mt-0.5">
+            <Sparkles className="w-4 h-4" />
+          </div>
+          <div className="space-y-1 min-w-0">
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-bold text-purple-900 dark:text-purple-200">
+                AI Campus Stylist Synergy
+              </span>
+              <span className="text-[10px] font-mono font-semibold px-2 py-0.5 bg-purple-100 dark:bg-purple-900/60 text-purple-700 dark:text-purple-300 rounded-full border border-purple-200 dark:border-purple-800">
+                Gemini 3.8
+              </span>
+            </div>
+            <p className="text-xs text-purple-800 dark:text-purple-300 leading-relaxed">
+              {aiSuggestions.recommendation}
+            </p>
+          </div>
+        </div>
+      )}
+
       {/* Section 1: Mutual Swap Compatibility Recommendations */}
       <div className="space-y-4">
         <div className="flex items-center justify-between">
@@ -175,73 +216,97 @@ export const RecommendationsHub: React.FC<RecommendationsHubProps> = ({ onInspec
           <span className="text-xs text-neutral-400 dark:text-neutral-500">Based on your closet &amp; peer wishlists</span>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {mutualMatches.slice(0, 4).map(({ targetItem, suggestedMyItem, score, matchReason }) => (
-            <div
-              key={targetItem.id}
-              className="p-5 bg-white dark:bg-[#18181c] border border-[#dbdbdb] dark:border-neutral-800 rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_20px_rgba(0,0,0,0.05)] dark:hover:shadow-[0_8px_20px_rgba(0,0,0,0.3)] transition-all flex flex-col justify-between gap-4"
-            >
-              <div>
-                {/* Score Header */}
-                <div className="flex items-center justify-between pb-3 border-b border-neutral-100 dark:border-neutral-800">
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs font-mono font-bold text-emerald-800 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 px-2.5 py-0.5 rounded-full">
-                      {score}% Swap Match
+        {mutualMatches.length === 0 ? (
+          <div className="p-10 text-center bg-white dark:bg-[#18181c] border border-[#dbdbdb] dark:border-neutral-800 rounded-3xl space-y-2 transition-colors duration-200">
+            <Shirt className="w-8 h-8 text-neutral-300 dark:text-neutral-600 mx-auto" />
+            <div className="text-sm font-bold text-neutral-900 dark:text-white">No active matches found</div>
+            <p className="text-xs text-neutral-500 dark:text-neutral-400 max-w-sm mx-auto">
+              Post more pieces to your closet or explore available campus grails to discover mutual matches!
+            </p>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {mutualMatches.slice(0, 4).map(({ targetItem, suggestedMyItem, score, matchReason }) => (
+              <div
+                key={targetItem.id}
+                className="p-5 bg-white dark:bg-[#18181c] border border-[#dbdbdb] dark:border-neutral-800 rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_20px_rgba(0,0,0,0.05)] dark:hover:shadow-[0_8px_20px_rgba(0,0,0,0.3)] transition-all flex flex-col justify-between gap-4"
+              >
+                <div>
+                  {/* Score Header */}
+                  <div className="flex items-center justify-between pb-3 border-b border-neutral-100 dark:border-neutral-800">
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs font-mono font-bold text-emerald-800 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 px-2.5 py-0.5 rounded-full">
+                        {score}% Swap Match
+                      </span>
+                      <span className="text-xs text-neutral-500 dark:text-neutral-400">With {targetItem.ownerName}</span>
+                    </div>
+                    <span className="text-xs font-bold text-neutral-900 dark:text-white font-mono">
+                      KSh {targetItem.estMarketValue.toLocaleString()}
                     </span>
-                    <span className="text-xs text-neutral-500 dark:text-neutral-400">With {targetItem.ownerName}</span>
                   </div>
-                  <span className="text-xs font-bold text-neutral-900 dark:text-white font-mono">
-                    KSh {targetItem.estMarketValue.toLocaleString()}
-                  </span>
+
+                  {/* Match reason */}
+                  <p className="mt-3 text-xs text-neutral-700 dark:text-neutral-300 font-medium leading-relaxed">
+                    💡 {matchReason}
+                  </p>
+
+                  {/* Target Garment Overview */}
+                  <div className="flex items-center gap-3 mt-3 p-3 bg-neutral-50 dark:bg-neutral-800/60 rounded-2xl border border-neutral-200 dark:border-neutral-700/60">
+                    <img
+                      src={targetItem.images[0]}
+                      alt={targetItem.title}
+                      onError={handleImageError}
+                      className="w-14 h-14 rounded-xl object-cover shrink-0 border border-neutral-200 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-800"
+                    />
+                    <div className="min-w-0 flex-1">
+                      <div className="text-[11px] text-neutral-500 dark:text-neutral-400 font-semibold">{targetItem.brand} · {targetItem.size}</div>
+                      <div className="text-xs font-bold text-neutral-900 dark:text-white truncate">{targetItem.title}</div>
+                      <div className="text-[11px] text-neutral-400 dark:text-neutral-500 font-mono truncate">{targetItem.fabric}</div>
+                    </div>
+                  </div>
+
+                  {/* Suggested from your closet */}
+                  {suggestedMyItem && (
+                    <div className="mt-2.5 p-2 bg-neutral-50 dark:bg-neutral-800/50 rounded-xl border border-neutral-200/60 dark:border-neutral-700/60 flex items-center justify-between gap-2 text-[11px]">
+                      <div className="flex items-center gap-2 min-w-0">
+                        <img
+                          src={suggestedMyItem.images[0]}
+                          alt={suggestedMyItem.title}
+                          onError={handleImageError}
+                          className="w-8 h-8 rounded-lg object-cover shrink-0 border border-neutral-200 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-800"
+                        />
+                        <div className="truncate">
+                          <span className="text-neutral-400 dark:text-neutral-500 font-medium">Trade your: </span>
+                          <span className="text-neutral-900 dark:text-white font-bold truncate">{suggestedMyItem.title}</span>
+                        </div>
+                      </div>
+                      <span className="text-neutral-500 dark:text-neutral-400 font-mono text-[10px] shrink-0 font-semibold">
+                        KSh {suggestedMyItem.estMarketValue.toLocaleString()}
+                      </span>
+                    </div>
+                  )}
                 </div>
 
-                {/* Match reason */}
-                <p className="mt-3 text-xs text-neutral-700 dark:text-neutral-300 font-medium leading-relaxed">
-                  💡 {matchReason}
-                </p>
-
-                {/* Target Garment Overview */}
-                <div className="flex items-center gap-3 mt-3 p-3 bg-neutral-50 dark:bg-neutral-800/60 rounded-2xl border border-neutral-200 dark:border-neutral-700/60">
-                  <img
-                    src={targetItem.images[0]}
-                    alt={targetItem.title}
-                    className="w-14 h-14 rounded-xl object-cover shrink-0 border border-neutral-200 dark:border-neutral-700"
-                  />
-                  <div className="min-w-0 flex-1">
-                    <div className="text-[11px] text-neutral-500 dark:text-neutral-400 font-semibold">{targetItem.brand} · {targetItem.size}</div>
-                    <div className="text-xs font-bold text-neutral-900 dark:text-white truncate">{targetItem.title}</div>
-                    <div className="text-[11px] text-neutral-400 dark:text-neutral-500 font-mono truncate">{targetItem.fabric}</div>
-                  </div>
+                {/* Action Buttons */}
+                <div className="flex items-center justify-end gap-2 pt-2 border-t border-neutral-100 dark:border-neutral-800">
+                  <button
+                    onClick={() => onInspect(targetItem)}
+                    className="px-3.5 py-2 matte-glass-btn text-xs font-semibold text-neutral-700 dark:text-neutral-200 rounded-xl cursor-pointer"
+                  >
+                    Inspect Fabric
+                  </button>
+                  <button
+                    onClick={() => onProposeSwap(targetItem)}
+                    className="px-4 py-2 matte-glass-btn-primary text-xs font-bold rounded-xl flex items-center gap-1.5 cursor-pointer"
+                  >
+                    <ArrowLeftRight className="w-3.5 h-3.5" />
+                    Propose Swap
+                  </button>
                 </div>
-
-                {/* Suggested from your closet */}
-                {suggestedMyItem && (
-                  <div className="mt-2 text-[11px] text-neutral-500 dark:text-neutral-400 flex items-center gap-2">
-                    <span className="text-neutral-400 dark:text-neutral-500 font-semibold">Trade your:</span>
-                    <span className="text-neutral-900 dark:text-white font-bold truncate">{suggestedMyItem.title}</span>
-                  </div>
-                )}
               </div>
-
-              {/* Action Buttons */}
-              <div className="flex items-center justify-end gap-2 pt-2 border-t border-neutral-100 dark:border-neutral-800">
-                <button
-                  onClick={() => onInspect(targetItem)}
-                  className="px-3.5 py-2 matte-glass-btn text-xs font-semibold text-neutral-700 dark:text-neutral-200 rounded-xl cursor-pointer"
-                >
-                  Inspect Fabric
-                </button>
-                <button
-                  onClick={() => onProposeSwap(targetItem)}
-                  className="px-4 py-2 matte-glass-btn-primary text-xs font-bold rounded-xl flex items-center gap-1.5 cursor-pointer"
-                >
-                  <ArrowLeftRight className="w-3.5 h-3.5" />
-                  Propose Swap
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Section 2: AI Campus Styling & Fabric Longevity Guide */}
@@ -303,6 +368,7 @@ export const RecommendationsHub: React.FC<RecommendationsHubProps> = ({ onInspec
                       <img
                         src={rev.reviewerAvatar}
                         alt={rev.reviewerName}
+                        onError={handleAvatarError}
                         className="w-8 h-8 rounded-full object-cover"
                       />
                     </div>

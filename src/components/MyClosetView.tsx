@@ -13,6 +13,25 @@ import {
   MapPin
 } from 'lucide-react';
 
+const FALLBACK_GARMENT_SVG = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 24 24" fill="none" stroke="%2394a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="background:%23f1f5f9;"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>`;
+const FALLBACK_AVATAR_SVG = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="%23cbd5e1" style="background:%23f1f5f9;"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>`;
+
+const handleGarmentError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+  const target = e.currentTarget;
+  if (!target.dataset.fallback) {
+    target.dataset.fallback = 'true';
+    target.src = FALLBACK_GARMENT_SVG;
+  }
+};
+
+const handleAvatarError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+  const target = e.currentTarget;
+  if (!target.dataset.fallback) {
+    target.dataset.fallback = 'true';
+    target.src = FALLBACK_AVATAR_SVG;
+  }
+};
+
 interface MyClosetViewProps {
   onOpenAddItem: () => void;
   onInspectItem: (item: ClothingItem) => void;
@@ -35,6 +54,7 @@ export const MyClosetView: React.FC<MyClosetViewProps> = ({ onOpenAddItem, onIns
               <img
                 src={currentUser.avatar}
                 alt={currentUser.name}
+                onError={handleAvatarError}
                 className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover"
               />
             </div>
@@ -156,6 +176,7 @@ export const MyClosetView: React.FC<MyClosetViewProps> = ({ onOpenAddItem, onIns
                     <img
                       src={item.images[0]}
                       alt={item.title}
+                      onError={handleGarmentError}
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute top-3 left-3 matte-glass px-2.5 py-1 rounded-full text-xs font-bold text-neutral-900 dark:text-neutral-100">
