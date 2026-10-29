@@ -143,7 +143,7 @@ export const ProposeSwapModal: React.FC<ProposeSwapModalProps> = ({ requestedIte
                     alt={requestedItem.title}
                     onError={handleGarmentError}
                     className="w-16 h-16 rounded-xl object-cover border border-neutral-200 dark:border-neutral-700 shrink-0 bg-neutral-100 dark:bg-neutral-800"
-                  />
+                   referrerPolicy="no-referrer"/>
                   <div className="min-w-0">
                     <h4 className="text-xs font-bold text-neutral-900 dark:text-white line-clamp-1">
                       {requestedItem.title}
@@ -190,7 +190,7 @@ export const ProposeSwapModal: React.FC<ProposeSwapModalProps> = ({ requestedIte
                           alt={selectedOfferedItem.title}
                           onError={handleGarmentError}
                           className="w-16 h-16 rounded-xl object-cover border border-neutral-200 dark:border-neutral-700 shrink-0 bg-neutral-100 dark:bg-neutral-800"
-                        />
+                         referrerPolicy="no-referrer"/>
                         <div className="min-w-0">
                           <p className="text-xs font-bold text-neutral-900 dark:text-white line-clamp-1">{selectedOfferedItem.title}</p>
                           <p className="text-[11px] text-neutral-500 dark:text-neutral-400 font-mono">{selectedOfferedItem.fabricWeight}</p>

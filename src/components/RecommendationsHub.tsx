@@ -257,7 +257,7 @@ export const RecommendationsHub: React.FC<RecommendationsHubProps> = ({ onInspec
                       alt={targetItem.title}
                       onError={handleImageError}
                       className="w-14 h-14 rounded-xl object-cover shrink-0 border border-neutral-200 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-800"
-                    />
+                     referrerPolicy="no-referrer"/>
                     <div className="min-w-0 flex-1">
                       <div className="text-[11px] text-neutral-500 dark:text-neutral-400 font-semibold">{targetItem.brand} · {targetItem.size}</div>
                       <div className="text-xs font-bold text-neutral-900 dark:text-white truncate">{targetItem.title}</div>
@@ -274,7 +274,7 @@ export const RecommendationsHub: React.FC<RecommendationsHubProps> = ({ onInspec
                           alt={suggestedMyItem.title}
                           onError={handleImageError}
                           className="w-8 h-8 rounded-lg object-cover shrink-0 border border-neutral-200 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-800"
-                        />
+                         referrerPolicy="no-referrer"/>
                         <div className="truncate">
                           <span className="text-neutral-400 dark:text-neutral-500 font-medium">Trade your: </span>
                           <span className="text-neutral-900 dark:text-white font-bold truncate">{suggestedMyItem.title}</span>
@@ -370,7 +370,7 @@ export const RecommendationsHub: React.FC<RecommendationsHubProps> = ({ onInspec
                         alt={rev.reviewerName}
                         onError={handleAvatarError}
                         className="w-8 h-8 rounded-full object-cover"
-                      />
+                       referrerPolicy="no-referrer"/>
                     </div>
                   </div>
                   <div>

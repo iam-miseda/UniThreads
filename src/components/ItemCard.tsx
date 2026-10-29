@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import { ClothingItem } from '../types';
 import { useSwap } from '../context/SwapContext';
+import { CAMPUS_LOCATIONS } from '../data/mockData';
 import { 
   ArrowLeftRight, 
-  ShieldCheck, 
   Heart, 
   Bookmark, 
   MessageCircle, 
   Share2, 
   Sparkles,
-  MapPin
+  MapPin,
+  Star,
+  Shirt,
+  Send
 } from 'lucide-react';
 
 const FALLBACK_GARMENT_SVG = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 24 24" fill="none" stroke="%2394a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="background:%23f1f5f9;"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>`;
@@ -22,8 +25,11 @@ interface ItemCardProps {
 }
 
 export const ItemCard: React.FC<ItemCardProps> = ({ item, onInspect, onProposeSwap }) => {
-  const { currentUser } = useSwap();
+  const { currentUser, allStudents, openChat } = useSwap();
   const isOwnItem = item.ownerId === currentUser.id;
+  const owner = allStudents.find(s => s.id === item.ownerId);
+  const campusInfo = CAMPUS_LOCATIONS.find(c => c.campus === item.ownerCampus || item.ownerCampus.includes(c.shortName));
+
   const [isLiked, setIsLiked] = useState(false);
   const [isSaved, setIsSaved] = useState(false);
 
@@ -45,16 +51,16 @@ export const ItemCard: React.FC<ItemCardProps> = ({ item, onInspect, onProposeSw
 
   return (
     <article className="bg-white dark:bg-[#18181c] border border-[#dbdbdb] dark:border-neutral-800 rounded-2xl overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] dark:hover:shadow-[0_8px_24px_rgba(0,0,0,0.3)] transition-all duration-300 flex flex-col justify-between">
-      {/* IG Header: Author & Location */}
+      {/* Student Author & Location Bar */}
       <div className="px-3.5 py-3 flex items-center justify-between border-b border-neutral-100/80 dark:border-neutral-800/80">
         <div className="flex items-center gap-2.5 min-w-0">
-          {/* IG Story Style Ring */}
           <div className="p-[1.5px] rounded-full ig-story-gradient shrink-0">
             <div className="p-[1px] bg-white dark:bg-neutral-900 rounded-full">
               <img
                 src={item.ownerAvatar}
                 alt={item.ownerName}
                 onError={handleAvatarError}
+                referrerPolicy="no-referrer"
                 className="w-7 h-7 rounded-full object-cover"
               />
             </div>
@@ -65,26 +71,21 @@ export const ItemCard: React.FC<ItemCardProps> = ({ item, onInspect, onProposeSw
               <span className="text-xs font-bold text-neutral-900 dark:text-neutral-100 truncate">
                 {isOwnItem ? 'You' : item.ownerName}
               </span>
-              {item.cleanlinessPledge && (
-                <span title="Cleanliness & Fabric Verified">
-                  <ShieldCheck className="w-3.5 h-3.5 text-blue-500 shrink-0" />
-                </span>
-              )}
             </div>
-            <div className="text-[11px] text-neutral-400 dark:text-neutral-500 truncate flex items-center gap-1">
-              <MapPin className="w-2.5 h-2.5 shrink-0" />
-              <span>{item.ownerCampus.split('(')[0]} · {item.ownerDorm.split('(')[0]}</span>
+            <div className="text-[11px] text-neutral-500 dark:text-neutral-400 truncate flex items-center gap-1 font-medium">
+              <span className="shrink-0">{campusInfo?.emoji || '📍'}</span>
+              <span className="font-semibold text-neutral-800 dark:text-neutral-200">{campusInfo?.shortName || item.ownerCampus.split('(')[0]}</span>
             </div>
           </div>
         </div>
 
         {/* Clean KSh Price Tag */}
-        <div className="px-2.5 py-1 matte-glass-btn text-[11px] font-bold text-neutral-800 dark:text-neutral-200 rounded-full shrink-0">
+        <div className="px-2.5 py-1 matte-glass-btn text-[11px] font-bold text-neutral-800 dark:text-neutral-200 rounded-full shrink-0 font-mono">
           KSh {item.estMarketValue.toLocaleString()}
         </div>
       </div>
 
-      {/* Main Garment Image */}
+      {/* Main Item Image */}
       <div 
         className="relative aspect-square w-full bg-neutral-100 dark:bg-neutral-800 overflow-hidden cursor-pointer group"
         onClick={() => onInspect(item)}
@@ -93,21 +94,28 @@ export const ItemCard: React.FC<ItemCardProps> = ({ item, onInspect, onProposeSw
           src={item.images[0]}
           alt={item.title}
           onError={handleGarmentError}
+          referrerPolicy="no-referrer"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           loading="lazy"
         />
 
         {/* Overlay Badges */}
-        <div className="absolute top-3 left-3 matte-glass px-2.5 py-1 rounded-full text-[11px] font-semibold text-neutral-800 dark:text-neutral-100">
-          {item.condition}
+        <div className="absolute top-3 left-3 matte-glass px-2.5 py-1 rounded-full text-[10px] font-bold text-neutral-900 dark:text-neutral-100 flex items-center gap-1">
+          {item.category.includes('Jewelry') ? '💍 Jewelry' : item.category.includes('Bags') ? '🎒 Bag' : item.condition}
         </div>
 
-        <div className="absolute top-3 right-3 matte-glass px-2.5 py-1 rounded-full text-[11px] font-mono text-neutral-700 dark:text-neutral-200">
-          Size {item.size}
+        <div className="absolute top-3 right-3 matte-glass px-2.5 py-1 rounded-full text-[10px] font-mono text-neutral-700 dark:text-neutral-200">
+          {item.size}
+        </div>
+
+        {/* University Location Pill on Garment Image */}
+        <div className="absolute bottom-2.5 left-2.5 px-2.5 py-1 rounded-full text-[10px] font-bold backdrop-blur-md bg-neutral-950/75 text-white flex items-center gap-1.5 shadow-md border border-white/20">
+          <span>{campusInfo?.emoji || '🏛️'}</span>
+          <span>{campusInfo?.shortName || item.ownerCampus.split('(')[0]}</span>
         </div>
       </div>
 
-      {/* IG Action Bar & Content */}
+      {/* Action Bar & Content */}
       <div className="p-3.5 flex flex-col flex-1 justify-between gap-2.5">
         <div>
           {/* Quick Engagement Row */}
@@ -115,41 +123,51 @@ export const ItemCard: React.FC<ItemCardProps> = ({ item, onInspect, onProposeSw
             <div className="flex items-center gap-3">
               <button
                 onClick={() => setIsLiked(!isLiked)}
-                className="text-neutral-700 dark:text-neutral-300 hover:text-rose-500 transition-colors"
+                className="text-neutral-700 dark:text-neutral-300 hover:text-rose-500 transition-colors cursor-pointer"
                 aria-label="Like item"
               >
-                <Heart className={`w-5 h-5 ${isLiked ? 'fill-rose-500 text-rose-500' : ''}`} />
+                <Heart className={`w-4.5 h-4.5 ${isLiked ? 'fill-rose-500 text-rose-500' : ''}`} />
               </button>
 
               <button
                 onClick={() => onInspect(item)}
-                className="text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors"
-                aria-label="Inspect fabric details"
+                className="text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors cursor-pointer"
+                aria-label="Inspect details"
               >
-                <MessageCircle className="w-5 h-5" />
+                <MessageCircle className="w-4.5 h-4.5" />
               </button>
+
+              {!isOwnItem && (
+                <button
+                  onClick={() => openChat(item.ownerId, item.id)}
+                  className="text-neutral-700 dark:text-neutral-300 hover:text-rose-500 transition-colors cursor-pointer"
+                  title="Direct Message Owner"
+                >
+                  <Send className="w-4 h-4" />
+                </button>
+              )}
 
               <button
                 onClick={() => {
                   navigator.clipboard?.writeText(window.location.href);
                 }}
-                className="text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors"
+                className="text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors cursor-pointer"
                 aria-label="Share listing"
               >
-                <Share2 className="w-5 h-5" />
+                <Share2 className="w-4.5 h-4.5" />
               </button>
             </div>
 
             <button
               onClick={() => setIsSaved(!isSaved)}
-              className="text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors"
+              className="text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors cursor-pointer"
               aria-label="Save to wardrobe wishlist"
             >
-              <Bookmark className={`w-5 h-5 ${isSaved ? 'fill-neutral-900 dark:fill-white text-neutral-900 dark:text-white' : ''}`} />
+              <Bookmark className={`w-4.5 h-4.5 ${isSaved ? 'fill-neutral-900 dark:fill-white text-neutral-900 dark:text-white' : ''}`} />
             </button>
           </div>
 
-          {/* IG Caption Format: Bold Brand + Title */}
+          {/* Caption Format */}
           <div className="text-xs text-neutral-800 dark:text-neutral-200 leading-snug">
             <span className="font-bold text-neutral-900 dark:text-white mr-1.5">{item.brand}</span>
             <span 
@@ -160,38 +178,44 @@ export const ItemCard: React.FC<ItemCardProps> = ({ item, onInspect, onProposeSw
             </span>
           </div>
 
-          {/* Fabric Specification */}
+          {/* Fabric / Material Specification */}
           <div className="mt-1 text-[11px] text-neutral-500 dark:text-neutral-400 line-clamp-1 font-mono">
-            🧵 {item.fabric}
+            ✨ {item.fabric}
+          </div>
+
+          {/* Campus Meetup Spot */}
+          <div className="mt-1 flex items-center gap-1 text-[10.5px] text-neutral-500 dark:text-neutral-400 font-medium truncate">
+            <MapPin className="w-3 h-3 text-rose-500 shrink-0" />
+            <span className="truncate">{item.preferredMeetup}</span>
           </div>
 
           {/* Swap Wishlist / Looking for in return */}
           <div className="mt-2 p-2 bg-neutral-50 dark:bg-neutral-800/60 rounded-xl border border-neutral-100 dark:border-neutral-700/60 text-[11px] leading-relaxed">
-            <span className="text-neutral-400 dark:text-neutral-400 font-semibold">Wants to swap for: </span>
+            <span className="text-neutral-400 font-semibold">Wants: </span>
             <span className="text-neutral-800 dark:text-neutral-200 line-clamp-1 font-medium">{item.lookingFor}</span>
           </div>
         </div>
 
-        {/* Matte Glassmorphic Action Buttons */}
+        {/* Action Buttons */}
         <div className="pt-2 border-t border-neutral-100 dark:border-neutral-800 flex items-center gap-2">
           <button
             onClick={() => onInspect(item)}
-            className="flex-1 py-1.5 px-3 matte-glass-btn text-xs font-semibold text-neutral-800 dark:text-neutral-200 rounded-xl"
+            className="flex-1 py-1.5 px-3 matte-glass-btn text-xs font-semibold text-neutral-800 dark:text-neutral-200 rounded-xl cursor-pointer"
           >
-            Inspect Fabric
+            Details
           </button>
 
           {!isOwnItem ? (
             <button
               onClick={() => onProposeSwap(item)}
-              className="flex-1 py-1.5 px-3 matte-glass-btn-primary text-xs font-bold rounded-xl flex items-center justify-center gap-1.5"
+              className="flex-1 py-1.5 px-3 matte-glass-btn-primary text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 cursor-pointer shadow-2xs active:scale-95"
             >
               <ArrowLeftRight className="w-3.5 h-3.5" />
               Swap Now
             </button>
           ) : (
             <span className="py-1.5 px-3 text-xs text-neutral-400 dark:text-neutral-500 bg-neutral-100 dark:bg-neutral-800/80 rounded-xl text-center font-medium">
-              In Your Closet
+              In Closet
             </span>
           )}
         </div>

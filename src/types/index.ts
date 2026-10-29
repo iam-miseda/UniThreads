@@ -1,5 +1,7 @@
 export type CategoryType = 
   | 'All'
+  | 'Jewelry & Accessories'
+  | 'Bags, Totes & Backpacks'
   | 'Outerwear & Jackets'
   | 'Tops & Hoodies'
   | 'Bottoms & Denim'
@@ -10,7 +12,6 @@ export type CategoryType =
   | 'Cargos & Parachute Pants'
   | 'Boots & Loafers'
   | 'Activewear & Gym Fits'
-  | 'Bags, Totes & Backpacks'
   | 'Headwear & Beanies'
   | 'Blazers & Formal Fits'
   | 'Tracksuits & Windbreakers'
@@ -24,6 +25,13 @@ export type ConditionType =
   | 'Vintage Character';
 
 export type FabricWeight = 'Heavyweight (350+ GSM)' | 'Mid-weight (200-350 GSM)' | 'Lightweight / Breathable';
+
+export interface UserPreferences {
+  vibes: string[];
+  genderStyle: 'All' | 'Unisex' | 'Menswear' | 'Womenswear';
+  primaryCampus: string;
+  onboardingCompleted: boolean;
+}
 
 export interface StudentUser {
   id: string;
@@ -40,6 +48,12 @@ export interface StudentUser {
   reviewCount: number;
   badges: string[];
   reputationTitle: string;
+  cleanlinessScore?: number;
+  fabricQualityScore?: number;
+  punctualityScore?: number;
+  preferences?: UserPreferences;
+  phoneNumber?: string;
+  mpesaNumber?: string;
 }
 
 export interface ClothingItem {
@@ -76,6 +90,13 @@ export type SwapStatus =
   | 'completed'
   | 'declined';
 
+export type PaymentStatus = 
+  | 'not_required'
+  | 'pending_payment'
+  | 'payment_sent'
+  | 'payment_verified'
+  | 'disputed';
+
 export interface SwapProposal {
   id: string;
   proposerId: string;
@@ -83,14 +104,32 @@ export interface SwapProposal {
   offeredItemId: string;
   requestedItemId: string;
   pointsBonus: number;
+  cashAmount?: number; // Optional cash/topup in KSh
   status: SwapStatus;
+
+  // Binance P2P Escrow & M-Pesa Verification fields
+  paymentRequired?: boolean;
+  paymentAmount?: number; // in KSh
+  paymentStatus?: PaymentStatus;
+  mpesaRecipientPhone?: string;
+  mpesaRecipientName?: string;
+  mpesaTillNumber?: string;
+  mpesaTransactionCode?: string;
+  mpesaScreenshot?: string;
+  paymentSentAt?: string;
+  paymentVerifiedAt?: string;
+
+  // Meetup & Date of Exchange
+  exchangeDate?: string; // e.g. "2026-10-31"
+  meetupLocation: string;
+  meetupTime: string;
   proposerAgreedFabric: boolean;
   receiverAgreedFabric: boolean;
   proposerAgreedMeetup: boolean;
   receiverAgreedMeetup: boolean;
-  meetupLocation: string;
-  meetupTime: string;
   meetupVerificationCode: string;
+  handoverConfirmedByProposer?: boolean;
+  handoverConfirmedByReceiver?: boolean;
   notes: string;
   createdAt: string;
   completedAt?: string;
@@ -105,7 +144,10 @@ export interface SwapReview {
   reviewerName: string;
   reviewerAvatar: string;
   revieweeId: string;
-  rating: number;
+  rating: number; // Comprehensive score
+  cleanlinessRating?: number; // 1-5 stars
+  fabricQualityRating?: number; // 1-5 stars
+  punctualityRating?: number; // 1-5 stars
   tags: string[];
   comment: string;
   bonusPointsAwarded: number;
@@ -119,4 +161,15 @@ export interface PerkItem {
   category: 'Listing Boost' | 'Campus Partner' | 'Eco Merch';
   description: string;
   claimed?: boolean;
+}
+
+export interface ChatMessage {
+  id: string;
+  senderId: string;
+  receiverId: string;
+  text: string;
+  timestamp: string;
+  relatedItemId?: string;
+  attachment?: string;
+  isSystemAlert?: boolean;
 }

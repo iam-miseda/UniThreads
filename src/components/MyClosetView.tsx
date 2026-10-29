@@ -10,7 +10,8 @@ import {
   Gift,
   ShieldCheck,
   Grid,
-  MapPin
+  MapPin,
+  LogOut
 } from 'lucide-react';
 
 const FALLBACK_GARMENT_SVG = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 24 24" fill="none" stroke="%2394a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="background:%23f1f5f9;"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>`;
@@ -36,9 +37,10 @@ interface MyClosetViewProps {
   onOpenAddItem: () => void;
   onInspectItem: (item: ClothingItem) => void;
   onOpenPerks: () => void;
+  onLogout: () => void;
 }
 
-export const MyClosetView: React.FC<MyClosetViewProps> = ({ onOpenAddItem, onInspectItem, onOpenPerks }) => {
+export const MyClosetView: React.FC<MyClosetViewProps> = ({ onOpenAddItem, onInspectItem, onOpenPerks, onLogout }) => {
   const { currentUser, items } = useSwap();
 
   const myItems = items.filter(i => i.ownerId === currentUser.id);
@@ -56,7 +58,7 @@ export const MyClosetView: React.FC<MyClosetViewProps> = ({ onOpenAddItem, onIns
                 alt={currentUser.name}
                 onError={handleAvatarError}
                 className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover"
-              />
+               referrerPolicy="no-referrer"/>
             </div>
           </div>
 
@@ -113,6 +115,13 @@ export const MyClosetView: React.FC<MyClosetViewProps> = ({ onOpenAddItem, onIns
               Perks Shop
             </button>
           </div>
+          <button
+            onClick={onLogout}
+            className="py-2.5 px-4 border border-neutral-200 dark:border-neutral-700 rounded-xl text-xs font-bold text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-800 flex items-center justify-center gap-2"
+          >
+            <LogOut className="w-4 h-4" />
+            Log out
+          </button>
 
           <button
             onClick={onOpenAddItem}
@@ -178,7 +187,7 @@ export const MyClosetView: React.FC<MyClosetViewProps> = ({ onOpenAddItem, onIns
                       alt={item.title}
                       onError={handleGarmentError}
                       className="w-full h-full object-cover"
-                    />
+                     referrerPolicy="no-referrer"/>
                     <div className="absolute top-3 left-3 matte-glass px-2.5 py-1 rounded-full text-xs font-bold text-neutral-900 dark:text-neutral-100">
                       KSh {item.estMarketValue.toLocaleString()}
                     </div>

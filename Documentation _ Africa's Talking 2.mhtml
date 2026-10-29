@@ -1,0 +1,3542 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://developers.africastalking.com/docs/sms/sending/bulk
+Subject: Documentation | Africa's Talking
+Date: Thu, 29 Oct 2026 12:13:06 GMT
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--TgLpSPrmdhER7W876d65mMbln3K3i2nhWSm8R0yXwJ----"
+
+
+------MultipartBoundary--TgLpSPrmdhER7W876d65mMbln3K3i2nhWSm8R0yXwJ----
+Content-Type: text/html
+Content-ID: <frame-C1CC106920792267F81875180BFC02B6@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://developers.africastalking.com/docs/sms/sending/bulk
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/=
+css" href=3D"cid:css-9cb5b27b-4933-47c7-9c9d-61b5fce57be4@mhtml.blink" /><m=
+eta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"><meta name=3D"view=
+port" content=3D"width=3Ddevice-width,initial-scale=3D1"><meta name=3D"them=
+e-color" content=3D"#f08d20"><meta name=3D"description" content=3D"Explore =
+our Tutorials, Code Samples, API Reference, SDKs and other resources to hel=
+p you start building with Africa's Talking."><title>Documentation | Africa'=
+s Talking</title><link href=3D"https://developers.africastalking.com/css/ch=
+unk-01893b84.73a15172.css" rel=3D"prefetch"><link href=3D"https://developer=
+s.africastalking.com/css/chunk-047b6ac4.2ad4ae03.css" rel=3D"prefetch"><lin=
+k href=3D"https://developers.africastalking.com/css/chunk-05b094c8.c2cbf8e8=
+.css" rel=3D"prefetch"><link href=3D"https://developers.africastalking.com/=
+css/chunk-07c10ed4.e3401529.css" rel=3D"prefetch"><link href=3D"https://dev=
+elopers.africastalking.com/css/chunk-10b5eba7.78fdcf2c.css" rel=3D"prefetch=
+"><link href=3D"https://developers.africastalking.com/css/chunk-18d8c814.83=
+3a6286.css" rel=3D"prefetch"><link href=3D"https://developers.africastalkin=
+g.com/css/chunk-268231ff.c88ef6cd.css" rel=3D"prefetch"><link href=3D"https=
+://developers.africastalking.com/css/chunk-38f43e35.a6233523.css" rel=3D"pr=
+efetch"><link href=3D"https://developers.africastalking.com/css/chunk-574c9=
+394.6db266f9.css" rel=3D"prefetch"><link href=3D"https://developers.africas=
+talking.com/css/chunk-5c73236c.d0758ddb.css" rel=3D"prefetch"><link href=3D=
+"https://developers.africastalking.com/css/chunk-6f05b710.1ff4990a.css" rel=
+=3D"prefetch"><link href=3D"https://developers.africastalking.com/css/chunk=
+-6f40013b.57725244.css" rel=3D"prefetch"><link href=3D"https://developers.a=
+fricastalking.com/css/chunk-6f6b44f2.cac08827.css" rel=3D"prefetch"><link h=
+ref=3D"https://developers.africastalking.com/css/chunk-799c4773.7772ba03.cs=
+s" rel=3D"prefetch"><link href=3D"https://developers.africastalking.com/css=
+/chunk-7fd71608.e3401529.css" rel=3D"prefetch"><link href=3D"https://develo=
+pers.africastalking.com/css/chunk-8659d518.e3071a90.css" rel=3D"prefetch"><=
+link href=3D"https://developers.africastalking.com/css/chunk-874bdb98.c3e7f=
+523.css" rel=3D"prefetch"><link href=3D"https://developers.africastalking.c=
+om/css/chunk-a18c94d4.7e902728.css" rel=3D"prefetch"><link href=3D"https://=
+developers.africastalking.com/css/chunk-b7cf0d48.2cc83a68.css" rel=3D"prefe=
+tch"><link href=3D"https://developers.africastalking.com/css/chunk-d97ea380=
+.a8be5f9b.css" rel=3D"prefetch"><link href=3D"https://developers.africastal=
+king.com/css/chunk-de34faee.f65f1b69.css" rel=3D"prefetch"><link href=3D"ht=
+tps://developers.africastalking.com/css/chunk-dfc21b4a.1a714dd5.css" rel=3D=
+"prefetch"><link href=3D"https://developers.africastalking.com/css/chunk-ff=
+5aa006.020a67bb.css" rel=3D"prefetch"><link href=3D"https://developers.afri=
+castalking.com/js/chunk-01893b84.92e9e9fd.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-047b6ac4.4ec3d3f1.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-05b094c8.296e7adb.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-07c10ed4.e6f3cf1c.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-0ea21304.1541ad5c.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-10b5eba7.128edc36.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-18d8c814.5761a38c.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-1cf42807.c64878d4.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-1e975bd3.03d47078.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-25b439c8.43aaf6a0.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-268231ff.00cddee4.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-280e80b0.dcc040dc.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0a3196.a8720ce9.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0a3577.1c65541c.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0a40c8.adb9e767.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0a43df.f79d5580.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0a44c8.e42cbc56.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0a4bbf.78ef1bbe.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0aa90c.ffe53bf2.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0aab07.b2986788.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0aad37.1e4e79e1.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0abc00.6c8cbbbe.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0ae937.1d673e11.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0ae98a.cc66a884.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0aeb45.1cd44a28.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0af08c.aa000bb5.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0afa49.b4d134b5.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0b1fd5.9b454140.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0b21d7.8cede9d6.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0b2762.10954504.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0b2b36.0369cbaa.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0b5dd7.927358e1.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0b5fb5.8977fe9f.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0b6187.7013eca2.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0b64da.56cb30c3.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0b68c6.909a0be1.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0b6a98.ca08b5b5.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0b9413.4eb06943.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0ba136.2ccff077.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0bb267.bcbf0968.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0bcec1.45b6d187.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0bdf38.0ae837d6.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0bdfa4.f540a601.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0bff92.0fde2820.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0c0494.69b69fb5.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0c0a09.b297c369.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0c100a.7734c17f.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0c138b.52e9fade.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0c192d.ac606fa6.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0c262c.ad414c55.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0c4313.ad1a14d0.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0c46d1.2c1db38e.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0c4a95.383fda0b.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0c4dc4.2c6f0c32.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0c512b.7e015b0a.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0c81f5.44e79872.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0c86e3.9547c523.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0c8f4c.e7177807.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0c9223.0020c49b.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0cc431.83f0b9ee.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0cc9ea.7cf3c7e8.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0cedcc.f680d6a2.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0cf112.4e23d635.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0cf16e.402c9b8e.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0cf4e6.ee336750.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0d056d.9e322d23.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0d0645.b372afd8.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0d0f6d.1449d70a.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0d34a7.428e136e.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0d39c9.81bc4d74.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0d3dab.cb17016f.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0d61fd.70540f1b.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0d66f2.2aef457b.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0d72c6.ed6eb351.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0d7e63.687f599f.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0da3ec.cd033e67.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0da761.9fcfa5ab.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0db21b.6d08329f.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0db2d2.4ce8ab9c.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0dd46d.aa37145a.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0dda4e.c800e274.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0ddb70.499f40a1.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0de7c1.def990e0.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0de971.4aa9cdbe.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0df082.666d9ef6.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0e186e.690b8501.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0e1b57.13f3ef48.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0e1fbe.1ef672b3.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0e22d6.62769ee5.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0e4fe5.97125512.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0e542a.52f1c49d.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0e5795.a90229cd.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0e57ec.8afcb072.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0e5b34.6b9245b7.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0e5f84.69826885.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0e64a2.d5474357.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0e64b4.75925211.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0e6553.de9f3418.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0e6712.c5414bd9.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0e6c86.e94da1ca.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0ea098.ffe5cafc.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d0f0a0f.ad3a880c.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d0f0a11.de3ef0fc.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d0f0f39.057b7307.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d207d18.4f477097.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d20849d.cecf52af.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d208ac5.ab1aed53.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d208bdf.f1617488.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d208c1d.a9b27a0f.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d209408.285f51db.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d20eff5.1d369706.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d20f745.5afe43cf.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d20faf8.bc7995f8.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d20ff23.c985b598.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d2100b7.b2d92c34.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d2134e9.e213f6c3.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d21373a.531fcac9.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d2138c7.826041e1.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d2167c9.16e234b0.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d216f3b.c54a16a9.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d217ada.373bfd88.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d217e5b.284d5bcb.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d21ab79.66ceb9b0.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d21b84a.b7b3b2ed.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d21b86d.0ca19e3d.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d21d162.41afe804.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d21dcd2.8e03c258.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d21f327.486bb57f.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d21f4bc.1978af21.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d2214b3.0de38bd3.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d221799.13f551f5.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d221814.803d6b50.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d221a34.aa37e490.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d221bc9.1aa2bd70.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d221c10.8d9d494b.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d221d84.c5f84b5d.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d222064.2037beab.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d222cba.8259ebcc.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d22502a.736b92fa.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d225655.bf5d8ba4.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d226775.5b566a16.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d229262.9f0e9479.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d229411.5fd46dd4.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d2295e9.c34a023f.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d22c171.ead63af9.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d22c2b8.9962246d.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d22c4bf.d1b67043.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d22ca58.9f089219.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d22db7a.ae64b430.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d2311f7.ff8261d9.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-2d237ee7.e73a85a7.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-2d238465.530aca60.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-2d238641.5d07d3b7.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-312ba8e0.02fb0785.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-38f43e35.3a13b897.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-4441a6d3.bed1c16d.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-488f8f99.5be66bfc.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-574c9394.53acb66b.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-5c73236c.0a7d4428.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-621a9a33.8d8a97cb.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-6ec0e15c.a8bac30d.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-6f05b710.e0d5e804.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-6f40013b.cbcf561c.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-6f6b44f2.77fc7c87.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-7481fe2d.7eafb984.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-7498b54e.e155164c.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-7532b3ea.96b1247f.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-7728b0cc.ee51d420.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-780ab26e.6d3f3dc6.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-799c4773.2369577c.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-7fd71608.58a1052b.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-8659d518.4c2392fb.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-874bdb98.0f45fae8.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-a18c94d4.489453b5.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-b7cf0d48.6278c6f0.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-d97ea380.4f0e039f.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-de34faee.34db61a2.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-dfc21b4a.9743f2f5.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/js/chunk-fcb65654.9c5d0967.js" re=
+l=3D"prefetch"><link href=3D"https://developers.africastalking.com/js/chunk=
+-fd4d831a.bdf12a85.js" rel=3D"prefetch"><link href=3D"https://developers.af=
+ricastalking.com/js/chunk-ff5aa006.0e38576f.js" rel=3D"prefetch"><link href=
+=3D"https://developers.africastalking.com/css/app.4d1cca98.css" rel=3D"prel=
+oad" as=3D"style"><link href=3D"https://developers.africastalking.com/js/ap=
+p.876f2ea5.js" rel=3D"preload" as=3D"script"><link href=3D"https://develope=
+rs.africastalking.com/js/chunk-vendors.7ccb1408.js" rel=3D"preload" as=3D"s=
+cript"><link href=3D"https://developers.africastalking.com/js/css.worker.5c=
+0eea85.js" rel=3D"preload" as=3D"script"><link href=3D"https://developers.a=
+fricastalking.com/js/editor.worker.da250ac7.js" rel=3D"preload" as=3D"scrip=
+t"><link href=3D"https://developers.africastalking.com/js/html.worker.44fb8=
+507.js" rel=3D"preload" as=3D"script"><link href=3D"https://developers.afri=
+castalking.com/js/json.worker.a36b2e1b.js" rel=3D"preload" as=3D"script"><l=
+ink href=3D"https://developers.africastalking.com/js/ts.worker.38823ac5.js"=
+ rel=3D"preload" as=3D"script"><link href=3D"https://developers.africastalk=
+ing.com/css/app.4d1cca98.css" rel=3D"stylesheet"><link rel=3D"icon" type=3D=
+"image/png" sizes=3D"32x32" href=3D"https://developers.africastalking.com/i=
+mg/icons/favicon-32x32.png"><link rel=3D"icon" type=3D"image/png" sizes=3D"=
+16x16" href=3D"https://developers.africastalking.com/img/icons/favicon-16x1=
+6.png"><link rel=3D"manifest" href=3D"https://developers.africastalking.com=
+/manifest.json"><meta name=3D"theme-color" content=3D"#4DBA87"><meta name=
+=3D"apple-mobile-web-app-capable" content=3D"no"><meta name=3D"apple-mobile=
+-web-app-status-bar-style" content=3D"default"><meta name=3D"apple-mobile-w=
+eb-app-title" content=3D"yoda.dashboard"><link rel=3D"apple-touch-icon" hre=
+f=3D"https://developers.africastalking.com/img/icons/apple-touch-icon-152x1=
+52.png"><link rel=3D"mask-icon" href=3D"https://developers.africastalking.c=
+om/img/icons/safari-pinned-tab.svg" color=3D"#4DBA87"><meta name=3D"msappli=
+cation-TileImage" content=3D"/img/icons/msapplication-icon-144x144.png"><me=
+ta name=3D"msapplication-TileColor" content=3D"#000000"><link rel=3D"styles=
+heet" type=3D"text/css" href=3D"https://developers.africastalking.com/css/c=
+hunk-6f40013b.57725244.css"><link rel=3D"stylesheet" type=3D"text/css" href=
+=3D"https://developers.africastalking.com/css/chunk-a18c94d4.7e902728.css">=
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"https://developers.afric=
+astalking.com/css/chunk-6f05b710.1ff4990a.css"><link rel=3D"stylesheet" typ=
+e=3D"text/css" href=3D"https://developers.africastalking.com/css/chunk-8659=
+d518.e3071a90.css"><link rel=3D"stylesheet" type=3D"text/css" href=3D"https=
+://developers.africastalking.com/css/chunk-799c4773.7772ba03.css"></head><b=
+ody><div class=3D"antialiased"><div class=3D"h-screen w-screen"><div data-v=
+-1f1b4243=3D"" class=3D"relative z-40 md:z-70"><div data-v-1f1b4243=3D"" cl=
+ass=3D"app-header w-screen fixed top-0 bg-orange-gradient"><div data-v-1f1b=
+4243=3D"" class=3D"flex flex-row h-16 items-center justify-between"><div da=
+ta-v-1f1b4243=3D"" class=3D"h-full px-4 flex flex-row lg:w-sideBarWidthLg x=
+l:w-sideBarWidthXl items-center text-white"><svg data-v-1f1b4243=3D"" xmlns=
+=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24" class=3D"h-8 fill-cur=
+rent lg:hidden mr-4"><path data-v-1f1b4243=3D"" d=3D"M0 0h24v24H0z" fill=3D=
+"none"></path><path data-v-1f1b4243=3D"" d=3D"M3 18h18v-2H3v2zm0-5h18v-2H3v=
+2zm0-7v2h18V6H3z"></path></svg><a data-v-1f1b4243=3D"" href=3D"https://deve=
+lopers.africastalking.com/" class=3D"flex h-8 router-link-active"><svg data=
+-v-1f1b4243=3D"" xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 670.98=
+ 296.39" class=3D"h-full fill-current"><defs data-v-1f1b4243=3D""></defs><g=
+ data-v-1f1b4243=3D"" id=3D"Layer_2" data-name=3D"Layer 2"><g data-v-1f1b42=
+43=3D"" id=3D"Layer_1-2" data-name=3D"Layer 1"><path data-v-1f1b4243=3D"" d=
+=3D"M196.58 139.39l-27-31.4-84.4-.1c-41.1 3.8-63.6 33.5-63.6 33.5-33.2 38.2=
+-18.2 83.3-18.2 83.3 6.4 32.7 31.7 51.4 31.7 51.4 22.2 18.2 50.1 20 50.1 20=
+h22.2a26.53 26.53 0 003-.6 2.85 2.85 0 01-.2-1.6 10 10 0 00-1.2-4.7c-1.7-4-=
+5.3-7.3-5.3-12.1.1-3.1-1.3-5.9-3.1-8.5-3.4-4.8-2.2-9.4.3-14 .5-.9 1.3-1.6 1=
+.2-2.7-.8-5-1.4-9.2-5-14-4.9-5.5-15.7-12-19.7-14.8-3.1-2.2-11.4-2.5-11.6-2.=
+5a11.63 11.63 0 00-1.8.4c-2.3.8-4.2.2-6.2-1.3-4-3-7.6-6.2-10-10.8-1.4-2.7-4=
+.9-4.3-4.2-8.2.1-.2-.2-8.1-.2-8.1s1.4-5.7 2.6-7.5c3.2-4.7 5.5-10.4 11.6-12.=
+7a5.14 5.14 0 003.7-4.4 6.23 6.23 0 012.4-4.2c2-1.5 7.1-5.2 7.9-4.9 1.6.6 3=
+.6 1.6 5.3.8 5.5-2.8 11.4-2.5 17.3-2.7 4-.1 4.9.7 3.9 4.4-.8 2.6.5 3.3 2.5 =
+3.8 1.8.4 3.8.5 5 2 1.4 1.7 3.4 2 5.3 2.7 1.2.5 1.8 0 2.2-1.2 1-3.2 2.6-3.8=
+ 5.7-2.5 2.1.9 4.4 1.3 6.6 2 3.8 1.2 7.3-1.4 11.1-.2 2.9.9 10 14 10 14l5.6-=
+.3v-11h27.7c28.8-10 16.7-31.3 16.8-31.3" class=3D"cls-1"></path><path data-=
+v-1f1b4243=3D"" d=3D"M98 233.89a.31.31 0 01.1.2V234H98zm184.78-172.8h4.4s-.=
+8 8.1 9.2 10.9l24.6.2s26.1 1.7 30.2 26.7c0 0 5 21.3-17.2 33.8a63.75 63.75 0=
+ 01-17.9 4h-33.3v-75.6zm0 159.5h4.4s-.8 8.4 9.2 10.9l24.6.2s26.2 1.7 30.2 2=
+6.7c0 0 5 21.3-17.2 33.8a63.88 63.88 0 01-17.9 4.1h-33.3v-75.7zM171.38 108h=
+-53.8c26.4 4.4 28.2 27.2 28.2 27.2l.2 45.5c2.8 4.4 5 9.2 7.7 13.8a25.25 25.=
+25 0 006.6 7.2c1.4 1 3.1 2 3.1 4.4.1 1.6 1.9 2.7 4 1.9 2.7-1 5.5-1.6 8.2-2.=
+4 2.2-.6 3.2.1 2.7 2.4-1.1 5.3-2.9 10.4-6.6 14.4-3.8 4.2-8.1 8-12 12.2-2 2.=
+3-4.2 4.8-3.8 8.2.6 4.7 2.3 9.2 2 14.2-.3 4.1-1.8 6.5-5.6 7.9-3.4 1.3-5.1 3=
+-5.6 5.7 5.1 23 27.2 24.8 27.2 24.8 33.6 2.4 35-32.9 35-32.9V148.29c-2.6-34=
+-37.5-40.3-37.5-40.3" class=3D"cls-1"></path><path data-v-1f1b4243=3D"" d=
+=3D"M227.18 26.89s4.2-28.7 34.3-26.8c0 0 26.8 2.4 28.7 30v78.8s.9 25.2 27.1=
+ 27.9l-27.2-.1v133.9s2.7 20.8 27.1 25.5l-60.4.3s-26.2-3.5-30.1-31.9c-4.3-23=
+.8.5-237.6.5-237.6M446.4 211.88h-11.93v41.65h11.84c13.1 0 20.69-9.39 20.69-=
+20.87s-7.22-20.78-20.6-20.78zm62.6 14c-8 0-11.84 6.24-12.2 11.48h24.58c-.24=
+-5.15-3.77-11.48-12.38-11.48z" class=3D"cls-1"></path><path data-v-1f1b4243=
+=3D"" d=3D"M611.28 175.55H371v59.7a59.66 59.66 0 0059.7 59.7h180.6a59.7 59.=
+7 0 100-119.4zM446.4 262.84h-22.5v-60.27h22.41c18.89 0 31.54 12.47 31.54 30=
+.09 0 17.8-12.65 30.18-31.45 30.18zm84.13-18.7h-33.61c.72 6.5 5.6 12 13.82 =
+12a18.35 18.35 0 0012.47-4.88l4.34 6.23c-4.43 4.16-10.84 6.42-17.71 6.42-13=
+.19 0-22.86-9.13-22.86-23 0-12.65 9.22-22.86 22.14-22.86 13.1 0 21.41 9.94 =
+21.41 23.68zm32.9 18.7h-10.21l-17.81-43.64h10.21l12.75 32.71 12.74-32.71h10=
+.12zm40.57 1.09c-7.5 0-14.19-2.44-18.7-6.87l4.33-6.78a22.46 22.46 0 0014.73=
+ 6.06c5.7 0 8.68-2.35 8.68-5.79 0-8.58-26.39-2.44-26.39-19.24 0-7.14 6.15-1=
+3.2 17.17-13.2a24.92 24.92 0 0116.9 6.06l-4 6.68a17.8 17.8 0 00-12.92-5.24c=
+-5 0-8 2.35-8 5.42 0 7.69 26.38 1.9 26.38 19.25-.02 7.77-6.43 13.65-18.18 1=
+3.65z" class=3D"cls-1"></path></g></g></svg></a></div><div data-v-1f1b4243=
+=3D"" class=3D"relative h-full flex-grow px-4 flex flex-row justify-end ite=
+ms-center"><div data-v-4c9c8330=3D"" data-v-1f1b4243=3D"" class=3D"hidden s=
+m:block absolute transform-center-x  w-3/5"><div data-v-4c9c8330=3D"" class=
+=3D"relative"><input data-v-4c9c8330=3D"" aria-label=3D"Search Term" name=
+=3D"search" type=3D"text" required=3D"required" autocomplete=3D"off" placeh=
+older=3D"Search documentation..." class=3D"appearance-none rounded-md block=
+ w-full placeholder-gray-400 text-gray-700 focus:outline-none focus:shadow-=
+outline-gray focus:shadow-md focus:z-10 p-2 pl-10 text-sm"><div data-v-4c9c=
+8330=3D"" class=3D"absolute left-0 top-0 text-gray-600 p-2"><svg data-v-4c9=
+c8330=3D"" xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24" class=
+=3D"h-5 fill-current"><path data-v-4c9c8330=3D"" d=3D"M0 0h24v24H0z" fill=
+=3D"none"></path><path data-v-4c9c8330=3D"" d=3D"M15.5 14h-.79l-.28-.27A6.4=
+71 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79=
+l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 1=
+4 9.5 11.99 14 9.5 14z"></path></svg><!----></div></div><!----></div><!----=
+><div data-v-1f1b4243=3D"" class=3D"relative"><div data-v-1f1b4243=3D"" cla=
+ss=3D"flex flex-row items-center cursor-pointer"><img src=3D"https://s.grav=
+atar.com/avatar/d82a3b15b8b35217df5a2585f4fdaf55?s=3D100&amp;d=3Dmp" data-i=
+nitials=3D"GO" alt=3D"Picture of Gabriel Ogweno" class=3D"rounded-full bg-g=
+ray-600 h-10 w-10"><!----></div><ul data-v-1f1b4243=3D"" class=3D"avatar-me=
+nu transition duration-150 absolute right-0 bg-white shadow-md rounded-md o=
+verflow-hidden min-w-48"><li data-v-1f1b4243=3D""><div data-v-1f1b4243=3D""=
+ class=3D"flex flex-col px-4 py-2 text-gray-800"><span data-v-1f1b4243=3D""=
+ class=3D"text-base">Gabriel Ogweno</span><span data-v-1f1b4243=3D"" class=
+=3D"text-sm">iam.miseda@gmail.com</span></div></li><li data-v-1f1b4243=3D""=
+><a data-v-1f1b4243=3D"" href=3D"https://account.africastalking.com/" targe=
+t=3D"_blank" class=3D"px-4 py-2 block border-t cursor-pointer text-sm text-=
+gray-700 bg-white hover:bg-gray-200"> Account </a></li></ul></div></div></d=
+iv></div></div><div class=3D"relative z-50 sidebar--open"><div class=3D"blo=
+ck lg:hidden sidebar__backpage opacity-0 fixed bg-white pointer-events-none=
+ h-screen w-screen z-0"></div><div class=3D"fixed sidebar w-sideBarWidth lg=
+:w-sideBarWidthLg xl:w-sideBarWidthXl bottom-0 left-0 top-0 lg:top-16 point=
+er-events-none lg:pointer-events-auto opacity-0 lg:opacity-100 transform -t=
+ranslate-x-full lg:translate-x-0"><div class=3D"w-full h-full shadow-2xl lg=
+:shadow-none overflow-y-auto bg-gray-100 overscroll-contain"><nav class=3D"=
+p-6 md:py-10"><div class=3D"mb-8"><h5 class=3D"flex flex-row items-center m=
+b-3 lg:mb-2 text-gray-500 uppercase tracking-wide font-bold text-sm lg:text=
+-xs"><svg xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 640 512" clas=
+s=3D"h-4 mr-1 fill-current"><path fill=3D"currentColor" d=3D"M622.34 153.2L=
+343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36=
+ 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 27=
+6.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 =
+448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.8=
+5 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-=
+36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55=
+-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L1=
+28 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z=
+"></path></svg>Learn </h5><a href=3D"https://developers.africastalking.com/=
+tutorials" class=3D"px-2 -mx-2 py-1 transition duration-200 ease-in-out rel=
+ative block hover:translate-x-2px hover:text-gray-900 text-gray-600"><span =
+class=3D"background rounded absolute inset-y-0 left-0 right-2"></span><span=
+ class=3D"text relative">Tutorials</span></a></div><div class=3D"mb-8"><h5 =
+class=3D"flex flex-row items-center mb-3 lg:mb-2 text-gray-500 uppercase tr=
+acking-wide font-bold text-sm lg:text-xs"><svg xmlns=3D"http://www.w3.org/2=
+000/svg" viewBox=3D"0 0 576 512" class=3D"h-4 mr-2 fill-current"><path fill=
+=3D"currentColor" d=3D"M528.3 46.5H388.5c-48.1 0-89.9 33.3-100.4 80.3-10.6-=
+47-52.3-80.3-100.4-80.3H48c-26.5 0-48 21.5-48 48v245.8c0 26.5 21.5 48 48 48=
+h89.7c102.2 0 132.7 24.4 147.3 75 .7 2.8 5.2 2.8 6 0 14.7-50.6 45.2-75 147.=
+3-75H528c26.5 0 48-21.5 48-48V94.6c0-26.4-21.3-47.9-47.7-48.1zM242 311.9c0 =
+1.9-1.5 3.5-3.5 3.5H78.2c-1.9 0-3.5-1.5-3.5-3.5V289c0-1.9 1.5-3.5 3.5-3.5h1=
+60.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H78.2c-1.9 0-3=
+.5-1.5-3.5-3.5v-22.9c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5V251z=
+m0-60.9c0 1.9-1.5 3.5-3.5 3.5H78.2c-1.9 0-3.5-1.5-3.5-3.5v-22.9c0-1.9 1.5-3=
+.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm259.3 121.7c0 1.9-1.5 3.5-3.5 =
+3.5H337.5c-1.9 0-3.5-1.5-3.5-3.5v-22.9c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.=
+5 1.5 3.5 3.5v22.9zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H337.5c-1.9 0-3.5-1.5-3.5-3=
+.5V228c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm0-60.9c0 1.9=
+-1.5 3.5-3.5 3.5H337.5c-1.9 0-3.5-1.5-3.5-3.5v-22.8c0-1.9 1.5-3.5 3.5-3.5h1=
+60.4c1.9 0 3.5 1.5 3.5 3.5V190z"></path></svg>API Reference </h5><div data-=
+v-5d991c21=3D"" class=3D"folder__root"><a data-v-5d991c21=3D"" href=3D"http=
+s://developers.africastalking.com/docs/authentication" class=3D"px-2 -mx-2 =
+py-1 transition duration-200 ease-in-out relative block hover:translate-x-2=
+px hover:text-gray-900 text-gray-600"><span data-v-5d991c21=3D"" class=3D"b=
+ackground rounded absolute inset-y-0 left-0 right-2"></span><span data-v-5d=
+991c21=3D"" class=3D"text relative">Authentication</span></a><a data-v-5d99=
+1c21=3D"" href=3D"https://developers.africastalking.com/docs/request_header=
+s" class=3D"px-2 -mx-2 py-1 transition duration-200 ease-in-out relative bl=
+ock hover:translate-x-2px hover:text-gray-900 text-gray-600"><span data-v-5=
+d991c21=3D"" class=3D"background rounded absolute inset-y-0 left-0 right-2"=
+></span><span data-v-5d991c21=3D"" class=3D"text relative">Request Headers<=
+/span></a><div data-v-5d991c21=3D"" class=3D"folder open"><span data-v-5d99=
+1c21=3D"" class=3D"folder__name flex flex-row items-center justify-between =
+cursor-pointer px-2 -mx-2 py-1 transition duration-200 ease-in-out block ho=
+ver:translate-x-2px hover:text-gray-900 text-gray-600">SMS<svg data-v-5d991=
+c21=3D"" xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24" class=
+=3D"folder__icon--closed h-6 fill-current pointer-events-none"><path data-v=
+-5d991c21=3D"" d=3D"M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"=
+></path><path data-v-5d991c21=3D"" fill=3D"none" d=3D"M0 0h24v24H0V0z"></pa=
+th></svg><svg data-v-5d991c21=3D"" xmlns=3D"http://www.w3.org/2000/svg" vie=
+wBox=3D"0 0 24 24" class=3D"folder__icon--open h-6 fill-current pointer-eve=
+nts-none"><path data-v-5d991c21=3D"" d=3D"M7.41 8.59L12 13.17l4.59-4.58L18 =
+10l-6 6-6-6 1.41-1.41z"></path><path data-v-5d991c21=3D"" fill=3D"none" d=
+=3D"M0 0h24v24H0V0z"></path></svg></span><div data-v-5d991c21=3D"" class=3D=
+"folder__content pl-4 border-l-2"><a data-v-5d991c21=3D"" href=3D"https://d=
+evelopers.africastalking.com/docs/sms/overview" class=3D"px-2 -mx-2 py-1 tr=
+ansition duration-200 ease-in-out relative block hover:translate-x-2px hove=
+r:text-gray-900 text-gray-600"><span data-v-5d991c21=3D"" class=3D"backgrou=
+nd rounded absolute inset-y-0 left-0 right-2"></span><span data-v-5d991c21=
+=3D"" class=3D"text relative">Overview</span></a><div data-v-5d991c21=3D"" =
+class=3D"folder open"><h5 data-v-5d991c21=3D"" class=3D"mt-3 mb-1 text-gray=
+-500 uppercase tracking-wide font-bold text-sm lg:text-xs">Sending</h5><div=
+ data-v-5d991c21=3D"" class=3D"pl-3"><a data-v-5d991c21=3D"" href=3D"https:=
+//developers.africastalking.com/docs/sms/sending/bulk" class=3D"router-link=
+-exact-active sidebar-link-active px-2 -mx-2 py-1 transition duration-200 e=
+ase-in-out relative block hover:translate-x-2px hover:text-gray-900 text-gr=
+ay-600" aria-current=3D"page"><span data-v-5d991c21=3D"" class=3D"backgroun=
+d rounded absolute inset-y-0 left-0 right-2"></span><span data-v-5d991c21=
+=3D"" class=3D"text relative">Bulk</span></a><a data-v-5d991c21=3D"" href=
+=3D"https://developers.africastalking.com/docs/sms/sending/bulk_(legacy)" c=
+lass=3D"px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block =
+hover:translate-x-2px hover:text-gray-900 text-gray-600"><span data-v-5d991=
+c21=3D"" class=3D"background rounded absolute inset-y-0 left-0 right-2"></s=
+pan><span data-v-5d991c21=3D"" class=3D"text relative">Bulk (legacy)</span>=
+</a><a data-v-5d991c21=3D"" href=3D"https://developers.africastalking.com/d=
+ocs/sms/sending/premium" class=3D"px-2 -mx-2 py-1 transition duration-200 e=
+ase-in-out relative block hover:translate-x-2px hover:text-gray-900 text-gr=
+ay-600"><span data-v-5d991c21=3D"" class=3D"background rounded absolute ins=
+et-y-0 left-0 right-2"></span><span data-v-5d991c21=3D"" class=3D"text rela=
+tive">Premium</span></a></div></div><div data-v-5d991c21=3D"" class=3D"fold=
+er"><h5 data-v-5d991c21=3D"" class=3D"mt-3 mb-1 text-gray-500 uppercase tra=
+cking-wide font-bold text-sm lg:text-xs">Premium Subscriptions</h5><div dat=
+a-v-5d991c21=3D"" class=3D"pl-3"><a data-v-5d991c21=3D"" href=3D"https://de=
+velopers.africastalking.com/docs/sms/premium_subscriptions/header_enrichmen=
+t" class=3D"px-2 -mx-2 py-1 transition duration-200 ease-in-out relative bl=
+ock hover:translate-x-2px hover:text-gray-900 text-gray-600"><span data-v-5=
+d991c21=3D"" class=3D"background rounded absolute inset-y-0 left-0 right-2"=
+></span><span data-v-5d991c21=3D"" class=3D"text relative">Header Enrichmen=
+t</span></a><a data-v-5d991c21=3D"" href=3D"https://developers.africastalki=
+ng.com/docs/sms/premium_subscriptions/consent_gateway" class=3D"px-2 -mx-2 =
+py-1 transition duration-200 ease-in-out relative block hover:translate-x-2=
+px hover:text-gray-900 text-gray-600"><span data-v-5d991c21=3D"" class=3D"b=
+ackground rounded absolute inset-y-0 left-0 right-2"></span><span data-v-5d=
+991c21=3D"" class=3D"text relative">Consent Gateway</span></a></div></div><=
+a data-v-5d991c21=3D"" href=3D"https://developers.africastalking.com/docs/s=
+ms/fetch_messages" class=3D"px-2 -mx-2 py-1 transition duration-200 ease-in=
+-out relative block hover:translate-x-2px hover:text-gray-900 text-gray-600=
+"><span data-v-5d991c21=3D"" class=3D"background rounded absolute inset-y-0=
+ left-0 right-2"></span><span data-v-5d991c21=3D"" class=3D"text relative">=
+Fetch Messages</span></a><a data-v-5d991c21=3D"" href=3D"https://developers=
+.africastalking.com/docs/sms/notifications" class=3D"px-2 -mx-2 py-1 transi=
+tion duration-200 ease-in-out relative block hover:translate-x-2px hover:te=
+xt-gray-900 text-gray-600"><span data-v-5d991c21=3D"" class=3D"background r=
+ounded absolute inset-y-0 left-0 right-2"></span><span data-v-5d991c21=3D""=
+ class=3D"text relative">Notifications</span></a></div></div><div data-v-5d=
+991c21=3D"" class=3D"folder"><span data-v-5d991c21=3D"" class=3D"folder__na=
+me flex flex-row items-center justify-between cursor-pointer px-2 -mx-2 py-=
+1 transition duration-200 ease-in-out block hover:translate-x-2px hover:tex=
+t-gray-900 text-gray-600">USSD<svg data-v-5d991c21=3D"" xmlns=3D"http://www=
+.w3.org/2000/svg" viewBox=3D"0 0 24 24" class=3D"folder__icon--closed h-6 f=
+ill-current pointer-events-none"><path data-v-5d991c21=3D"" d=3D"M8.59 16.5=
+9L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path><path data-v-5d991c21=
+=3D"" fill=3D"none" d=3D"M0 0h24v24H0V0z"></path></svg><svg data-v-5d991c21=
+=3D"" xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24" class=3D"f=
+older__icon--open h-6 fill-current pointer-events-none"><path data-v-5d991c=
+21=3D"" d=3D"M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></pat=
+h><path data-v-5d991c21=3D"" fill=3D"none" d=3D"M0 0h24v24H0V0z"></path></s=
+vg></span><div data-v-5d991c21=3D"" class=3D"folder__content pl-4 border-l-=
+2"><a data-v-5d991c21=3D"" href=3D"https://developers.africastalking.com/do=
+cs/ussd/overview" class=3D"px-2 -mx-2 py-1 transition duration-200 ease-in-=
+out relative block hover:translate-x-2px hover:text-gray-900 text-gray-600"=
+><span data-v-5d991c21=3D"" class=3D"background rounded absolute inset-y-0 =
+left-0 right-2"></span><span data-v-5d991c21=3D"" class=3D"text relative">O=
+verview</span></a><a data-v-5d991c21=3D"" href=3D"https://developers.africa=
+stalking.com/docs/ussd/handle_sessions" class=3D"px-2 -mx-2 py-1 transition=
+ duration-200 ease-in-out relative block hover:translate-x-2px hover:text-g=
+ray-900 text-gray-600"><span data-v-5d991c21=3D"" class=3D"background round=
+ed absolute inset-y-0 left-0 right-2"></span><span data-v-5d991c21=3D"" cla=
+ss=3D"text relative">Handle Sessions</span></a><a data-v-5d991c21=3D"" href=
+=3D"https://developers.africastalking.com/docs/ussd/notifications" class=3D=
+"px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block hover:t=
+ranslate-x-2px hover:text-gray-900 text-gray-600"><span data-v-5d991c21=3D"=
+" class=3D"background rounded absolute inset-y-0 left-0 right-2"></span><sp=
+an data-v-5d991c21=3D"" class=3D"text relative">Notifications</span></a></d=
+iv></div><div data-v-5d991c21=3D"" class=3D"folder"><span data-v-5d991c21=
+=3D"" class=3D"folder__name flex flex-row items-center justify-between curs=
+or-pointer px-2 -mx-2 py-1 transition duration-200 ease-in-out block hover:=
+translate-x-2px hover:text-gray-900 text-gray-600">Voice<svg data-v-5d991c2=
+1=3D"" xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24" class=3D"=
+folder__icon--closed h-6 fill-current pointer-events-none"><path data-v-5d9=
+91c21=3D"" d=3D"M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></p=
+ath><path data-v-5d991c21=3D"" fill=3D"none" d=3D"M0 0h24v24H0V0z"></path><=
+/svg><svg data-v-5d991c21=3D"" xmlns=3D"http://www.w3.org/2000/svg" viewBox=
+=3D"0 0 24 24" class=3D"folder__icon--open h-6 fill-current pointer-events-=
+none"><path data-v-5d991c21=3D"" d=3D"M7.41 8.59L12 13.17l4.59-4.58L18 10l-=
+6 6-6-6 1.41-1.41z"></path><path data-v-5d991c21=3D"" fill=3D"none" d=3D"M0=
+ 0h24v24H0V0z"></path></svg></span><div data-v-5d991c21=3D"" class=3D"folde=
+r__content pl-4 border-l-2"><a data-v-5d991c21=3D"" href=3D"https://develop=
+ers.africastalking.com/docs/voice/overview" class=3D"px-2 -mx-2 py-1 transi=
+tion duration-200 ease-in-out relative block hover:translate-x-2px hover:te=
+xt-gray-900 text-gray-600"><span data-v-5d991c21=3D"" class=3D"background r=
+ounded absolute inset-y-0 left-0 right-2"></span><span data-v-5d991c21=3D""=
+ class=3D"text relative">Overview</span></a><a data-v-5d991c21=3D"" href=3D=
+"https://developers.africastalking.com/docs/voice/make_call" class=3D"px-2 =
+-mx-2 py-1 transition duration-200 ease-in-out relative block hover:transla=
+te-x-2px hover:text-gray-900 text-gray-600"><span data-v-5d991c21=3D"" clas=
+s=3D"background rounded absolute inset-y-0 left-0 right-2"></span><span dat=
+a-v-5d991c21=3D"" class=3D"text relative">Make Call</span></a><a data-v-5d9=
+91c21=3D"" href=3D"https://developers.africastalking.com/docs/voice/handle_=
+calls" class=3D"px-2 -mx-2 py-1 transition duration-200 ease-in-out relativ=
+e block hover:translate-x-2px hover:text-gray-900 text-gray-600"><span data=
+-v-5d991c21=3D"" class=3D"background rounded absolute inset-y-0 left-0 righ=
+t-2"></span><span data-v-5d991c21=3D"" class=3D"text relative">Handle Calls=
+</span></a><a data-v-5d991c21=3D"" href=3D"https://developers.africastalkin=
+g.com/docs/voice/call_transfer" class=3D"px-2 -mx-2 py-1 transition duratio=
+n-200 ease-in-out relative block hover:translate-x-2px hover:text-gray-900 =
+text-gray-600"><span data-v-5d991c21=3D"" class=3D"background rounded absol=
+ute inset-y-0 left-0 right-2"></span><span data-v-5d991c21=3D"" class=3D"te=
+xt relative">Call Transfer</span></a><div data-v-5d991c21=3D"" class=3D"fol=
+der"><h5 data-v-5d991c21=3D"" class=3D"mt-3 mb-1 text-gray-500 uppercase tr=
+acking-wide font-bold text-sm lg:text-xs">Actions</h5><div data-v-5d991c21=
+=3D"" class=3D"pl-3"><a data-v-5d991c21=3D"" href=3D"https://developers.afr=
+icastalking.com/docs/voice/actions/overview" class=3D"px-2 -mx-2 py-1 trans=
+ition duration-200 ease-in-out relative block hover:translate-x-2px hover:t=
+ext-gray-900 text-gray-600"><span data-v-5d991c21=3D"" class=3D"background =
+rounded absolute inset-y-0 left-0 right-2"></span><span data-v-5d991c21=3D"=
+" class=3D"text relative">Overview</span></a><a data-v-5d991c21=3D"" href=
+=3D"https://developers.africastalking.com/docs/voice/actions/say" class=3D"=
+px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block hover:tr=
+anslate-x-2px hover:text-gray-900 text-gray-600"><span data-v-5d991c21=3D""=
+ class=3D"background rounded absolute inset-y-0 left-0 right-2"></span><spa=
+n data-v-5d991c21=3D"" class=3D"text relative">Say</span></a><a data-v-5d99=
+1c21=3D"" href=3D"https://developers.africastalking.com/docs/voice/actions/=
+play" class=3D"px-2 -mx-2 py-1 transition duration-200 ease-in-out relative=
+ block hover:translate-x-2px hover:text-gray-900 text-gray-600"><span data-=
+v-5d991c21=3D"" class=3D"background rounded absolute inset-y-0 left-0 right=
+-2"></span><span data-v-5d991c21=3D"" class=3D"text relative">Play</span></=
+a><a data-v-5d991c21=3D"" href=3D"https://developers.africastalking.com/doc=
+s/voice/actions/get_digits" class=3D"px-2 -mx-2 py-1 transition duration-20=
+0 ease-in-out relative block hover:translate-x-2px hover:text-gray-900 text=
+-gray-600"><span data-v-5d991c21=3D"" class=3D"background rounded absolute =
+inset-y-0 left-0 right-2"></span><span data-v-5d991c21=3D"" class=3D"text r=
+elative">Get Digits</span></a><a data-v-5d991c21=3D"" href=3D"https://devel=
+opers.africastalking.com/docs/voice/actions/dial" class=3D"px-2 -mx-2 py-1 =
+transition duration-200 ease-in-out relative block hover:translate-x-2px ho=
+ver:text-gray-900 text-gray-600"><span data-v-5d991c21=3D"" class=3D"backgr=
+ound rounded absolute inset-y-0 left-0 right-2"></span><span data-v-5d991c2=
+1=3D"" class=3D"text relative">Dial</span></a><a data-v-5d991c21=3D"" href=
+=3D"https://developers.africastalking.com/docs/voice/actions/record" class=
+=3D"px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block hove=
+r:translate-x-2px hover:text-gray-900 text-gray-600"><span data-v-5d991c21=
+=3D"" class=3D"background rounded absolute inset-y-0 left-0 right-2"></span=
+><span data-v-5d991c21=3D"" class=3D"text relative">Record</span></a><a dat=
+a-v-5d991c21=3D"" href=3D"https://developers.africastalking.com/docs/voice/=
+actions/call_queue" class=3D"px-2 -mx-2 py-1 transition duration-200 ease-i=
+n-out relative block hover:translate-x-2px hover:text-gray-900 text-gray-60=
+0"><span data-v-5d991c21=3D"" class=3D"background rounded absolute inset-y-=
+0 left-0 right-2"></span><span data-v-5d991c21=3D"" class=3D"text relative"=
+>Call Queue</span></a><a data-v-5d991c21=3D"" href=3D"https://developers.af=
+ricastalking.com/docs/voice/actions/redirect" class=3D"px-2 -mx-2 py-1 tran=
+sition duration-200 ease-in-out relative block hover:translate-x-2px hover:=
+text-gray-900 text-gray-600"><span data-v-5d991c21=3D"" class=3D"background=
+ rounded absolute inset-y-0 left-0 right-2"></span><span data-v-5d991c21=3D=
+"" class=3D"text relative">Redirect</span></a><a data-v-5d991c21=3D"" href=
+=3D"https://developers.africastalking.com/docs/voice/actions/reject" class=
+=3D"px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block hove=
+r:translate-x-2px hover:text-gray-900 text-gray-600"><span data-v-5d991c21=
+=3D"" class=3D"background rounded absolute inset-y-0 left-0 right-2"></span=
+><span data-v-5d991c21=3D"" class=3D"text relative">Reject</span></a><a dat=
+a-v-5d991c21=3D"" href=3D"https://developers.africastalking.com/docs/voice/=
+actions/conference" class=3D"px-2 -mx-2 py-1 transition duration-200 ease-i=
+n-out relative block hover:translate-x-2px hover:text-gray-900 text-gray-60=
+0"><span data-v-5d991c21=3D"" class=3D"background rounded absolute inset-y-=
+0 left-0 right-2"></span><span data-v-5d991c21=3D"" class=3D"text relative"=
+>Conference</span></a><a data-v-5d991c21=3D"" href=3D"https://developers.af=
+ricastalking.com/docs/voice/actions/call_actions" class=3D"px-2 -mx-2 py-1 =
+transition duration-200 ease-in-out relative block hover:translate-x-2px ho=
+ver:text-gray-900 text-gray-600"><span data-v-5d991c21=3D"" class=3D"backgr=
+ound rounded absolute inset-y-0 left-0 right-2"></span><span data-v-5d991c2=
+1=3D"" class=3D"text relative">Call Actions</span></a></div></div><div data=
+-v-5d991c21=3D"" class=3D"folder"><h5 data-v-5d991c21=3D"" class=3D"mt-3 mb=
+-1 text-gray-500 uppercase tracking-wide font-bold text-sm lg:text-xs">WebR=
+TC Client</h5><div data-v-5d991c21=3D"" class=3D"pl-3"><a data-v-5d991c21=
+=3D"" href=3D"https://developers.africastalking.com/docs/voice/webRTC_clien=
+t/overview" class=3D"px-2 -mx-2 py-1 transition duration-200 ease-in-out re=
+lative block hover:translate-x-2px hover:text-gray-900 text-gray-600"><span=
+ data-v-5d991c21=3D"" class=3D"background rounded absolute inset-y-0 left-0=
+ right-2"></span><span data-v-5d991c21=3D"" class=3D"text relative">Overvie=
+w</span></a><a data-v-5d991c21=3D"" href=3D"https://developers.africastalki=
+ng.com/docs/voice/webRTC_client/usage" class=3D"px-2 -mx-2 py-1 transition =
+duration-200 ease-in-out relative block hover:translate-x-2px hover:text-gr=
+ay-900 text-gray-600"><span data-v-5d991c21=3D"" class=3D"background rounde=
+d absolute inset-y-0 left-0 right-2"></span><span data-v-5d991c21=3D"" clas=
+s=3D"text relative">Usage</span></a></div></div><a data-v-5d991c21=3D"" hre=
+f=3D"https://developers.africastalking.com/docs/voice/SIP" class=3D"px-2 -m=
+x-2 py-1 transition duration-200 ease-in-out relative block hover:translate=
+-x-2px hover:text-gray-900 text-gray-600"><span data-v-5d991c21=3D"" class=
+=3D"background rounded absolute inset-y-0 left-0 right-2"></span><span data=
+-v-5d991c21=3D"" class=3D"text relative">SIP</span></a><a data-v-5d991c21=
+=3D"" href=3D"https://developers.africastalking.com/docs/voice/queue_status=
+" class=3D"px-2 -mx-2 py-1 transition duration-200 ease-in-out relative blo=
+ck hover:translate-x-2px hover:text-gray-900 text-gray-600"><span data-v-5d=
+991c21=3D"" class=3D"background rounded absolute inset-y-0 left-0 right-2">=
+</span><span data-v-5d991c21=3D"" class=3D"text relative">Queue Status</spa=
+n></a><a data-v-5d991c21=3D"" href=3D"https://developers.africastalking.com=
+/docs/voice/upload_media_file" class=3D"px-2 -mx-2 py-1 transition duration=
+-200 ease-in-out relative block hover:translate-x-2px hover:text-gray-900 t=
+ext-gray-600"><span data-v-5d991c21=3D"" class=3D"background rounded absolu=
+te inset-y-0 left-0 right-2"></span><span data-v-5d991c21=3D"" class=3D"tex=
+t relative">Upload Media File</span></a><a data-v-5d991c21=3D"" href=3D"htt=
+ps://developers.africastalking.com/docs/voice/notifications" class=3D"px-2 =
+-mx-2 py-1 transition duration-200 ease-in-out relative block hover:transla=
+te-x-2px hover:text-gray-900 text-gray-600"><span data-v-5d991c21=3D"" clas=
+s=3D"background rounded absolute inset-y-0 left-0 right-2"></span><span dat=
+a-v-5d991c21=3D"" class=3D"text relative">Notifications</span></a></div></d=
+iv><div data-v-5d991c21=3D"" class=3D"folder"><span data-v-5d991c21=3D"" cl=
+ass=3D"folder__name flex flex-row items-center justify-between cursor-point=
+er px-2 -mx-2 py-1 transition duration-200 ease-in-out block hover:translat=
+e-x-2px hover:text-gray-900 text-gray-600">Airtime<svg data-v-5d991c21=3D""=
+ xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24" class=3D"folder=
+__icon--closed h-6 fill-current pointer-events-none"><path data-v-5d991c21=
+=3D"" d=3D"M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path><=
+path data-v-5d991c21=3D"" fill=3D"none" d=3D"M0 0h24v24H0V0z"></path></svg>=
+<svg data-v-5d991c21=3D"" xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0=
+ 0 24 24" class=3D"folder__icon--open h-6 fill-current pointer-events-none"=
+><path data-v-5d991c21=3D"" d=3D"M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6=
+-6 1.41-1.41z"></path><path data-v-5d991c21=3D"" fill=3D"none" d=3D"M0 0h24=
+v24H0V0z"></path></svg></span><div data-v-5d991c21=3D"" class=3D"folder__co=
+ntent pl-4 border-l-2"><a data-v-5d991c21=3D"" href=3D"https://developers.a=
+fricastalking.com/docs/airtime/overview" class=3D"px-2 -mx-2 py-1 transitio=
+n duration-200 ease-in-out relative block hover:translate-x-2px hover:text-=
+gray-900 text-gray-600"><span data-v-5d991c21=3D"" class=3D"background roun=
+ded absolute inset-y-0 left-0 right-2"></span><span data-v-5d991c21=3D"" cl=
+ass=3D"text relative">Overview</span></a><a data-v-5d991c21=3D"" href=3D"ht=
+tps://developers.africastalking.com/docs/airtime/sending" class=3D"px-2 -mx=
+-2 py-1 transition duration-200 ease-in-out relative block hover:translate-=
+x-2px hover:text-gray-900 text-gray-600"><span data-v-5d991c21=3D"" class=
+=3D"background rounded absolute inset-y-0 left-0 right-2"></span><span data=
+-v-5d991c21=3D"" class=3D"text relative">Sending</span></a><div data-v-5d99=
+1c21=3D"" class=3D"folder"><h5 data-v-5d991c21=3D"" class=3D"mt-3 mb-1 text=
+-gray-500 uppercase tracking-wide font-bold text-sm lg:text-xs">Notificatio=
+ns</h5><div data-v-5d991c21=3D"" class=3D"pl-3"><a data-v-5d991c21=3D"" hre=
+f=3D"https://developers.africastalking.com/docs/airtime/notifications/valid=
+ation" class=3D"px-2 -mx-2 py-1 transition duration-200 ease-in-out relativ=
+e block hover:translate-x-2px hover:text-gray-900 text-gray-600"><span data=
+-v-5d991c21=3D"" class=3D"background rounded absolute inset-y-0 left-0 righ=
+t-2"></span><span data-v-5d991c21=3D"" class=3D"text relative">Validation</=
+span></a><a data-v-5d991c21=3D"" href=3D"https://developers.africastalking.=
+com/docs/airtime/notifications/status" class=3D"px-2 -mx-2 py-1 transition =
+duration-200 ease-in-out relative block hover:translate-x-2px hover:text-gr=
+ay-900 text-gray-600"><span data-v-5d991c21=3D"" class=3D"background rounde=
+d absolute inset-y-0 left-0 right-2"></span><span data-v-5d991c21=3D"" clas=
+s=3D"text relative">Status</span></a></div></div><div data-v-5d991c21=3D"" =
+class=3D"folder"><h5 data-v-5d991c21=3D"" class=3D"mt-3 mb-1 text-gray-500 =
+uppercase tracking-wide font-bold text-sm lg:text-xs">Query</h5><div data-v=
+-5d991c21=3D"" class=3D"pl-3"><a data-v-5d991c21=3D"" href=3D"https://devel=
+opers.africastalking.com/docs/airtime/query/find_transaction_status" class=
+=3D"px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block hove=
+r:translate-x-2px hover:text-gray-900 text-gray-600"><span data-v-5d991c21=
+=3D"" class=3D"background rounded absolute inset-y-0 left-0 right-2"></span=
+><span data-v-5d991c21=3D"" class=3D"text relative">Find Transaction Status=
+</span></a></div></div></div></div><div data-v-5d991c21=3D"" class=3D"folde=
+r"><span data-v-5d991c21=3D"" class=3D"folder__name flex flex-row items-cen=
+ter justify-between cursor-pointer px-2 -mx-2 py-1 transition duration-200 =
+ease-in-out block hover:translate-x-2px hover:text-gray-900 text-gray-600">=
+Whatsapp<svg data-v-5d991c21=3D"" xmlns=3D"http://www.w3.org/2000/svg" view=
+Box=3D"0 0 24 24" class=3D"folder__icon--closed h-6 fill-current pointer-ev=
+ents-none"><path data-v-5d991c21=3D"" d=3D"M8.59 16.59L13.17 12 8.59 7.41 1=
+0 6l6 6-6 6-1.41-1.41z"></path><path data-v-5d991c21=3D"" fill=3D"none" d=
+=3D"M0 0h24v24H0V0z"></path></svg><svg data-v-5d991c21=3D"" xmlns=3D"http:/=
+/www.w3.org/2000/svg" viewBox=3D"0 0 24 24" class=3D"folder__icon--open h-6=
+ fill-current pointer-events-none"><path data-v-5d991c21=3D"" d=3D"M7.41 8.=
+59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path><path data-v-5d991c=
+21=3D"" fill=3D"none" d=3D"M0 0h24v24H0V0z"></path></svg></span><div data-v=
+-5d991c21=3D"" class=3D"folder__content pl-4 border-l-2"><a data-v-5d991c21=
+=3D"" href=3D"https://developers.africastalking.com/docs/whatsapp/overview"=
+ class=3D"px-2 -mx-2 py-1 transition duration-200 ease-in-out relative bloc=
+k hover:translate-x-2px hover:text-gray-900 text-gray-600"><span data-v-5d9=
+91c21=3D"" class=3D"background rounded absolute inset-y-0 left-0 right-2"><=
+/span><span data-v-5d991c21=3D"" class=3D"text relative">Overview</span></a=
+><a data-v-5d991c21=3D"" href=3D"https://developers.africastalking.com/docs=
+/whatsapp/send_message" class=3D"px-2 -mx-2 py-1 transition duration-200 ea=
+se-in-out relative block hover:translate-x-2px hover:text-gray-900 text-gra=
+y-600"><span data-v-5d991c21=3D"" class=3D"background rounded absolute inse=
+t-y-0 left-0 right-2"></span><span data-v-5d991c21=3D"" class=3D"text relat=
+ive">Send Message</span></a><a data-v-5d991c21=3D"" href=3D"https://develop=
+ers.africastalking.com/docs/whatsapp/create_template" class=3D"px-2 -mx-2 p=
+y-1 transition duration-200 ease-in-out relative block hover:translate-x-2p=
+x hover:text-gray-900 text-gray-600"><span data-v-5d991c21=3D"" class=3D"ba=
+ckground rounded absolute inset-y-0 left-0 right-2"></span><span data-v-5d9=
+91c21=3D"" class=3D"text relative">Create Template</span></a></div></div><d=
+iv data-v-5d991c21=3D"" class=3D"folder"><span data-v-5d991c21=3D"" class=
+=3D"folder__name flex flex-row items-center justify-between cursor-pointer =
+px-2 -mx-2 py-1 transition duration-200 ease-in-out block hover:translate-x=
+-2px hover:text-gray-900 text-gray-600">Mobile Data<svg data-v-5d991c21=3D"=
+" xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24" class=3D"folde=
+r__icon--closed h-6 fill-current pointer-events-none"><path data-v-5d991c21=
+=3D"" d=3D"M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path><=
+path data-v-5d991c21=3D"" fill=3D"none" d=3D"M0 0h24v24H0V0z"></path></svg>=
+<svg data-v-5d991c21=3D"" xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0=
+ 0 24 24" class=3D"folder__icon--open h-6 fill-current pointer-events-none"=
+><path data-v-5d991c21=3D"" d=3D"M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6=
+-6 1.41-1.41z"></path><path data-v-5d991c21=3D"" fill=3D"none" d=3D"M0 0h24=
+v24H0V0z"></path></svg></span><div data-v-5d991c21=3D"" class=3D"folder__co=
+ntent pl-4 border-l-2"><a data-v-5d991c21=3D"" href=3D"https://developers.a=
+fricastalking.com/docs/data/overview" class=3D"px-2 -mx-2 py-1 transition d=
+uration-200 ease-in-out relative block hover:translate-x-2px hover:text-gra=
+y-900 text-gray-600"><span data-v-5d991c21=3D"" class=3D"background rounded=
+ absolute inset-y-0 left-0 right-2"></span><span data-v-5d991c21=3D"" class=
+=3D"text relative">Overview</span></a><a data-v-5d991c21=3D"" href=3D"https=
+://developers.africastalking.com/docs/data/sending" class=3D"px-2 -mx-2 py-=
+1 transition duration-200 ease-in-out relative block hover:translate-x-2px =
+hover:text-gray-900 text-gray-600"><span data-v-5d991c21=3D"" class=3D"back=
+ground rounded absolute inset-y-0 left-0 right-2"></span><span data-v-5d991=
+c21=3D"" class=3D"text relative">Sending</span></a><div data-v-5d991c21=3D"=
+" class=3D"folder"><h5 data-v-5d991c21=3D"" class=3D"mt-3 mb-1 text-gray-50=
+0 uppercase tracking-wide font-bold text-sm lg:text-xs">Notifications</h5><=
+div data-v-5d991c21=3D"" class=3D"pl-3"><a data-v-5d991c21=3D"" href=3D"htt=
+ps://developers.africastalking.com/docs/data/notifications/validation" clas=
+s=3D"px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block hov=
+er:translate-x-2px hover:text-gray-900 text-gray-600"><span data-v-5d991c21=
+=3D"" class=3D"background rounded absolute inset-y-0 left-0 right-2"></span=
+><span data-v-5d991c21=3D"" class=3D"text relative">Validation</span></a><a=
+ data-v-5d991c21=3D"" href=3D"https://developers.africastalking.com/docs/da=
+ta/notifications/status" class=3D"px-2 -mx-2 py-1 transition duration-200 e=
+ase-in-out relative block hover:translate-x-2px hover:text-gray-900 text-gr=
+ay-600"><span data-v-5d991c21=3D"" class=3D"background rounded absolute ins=
+et-y-0 left-0 right-2"></span><span data-v-5d991c21=3D"" class=3D"text rela=
+tive">Status</span></a></div></div><div data-v-5d991c21=3D"" class=3D"folde=
+r"><h5 data-v-5d991c21=3D"" class=3D"mt-3 mb-1 text-gray-500 uppercase trac=
+king-wide font-bold text-sm lg:text-xs">Query</h5><div data-v-5d991c21=3D""=
+ class=3D"pl-3"><a data-v-5d991c21=3D"" href=3D"https://developers.africast=
+alking.com/docs/data/query/find_transaction" class=3D"px-2 -mx-2 py-1 trans=
+ition duration-200 ease-in-out relative block hover:translate-x-2px hover:t=
+ext-gray-900 text-gray-600"><span data-v-5d991c21=3D"" class=3D"background =
+rounded absolute inset-y-0 left-0 right-2"></span><span data-v-5d991c21=3D"=
+" class=3D"text relative">Find Transaction</span></a><a data-v-5d991c21=3D"=
+" href=3D"https://developers.africastalking.com/docs/data/query/fetch_walle=
+t_balance" class=3D"px-2 -mx-2 py-1 transition duration-200 ease-in-out rel=
+ative block hover:translate-x-2px hover:text-gray-900 text-gray-600"><span =
+data-v-5d991c21=3D"" class=3D"background rounded absolute inset-y-0 left-0 =
+right-2"></span><span data-v-5d991c21=3D"" class=3D"text relative">Fetch Wa=
+llet Balance</span></a></div></div></div></div><a data-v-5d991c21=3D"" href=
+=3D"https://developers.africastalking.com/docs/application" class=3D"px-2 -=
+mx-2 py-1 transition duration-200 ease-in-out relative block hover:translat=
+e-x-2px hover:text-gray-900 text-gray-600"><span data-v-5d991c21=3D"" class=
+=3D"background rounded absolute inset-y-0 left-0 right-2"></span><span data=
+-v-5d991c21=3D"" class=3D"text relative">Application</span></a><a data-v-5d=
+991c21=3D"" href=3D"https://developers.africastalking.com/docs/notification=
+s" class=3D"px-2 -mx-2 py-1 transition duration-200 ease-in-out relative bl=
+ock hover:translate-x-2px hover:text-gray-900 text-gray-600"><span data-v-5=
+d991c21=3D"" class=3D"background rounded absolute inset-y-0 left-0 right-2"=
+></span><span data-v-5d991c21=3D"" class=3D"text relative">Notifications</s=
+pan></a><a data-v-5d991c21=3D"" href=3D"https://developers.africastalking.c=
+om/docs/idempotent_requests" class=3D"px-2 -mx-2 py-1 transition duration-2=
+00 ease-in-out relative block hover:translate-x-2px hover:text-gray-900 tex=
+t-gray-600"><span data-v-5d991c21=3D"" class=3D"background rounded absolute=
+ inset-y-0 left-0 right-2"></span><span data-v-5d991c21=3D"" class=3D"text =
+relative">Idempotent Requests</span></a></div></div><div class=3D"mb-8"><h5=
+ class=3D"flex flex-row items-center mb-3 lg:mb-2 text-gray-500 uppercase t=
+racking-wide font-bold text-sm lg:text-xs"><svg xmlns=3D"http://www.w3.org/=
+2000/svg" viewBox=3D"0 0 24 24" class=3D"h-5 mr-1 fill-current"><path d=3D"=
+M0 0h24v24H0V0z" fill=3D"none"></path><path d=3D"M19.14 12.94c.04-.3.06-.61=
+.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.488.=
+488 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-=
+.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-=
+.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.=
+09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37=
+.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.2=
+4 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .=
+59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.6=
+2-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"></path></svg=
+>Tools </h5><a href=3D"https://developers.africastalking.com/sdks" class=3D=
+"px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block hover:t=
+ranslate-x-2px hover:text-gray-900 text-gray-600"><span class=3D"background=
+ rounded absolute inset-y-0 left-0 right-2"></span><span class=3D"text rela=
+tive">SDKs</span></a><a href=3D"https://developers.africastalking.com/simul=
+ator" class=3D"px-2 -mx-2 py-1 transition duration-200 ease-in-out relative=
+ block hover:translate-x-2px hover:text-gray-900 text-gray-600"><span class=
+=3D"background rounded absolute inset-y-0 left-0 right-2"></span><span clas=
+s=3D"text relative">Simulator</span></a><a href=3D"https://www.postman.com/=
+africastalking" target=3D"_blank" class=3D"px-2 -mx-2 py-1 transition durat=
+ion-200 ease-in-out block hover:translate-x-2px hover:text-gray-900 text-gr=
+ay-600">Postman Collections</a></div><div class=3D"mb-8"><h5 class=3D"flex =
+flex-row items-center mb-3 lg:mb-2 text-gray-500 uppercase tracking-wide fo=
+nt-bold text-sm lg:text-xs"><svg xmlns=3D"http://www.w3.org/2000/svg" viewB=
+ox=3D"0 0 24 24" class=3D"h-5 mr-1 fill-current"><path d=3D"M0 0h24v24H0z" =
+fill=3D"none"></path><path d=3D"M19 2H5a2 2 0 00-2 2v14a2 2 0 002 2h4l3 3 3=
+-3h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-6 16h-2v-2h2v2zm2.07-7.75l-.9.92C13.=
+45 11.9 13 12.5 13 14h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.8=
+6.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36=
+ 1.68-.93 2.25z"></path></svg>Support </h5><a href=3D"https://join.slack.co=
+m/t/africastalking/shared_invite/zt-38sb51cab-QdjmqAkVrUjuDwnEeuUFrg" targe=
+t=3D"_blank" class=3D"px-2 -mx-2 py-1 transition duration-200 ease-in-out b=
+lock hover:translate-x-2px hover:text-gray-900 text-gray-600">Slack</a><a h=
+ref=3D"https://github.com/AfricasTalkingLtd" target=3D"_blank" class=3D"px-=
+2 -mx-2 py-1 transition duration-200 ease-in-out block hover:translate-x-2p=
+x hover:text-gray-900 text-gray-600">Github</a><a href=3D"https://help.afri=
+castalking.com/" target=3D"_blank" class=3D"px-2 -mx-2 py-1 transition dura=
+tion-200 ease-in-out block hover:translate-x-2px hover:text-gray-900 text-g=
+ray-600">Help Center</a></div></nav></div></div></div><div class=3D"h-full =
+pt-16 sidebar-pl"><div class=3D"codesamples-pr codesamples--open"><div clas=
+s=3D"flex flex-row justify-center"><div class=3D"docs-content w-full py-10 =
+px-6 md:w-full"><!----><div><div><h1>Send Bulk SMS</h1>
+<p>Send SMS through your application by making a <code>HTTP POST</code> req=
+uest to the following endpoints:</p>
+<div class=3D"callout success"><span class=3D"title">Endpoints</span><span =
+class=3D"callout__text">Live: https://api.africastalking.com/version1/messa=
+ging/bulk
+</span><span class=3D"callout__text">Sandbox: https://api.sandbox.africasta=
+lking.com/version1/messaging/bulk (coming soon)
+</span></div>
+<h3>Request payload</h3>
+<p>In addition to the <a href=3D"https://developers.africastalking.com/docs=
+/request_headers" target=3D"_blank">standard request headers</a>, this endp=
+oint also accepts json requests. The body of the request should contain the=
+ following fields:</p>
+<table class=3D"table">
+<thead>
+<tr>
+<th>Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>username</strong> <code>String</code> <code>Required</code> <br=
+> Your Africa=E2=80=99s Talking application username.</td>
+</tr>
+<tr>
+<td><strong>phoneNumbers</strong> <code>String</code> <code>Required</code>=
+ <br> A list of recipients=E2=80=99 phone numbers.</td>
+</tr>
+<tr>
+<td><strong>message</strong> <code>String</code> <code>Required</code> <br>=
+ The message to be sent.</td>
+</tr>
+<tr>
+<td><strong>senderId</strong> <code>String</code> <code>Required</code> <br=
+> Your registered short code or alphanumeric</td>
+</tr>
+<tr>
+<td><strong>enqueue</strong> <code>Integer</code> <code>Optional</code> <br=
+> This is used for Bulk SMS clients that would like to deliver as many mess=
+ages to the API before waiting for an acknowledgement from the Telcos. Poss=
+ible values are <code>1</code> to enable and <code>0</code> to disable. If =
+enabled, the API will store the messages in a queue and send them out async=
+hronously after responding to the request. The default value is <code>1</co=
+de></td>
+</tr>
+</tbody>
+</table>
+<h3>API response</h3>
+<p>The body of the response will be a JSON object containing the following =
+fields:</p>
+<table class=3D"table">
+<thead>
+<tr>
+<th>Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SMSMessageData</strong> <code>Map</code> <br> A <code>Map</code=
+> detailing the eventual result of the sms request. It contains the followi=
+ng fields:<ul><li><strong>Message</strong> <code>String</code>: A summary o=
+f the total number of <code>recipients</code> the sms was sent to and the t=
+otal cost incurred.</li><li><strong>Recipients</strong> <code>List</code>: =
+A list of recipients included in the original request. Each <code>recipient=
+</code> is a <code>Map</code> with the following fields:<ul><li><strong>sta=
+tusCode</strong> <code>Integer</code>: This corresponds to the status of th=
+e request. Possible values are:<ul><li><code>100</code>: Processed</li><li>=
+<code>101</code>: Sent</li><li><code>102</code>: Queued</li><li><code>401</=
+code>: RiskHold</li><li><code>402</code>: InvalidSenderId</li><li><code>403=
+</code>: InvalidPhoneNumber</li><li><code>404</code>: UnsupportedNumberType=
+</li><li><code>405</code>: InsufficientBalance</li><li><code>406</code>: Us=
+erInBlacklist</li><li><code>407</code>: CouldNotRoute</li><li><code>409</co=
+de>: DoNotDisturbRejection</li><li><code>500</code>: InternalServerError</l=
+i><li><code>501</code>: GatewayError</li><li><code>502</code>: RejectedByGa=
+teway</li></ul></li><li><strong>number</strong> <code>String</code>: The re=
+cipient=E2=80=99s phone number</li><li><strong>cost</strong> <code>String</=
+code>: Amount incurred to send this sms. The format of this string is: (3-d=
+igit Currency Code)(space)(Decimal Value) e.g KES 1.00</li><li><strong>stat=
+us</strong> <code>String</code>: A string indicating whether the sms was se=
+nt to this recipient or not. This does not indicate the delivery status of =
+the sms to this recipient.</li><li><strong>messageId</strong> <code>String<=
+/code>: The messageId received when the sms was sent.</li></ul></li></ul></=
+td>
+</tr>
+</tbody>
+</table>
+<h2>Send SMS to Hashed Number</h2>
+<p>For Safaricom in Kenya, you can send SMSs using hashed phone numbers to =
+the same API endpoint.</p>
+<h3>Request payload</h3>
+<p>In addition to the <a href=3D"https://developers.africastalking.com/docs=
+/request_headers" target=3D"_blank">standard request headers</a>, the body =
+of the request should contain the following fields:</p>
+<table class=3D"table">
+<thead>
+<tr>
+<th>Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>username</strong> <code>String</code> <code>Required</code> <br=
+> Your Africa=E2=80=99s Talking application username.</td>
+</tr>
+<tr>
+<td><strong>message</strong> <code>String</code> <code>Required</code> <br>=
+ The message to be sent.</td>
+</tr>
+<tr>
+<td><strong>maskedNumber</strong> <code>String</code> <code>Required</code>=
+ <br> The string of the hashed number to be sent to.</td>
+</tr>
+<tr>
+<td><strong>telco</strong> <code>String</code> <code>Required</code> <br> T=
+he service provider.</td>
+</tr>
+<tr>
+<td><strong>phoneNumbers</strong> <code>String</code> <code>Required</code>=
+ <br> This value must be a blank list, i.e, []</td>
+</tr>
+<tr>
+<td><strong>senderId</strong> <code>String</code> <code>Optional</code> <br=
+> Your registered short code or alphanumeric</td>
+</tr>
+</tbody>
+</table>
+<h3>API response</h3>
+<p>The body of the response will be a JSON object containing the following =
+fields:</p>
+<table class=3D"table">
+<thead>
+<tr>
+<th>Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SMSMessageData</strong> <code>Map</code> <br> A <code>Map</code=
+> detailing the eventual result of the sms request. It contains the followi=
+ng fields:<ul><li><strong>Message</strong> <code>String</code>: A summary o=
+f the total number of <code>recipients</code> the sms was sent to and the t=
+otal cost incurred.</li><li><strong>Recipients</strong> <code>List</code>: =
+A list of recipients included in the original request. Each <code>recipient=
+</code> is a <code>Map</code> with the following fields:<ul><li><strong>sta=
+tusCode</strong> <code>Integer</code>: This corresponds to the status of th=
+e request. Possible values are:<ul><li><code>100</code>: Processed</li><li>=
+<code>101</code>: Sent</li><li><code>102</code>: Queued</li><li><code>401</=
+code>: RiskHold</li><li><code>402</code>: InvalidSenderId</li><li><code>403=
+</code>: InvalidPhoneNumber</li><li><code>404</code>: UnsupportedNumberType=
+</li><li><code>405</code>: InsufficientBalance</li><li><code>406</code>: Us=
+erInBlacklist</li><li><code>407</code>: CouldNotRoute</li><li><code>409</co=
+de>: DoNotDisturbRejection</li><li><code>500</code>: InternalServerError</l=
+i><li><code>501</code>: GatewayError</li><li><code>502</code>: RejectedByGa=
+teway</li></ul></li><li><strong>number</strong> <code>String</code>: The re=
+cipient=E2=80=99s phone number</li><li><strong>cost</strong> <code>String</=
+code>: Amount incurred to send this sms. The format of this string is: (3-d=
+igit Currency Code)(space)(Decimal Value) e.g KES 1.00</li><li><strong>stat=
+us</strong> <code>String</code>: A string indicating whether the sms was se=
+nt to this recipient or not. This does not indicate the delivery status of =
+the sms to this recipient.</li><li><strong>messageId</strong> <code>String<=
+/code>: The messageId received when the sms was sent.</li></ul></li></ul></=
+td>
+</tr>
+</tbody>
+</table>
+</div></div><!----></div></div><span class=3D"codesamples_trigger bg-codesa=
+mple shadow-md py-4 px-2 top-24 right-0 md:hidden rounded-l-md flex items-c=
+enter content-center"><svg xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"=
+0 0 640 512" class=3D"h-4 fill-current text-gray-100"><path fill=3D"current=
+Color" d=3D"M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.=
+4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 =
+10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-7=
+9.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5=
+.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-13=
+5.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-=
+4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 4=
+6.4c4.5 4.9 12.1 5.1 17 .6z"></path></svg></span><div class=3D"fixed codesa=
+mples codesamples-w bottom-0 right-0 top-0 md:top-16 lg:z-60 bg-codesample =
+shadow-2xl md:shadow-none pointer-events-none md:pointer-events-auto opacit=
+y-0 md:opacity-100 transform translate-x-full md:translate-x-0"><div class=
+=3D"w-full h-full bg-codesample md:shadow-none"><div class=3D"h-12 bg-codes=
+ample-dark flex flex-row justify-between items-center"><div class=3D"relati=
+ve flex items-center cursor-pointer"><select class=3D"block appearance-none=
+ cursor-pointer text-sm pl-2 pr-6 bg-codesample-dark text-gray-500 py-1 rou=
+nded leading-tight focus:outline-none focus:bg-codesample-dark"><option val=
+ue=3D"curl"> Curl </option><option value=3D"php"> PHP </option><option valu=
+e=3D"java"> Java </option><option value=3D"node"> Node </option><option val=
+ue=3D"python"> Python </option><option value=3D"ruby"> Ruby </option></sele=
+ct><div class=3D"pointer-events-none absolute inset-y-0 right-0 flex items-=
+center pt-1 text-gray-500"><svg viewBox=3D"0 0 24 24" fill=3D"none" stroke=
+=3D"currentColor" class=3D"h-5"><path d=3D"M7 7l3-3 3 3m0 6l-3 3-3-3" strok=
+e-width=3D"1.5" stroke-linecap=3D"round" stroke-linejoin=3D"round"></path><=
+/svg></div></div><div class=3D"flex flex-row justify-end items-center"><spa=
+n aria-label=3D"Click to copy" data-balloon-pos=3D"left" class=3D"text-gray=
+-500 cursor-pointer transition duration-200 ease-in-out hover:translate-x-2=
+px hover:text-gray-100"><span class=3D"pointer-events-none flex flex-row it=
+ems-center tracking-wide text-sm px-2"><svg xmlns=3D"http://www.w3.org/2000=
+/svg" viewBox=3D"0 0 24 24" class=3D"h-4 mr-1 fill-current"><path d=3D"M0 0=
+h24v24H0z" fill=3D"none"></path><path d=3D"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h1=
+2V1zm-1 4l6 6v10c0 1.1-.9 2-2 2H7.99C6.89 23 6 22.1 6 21l.01-14c0-1.1.89-2 =
+1.99-2h7zm-1 7h5.5L14 6.5V12z"></path></svg>Copy </span></span><!----></div=
+></div><div class=3D"absolute top-12 bottom-0 left-0 right-0 flex flex-col"=
+><div class=3D"code-sample-content w-full flex-1 bg-codesample overflow-y-a=
+uto"><div><pre><code class=3D"language-javascript hljs" data-highlighted=3D=
+"yes"><span class=3D"hljs-comment">// Set your app credentials</span>
+<span class=3D"hljs-keyword">const</span> credentials =3D {
+    <span class=3D"hljs-attr">apiKey</span>: <span class=3D"hljs-string">'M=
+yAppAPIkey'</span>,
+    <span class=3D"hljs-attr">username</span>: <span class=3D"hljs-string">=
+'MyAppUsername'</span>,
+}
+
+<span class=3D"hljs-comment">// Initialize the SDK</span>
+<span class=3D"hljs-keyword">const</span> <span class=3D"hljs-title class_"=
+>AfricasTalking</span> =3D <span class=3D"hljs-built_in">require</span>(<sp=
+an class=3D"hljs-string">'africastalking'</span>)(credentials);
+
+<span class=3D"hljs-comment">// Get the SMS service</span>
+<span class=3D"hljs-keyword">const</span> sms =3D <span class=3D"hljs-title=
+ class_">AfricasTalking</span>.<span class=3D"hljs-property">SMS</span>;
+
+<span class=3D"hljs-keyword">function</span> <span class=3D"hljs-title func=
+tion_">sendMessage</span>(<span class=3D"hljs-params"></span>) {
+    <span class=3D"hljs-keyword">const</span> options =3D {
+        <span class=3D"hljs-comment">// Set the numbers you want to send to=
+ in international format</span>
+        <span class=3D"hljs-attr">to</span>: [<span class=3D"hljs-string">'=
++254711XXXYYY'</span>, <span class=3D"hljs-string">'+254733YYYZZZ'</span>],
+        <span class=3D"hljs-comment">// Set your message</span>
+        <span class=3D"hljs-attr">message</span>: <span class=3D"hljs-strin=
+g">"I'm a lumberjack and its ok, I sleep all night and I work all day"</spa=
+n>,
+        <span class=3D"hljs-comment">// Set your shortCode or senderId</spa=
+n>
+        <span class=3D"hljs-attr">from</span>: <span class=3D"hljs-string">=
+'XXYYZZ'</span>
+    }
+
+    <span class=3D"hljs-comment">// That=E2=80=99s it, hit send and we=E2=
+=80=99ll take care of the rest</span>
+    sms.<span class=3D"hljs-title function_">send</span>(options)
+        .<span class=3D"hljs-title function_">then</span>(<span class=3D"hl=
+js-variable language_">console</span>.<span class=3D"hljs-property">log</sp=
+an>)
+        .<span class=3D"hljs-title function_">catch</span>(<span class=3D"h=
+ljs-variable language_">console</span>.<span class=3D"hljs-property">log</s=
+pan>);
+}
+
+<span class=3D"hljs-title function_">sendMessage</span>();
+</code></pre>
+</div></div><div class=3D"console-resize-handler"></div><div class=3D"w-ful=
+l flex-1"><div class=3D"h-full flex flex-col"><div class=3D"h-12 bg-codesam=
+ple-dark flex flex-row justify-between items-center"><div class=3D"flex fle=
+x-row justify-start"><span class=3D"text-gray-500 cursor-pointer transition=
+ duration-200 ease-in-out hover:translate-x-2px hover:text-gray-100"><span =
+class=3D"pointer-events-none flex flex-row tracking-wide text-sm px-4"> Exa=
+mple Response </span></span></div><div class=3D"flex flex-row justify-end">=
+<span class=3D"text-gray-500 cursor-pointer transition duration-200 ease-in=
+-out hover:translate-x-2px hover:text-gray-100 px-4"><svg xmlns=3D"http://w=
+ww.w3.org/2000/svg" viewBox=3D"0 0 24 24" class=3D"h-5 mr-1 fill-current tr=
+ansform"><path d=3D"M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z=
+"></path><path fill=3D"none" d=3D"M0 0h24v24H0V0z"></path></svg></span></di=
+v></div><div class=3D"flex-1 bg-codesample w-full"><div class=3D"response-s=
+ample-content bg-codesample h-full overflow-y-auto"><div><pre><code class=
+=3D"language-json hljs" data-highlighted=3D"yes"><span class=3D"hljs-punctu=
+ation">{</span>
+    <span class=3D"hljs-attr">"SMSMessageData"</span><span class=3D"hljs-pu=
+nctuation">:</span> <span class=3D"hljs-punctuation">{</span>
+        <span class=3D"hljs-attr">"Message"</span><span class=3D"hljs-punct=
+uation">:</span> <span class=3D"hljs-string">"Sent to 1/1 Total Cost: KES 0=
+.8000"</span><span class=3D"hljs-punctuation">,</span>
+        <span class=3D"hljs-attr">"Recipients"</span><span class=3D"hljs-pu=
+nctuation">:</span> <span class=3D"hljs-punctuation">[</span><span class=3D=
+"hljs-punctuation">{</span>
+            <span class=3D"hljs-attr">"statusCode"</span><span class=3D"hlj=
+s-punctuation">:</span> <span class=3D"hljs-number">101</span><span class=
+=3D"hljs-punctuation">,</span>
+            <span class=3D"hljs-attr">"number"</span><span class=3D"hljs-pu=
+nctuation">:</span> <span class=3D"hljs-string">"+254711XXXYYY"</span><span=
+ class=3D"hljs-punctuation">,</span>
+            <span class=3D"hljs-attr">"status"</span><span class=3D"hljs-pu=
+nctuation">:</span> <span class=3D"hljs-string">"Success"</span><span class=
+=3D"hljs-punctuation">,</span>
+            <span class=3D"hljs-attr">"cost"</span><span class=3D"hljs-punc=
+tuation">:</span> <span class=3D"hljs-string">"KES 0.8000"</span><span clas=
+s=3D"hljs-punctuation">,</span>
+            <span class=3D"hljs-attr">"messageId"</span><span class=3D"hljs=
+-punctuation">:</span> <span class=3D"hljs-string">"ATPid_SampleTxnId123"</=
+span>
+        <span class=3D"hljs-punctuation">}</span><span class=3D"hljs-punctu=
+ation">]</span>
+    <span class=3D"hljs-punctuation">}</span>
+<span class=3D"hljs-punctuation">}</span>
+</code></pre>
+</div></div></div></div></div></div></div></div><div class=3D"block md:hidd=
+en codesamples__backpage opacity-0 fixed bg-white pointer-events-none top-0=
+ bottom-0 w-screen z-50"></div></div></div></div><section data-v-379ab511=
+=3D"" class=3D"visible"><div data-v-379ab511=3D"" class=3D"message"> We use=
+ cookies and similar technologies to improve your experience on our site. T=
+o learn more about this, view our <a data-v-379ab511=3D"" href=3D"https://a=
+fricastalking.com/privacy_policy" target=3D"_blank" class=3D"link">Privacy =
+Policy</a></div><div data-v-379ab511=3D"" class=3D"buttons"><button data-v-=
+379ab511=3D"" role=3D"button" class=3D"btn">Got it!</button></div></section=
+></div><iframe id=3D"intercom-frame" style=3D"position: absolute !important=
+; opacity: 0 !important; width: 1px !important; height: 1px !important; top=
+: 0 !important; left: 0 !important; border: none !important; display: block=
+ !important; z-index: -1 !important; pointer-events: none;" aria-hidden=3D"=
+true" tabindex=3D"-1" title=3D"Intercom"></iframe><div class=3D"intercom-li=
+ghtweight-app"><div class=3D"intercom-lightweight-app-launcher intercom-lau=
+ncher" role=3D"button" tabindex=3D"0" aria-label=3D"Open Intercom Messenger=
+" aria-live=3D"polite" aria-expanded=3D"false"><div class=3D"intercom-light=
+weight-app-launcher-icon intercom-lightweight-app-launcher-icon-open"><svg =
+xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 28 32"><path d=3D"M28 3=
+2s-4.714-1.855-8.527-3.34H3.437C1.54 28.66 0 27.026 0 25.013V3.644C0 1.633 =
+1.54 0 3.437 0h21.125c1.898 0 3.437 1.632 3.437 3.645v18.404H28V32zm-4.139-=
+11.982a.88.88 0 00-1.292-.105c-.03.026-3.015 2.681-8.57 2.681-5.486 0-8.517=
+-2.636-8.571-2.684a.88.88 0 00-1.29.107 1.01 1.01 0 00-.219.708.992.992 0 0=
+0.318.664c.142.128 3.537 3.15 9.762 3.15 6.226 0 9.621-3.022 9.763-3.15a.99=
+2.992 0 00.317-.664 1.01 1.01 0 00-.218-.707z"></path></svg>
+</div><div class=3D"intercom-lightweight-app-launcher-icon intercom-lightwe=
+ight-app-launcher-icon-minimize"><svg width=3D"24" height=3D"24" viewBox=3D=
+"0 0 24 24" fill=3D"none" xmlns=3D"http://www.w3.org/2000/svg">
+  <path fill-rule=3D"evenodd" clip-rule=3D"evenodd" d=3D"M18.601 8.39897C18=
+.269 8.06702 17.7309 8.06702 17.3989 8.39897L12 13.7979L6.60099 8.39897C6.2=
+6904 8.06702 5.73086 8.06702 5.39891 8.39897C5.06696 8.73091 5.06696 9.2691=
+ 5.39891 9.60105L11.3989 15.601C11.7309 15.933 12.269 15.933 12.601 15.601L=
+18.601 9.60105C18.9329 9.2691 18.9329 8.73091 18.601 8.39897Z" fill=3D"curr=
+entColor"></path>
+</svg>
+</div></div></div></body></html>
+------MultipartBoundary--TgLpSPrmdhER7W876d65mMbln3K3i2nhWSm8R0yXwJ----
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: https://s.gravatar.com/avatar/d82a3b15b8b35217df5a2585f4fdaf55?s=100&d=mp
+
+/9j/4AAQSkZJRgABAQEAYABgAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcg
+SlBFRyB2NjIpLCBxdWFsaXR5ID0gOTAK/9sAQwADAgIDAgIDAwMDBAMDBAUIBQUEBAUKBwcGCAwK
+DAwLCgsLDQ4SEA0OEQ4LCxAWEBETFBUVFQwPFxgWFBgSFBUU/9sAQwEDBAQFBAUJBQUJFA0LDRQU
+FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQU/8AAEQgAZABk
+AwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMF
+BQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkq
+NDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqi
+o6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/E
+AB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMR
+BAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVG
+R0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKz
+tLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8A
++uKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKmtLKe/uUt7aJ5pnOFRBkmu90
+r4P3M0avqF2tsT/yziXew+p6fzoA88or1Wf4N2hQ+TqMyP6yIGH6YrjPEfgXU/DYMsqCe1z/AK+H
+kD6jqKAOdooooAKKKKACiiigAooooAKciNI6ogLMxwAOpNNrq/hppq6l4rgLjclupnIPqOB+pB/C
+gD0nwV4Ri8MacC6K19KAZpPT/ZHsP1rp6KKACo5I0nRkdQ6MMMrDII9DUlFAHh/xC8JDw3qSy26n
+7BcZMY/uN3X/AA/+tXKV7v8AEDTV1PwpfKRl4V89D6FeT+mR+NeEUAFFFFABRRRQAUUUUAFd78HW
+Ua7eA/eNtx/30tcFXReANXXRvFFpJI22GXMLk9g3Q/nigD3miiigAooooAz9fZV0LUS33RbSZ/75
+NfOle3/ErV10zwxPGGxNdfuUHsfvH8s/nXiFABRRRQAUUUUAFFFFABRRWjpPh7UdcfbY2kk4BwXA
+wo+rHigD0/4feOo9Wt47C+kCX0Y2o7H/AFo7f8C/nXd15Jpfwjv5JUe+uoraMEEiIln/AMB9ea9U
+tbdbW3jhVndY1ChpGLMcdyT1NAE9U9R1O20q0kubqVYYUGSzH9B6n2q5XJeNfA58V+XLFdvBPGMB
+HJMZ/DsfcUAeX+MPFEvinVDOQY7aMbYYj2Hqfc1g11Op/DXXdNUuLdbtB1Ns24/kcH9K5h0aJ2R1
+KOpwVYYINADaKKKACiiigAooqxp9m+oX1vax/fmkWMfUnFAHX/D/AMCrrrfbr9SLFThI+nmkdfwF
+evW9vFaQpFDGsUSDCogwAPpTLCyi06zhtYV2xQoEUewqzQAUUUUAFFFFABXN+K/BVn4ngYsqwXgH
+yXCjn6N6iukooA+bdQ0+fS72a1uEKTRNtZf6/Sq1em/F/RlAs9URcMT5EpHfup/n+leZUAFFFFAB
+XQ/D+JZfGGmBhkbi34gHFFFAHvVFFFABRRRQAUUUUAFFFFAHI/E+NZPB92WGSrxkex3Af1NeJUUU
+AFFFFAH/2Q==
+
+------MultipartBoundary--TgLpSPrmdhER7W876d65mMbln3K3i2nhWSm8R0yXwJ----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://developers.africastalking.com/css/chunk-799c4773.7772ba03.css
+
+@charset "utf-8";
+
+.response-sample-content { overscroll-behavior: contain; }
+
+.response-sample-content > div { min-height: 100%; position: relative; }
+
+.response-sample-content > div > pre { top: 0px; bottom: 0px; width: 100%; =
+position: absolute; }
+
+.response-sample-content > div > pre > code { min-height: 100%; font-size: =
+0.875rem; padding: 1rem; background-color: rgb(45, 55, 72); color: rgb(247,=
+ 250, 252); }
+------MultipartBoundary--TgLpSPrmdhER7W876d65mMbln3K3i2nhWSm8R0yXwJ----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://developers.africastalking.com/css/chunk-8659d518.e3071a90.css
+
+@charset "utf-8";
+
+.code-sample-content { overscroll-behavior: contain; }
+
+.code-sample-content > div { min-height: 100%; position: relative; }
+
+.code-sample-content > div > pre { top: 0px; bottom: 0px; width: 100%; posi=
+tion: absolute; }
+
+.code-sample-content > div > pre > code { min-height: 100%; font-size: 0.87=
+5rem; padding: 1rem; background-color: rgb(45, 55, 72); color: rgb(247, 250=
+, 252); }
+------MultipartBoundary--TgLpSPrmdhER7W876d65mMbln3K3i2nhWSm8R0yXwJ----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://developers.africastalking.com/css/chunk-6f05b710.1ff4990a.css
+
+@charset "utf-8";
+
+:root { --codeSampleWidthSm: 20rem; --codeSampleWidthMd: 27.875rem; --codeS=
+ampleWidthLg: 30rem; --codeSampleWidthXl: 37.875rem; }
+
+.codesamples-w { width: 83.3333%; }
+
+.codesamples-pr { padding-right: 0px; }
+
+@media (min-width: 1024px) {
+  .codesamples-w { width: var(--codeSampleWidthMd); }
+  .codesamples-pr { padding-right: var(--codeSampleWidthMd); }
+}
+
+@media (orientation: portrait) {
+  .codesamples { z-index: 60; }
+}
+
+@media (min-width: 1200px) {
+  .codesamples-w { width: var(--codeSampleWidthLg); }
+  .codesamples-pr { padding-right: var(--codeSampleWidthLg); }
+}
+
+@media (min-width: 1440px) {
+  .codesamples-w { width: var(--codeSampleWidthXl); }
+  .codesamples-pr { padding-right: var(--codeSampleWidthXl); }
+}
+
+.codesamples_trigger { position: fixed; }
+
+.codesamples--open .codesamples { pointer-events: auto; --tw-translate-x: 0=
+px; opacity: 1; }
+
+.codesamples--open .codesamples__backpage { pointer-events: auto; opacity: =
+0.75; }
+
+.docs-content h1 { font-size: 1.875rem; font-weight: 600; }
+
+.docs-content h1, .docs-content h2 { line-height: 1; margin-top: 1rem; marg=
+in-bottom: 1rem; }
+
+.docs-content h2 { font-size: 1.5rem; font-weight: 500; }
+
+.docs-content h3 { font-size: 1.25rem; font-weight: 400; line-height: 1; ma=
+rgin-top: 1rem; margin-bottom: 1rem; }
+
+.docs-content p { font-size: 1rem; margin-top: 1.3rem; }
+
+.docs-content a:link, .docs-content a:visited { color: rgb(237, 137, 54); }
+
+.docs-content a:active, .docs-content a:hover { color: rgb(221, 107, 32); }
+
+.docs-content ol, .docs-content ul { padding-left: 1rem; margin-top: 0.5rem=
+; margin-bottom: 1rem; color: rgb(74, 85, 104); }
+
+.docs-content ul { list-style-type: disc; }
+
+.docs-content ol { list-style-type: decimal; }
+
+.docs-content li { font-size: 1rem; margin-bottom: 0.25rem; }
+
+.docs-content code { font-size: 0.75rem; background-color: rgb(247, 250, 25=
+2); border-radius: 3px; }
+
+.docs-content pre code { font-size: 0.875rem; padding: 0.75rem 1rem; margin=
+: 1rem 0px; background-color: rgb(45, 55, 72); color: rgb(247, 250, 252); }
+
+.docs-content p code, .docs-content table code { border: 1px solid rgb(237,=
+ 242, 247); padding: 0.1rem 0.3rem; color: rgb(197, 48, 48); }
+
+.docs-content .doc__image { margin-top: 2rem; margin-bottom: 2rem; }
+
+.docs-content table { margin-top: 1rem; margin-bottom: 2rem; width: 100%; }
+
+.docs-content table th { font-size: 1rem; font-weight: 600; color: rgb(26, =
+32, 44); }
+
+.docs-content table td, .docs-content table th { padding: 0.75rem 1rem 0.75=
+rem 0px; text-align: left; border-bottom: 1px solid rgb(203, 213, 224); bor=
+der-top-color: rgb(203, 213, 224); border-right-color: rgb(203, 213, 224); =
+border-left-color: rgb(203, 213, 224); }
+
+.docs-content table td { font-size: 0.875rem; vertical-align: top; color: r=
+gb(74, 85, 104); }
+
+.docs-content table td ol, .docs-content table td ul { list-style-type: non=
+e; padding: 0px; color: rgb(74, 85, 104); }
+
+.docs-content table td ul { margin-top: 0.875rem; margin-left: 0.9375rem; }
+
+.docs-content table td ul li { font-size: 0.875rem; }
+
+.docs-content table td ul li ul { margin-left: 0.875rem; }
+
+.docs-content .callout { padding: 1rem; border-radius: 0px 5px 5px 0px; dis=
+play: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; fl=
+ex-direction: column; margin: 1rem 0px; border-left: 5px solid; background-=
+color: rgb(45, 55, 72); color: rgb(247, 250, 252); overflow: scroll; }
+
+.docs-content .callout .title { font-weight: 500; margin-bottom: 0.5rem; }
+
+.docs-content .callout.info { border-color: rgb(66, 153, 225); }
+
+.docs-content .callout.info > .title { color: rgb(66, 153, 225); }
+
+.docs-content .callout.success { border-color: rgb(72, 187, 120); }
+
+.docs-content .callout.success > .title { color: rgb(72, 187, 120); }
+
+.docs-content .callout.warning { border-color: rgb(237, 137, 54); }
+
+.docs-content .callout.warning > .title { color: rgb(237, 137, 54); }
+
+.docs-content .callout.danger { border-color: rgb(245, 101, 101); }
+
+.docs-content .callout.danger > .title { color: rgb(245, 101, 101); }
+
+h1, h2, h3, h4, h5, h6 { color: rgb(26, 32, 44); }
+
+p { color: rgb(74, 85, 104); }
+------MultipartBoundary--TgLpSPrmdhER7W876d65mMbln3K3i2nhWSm8R0yXwJ----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://developers.africastalking.com/css/chunk-a18c94d4.7e902728.css
+
+@charset "utf-8";
+
+.folder > .folder__content[data-v-5d991c21] { opacity: 0; height: 0px; poin=
+ter-events: none; }
+
+.folder.open > .folder__content[data-v-5d991c21] { opacity: 1; height: auto=
+; pointer-events: auto; }
+
+.folder.open > .folder__name[data-v-5d991c21] { color: rgb(237, 137, 54); }
+
+.folder.open > .folder__name .folder__icon--open[data-v-5d991c21] { display=
+: inline-flex; }
+
+.folder .folder__name .folder__icon--open[data-v-5d991c21], .folder.open > =
+.folder__name .folder__icon--closed[data-v-5d991c21] { display: none; }
+
+.folder .folder__name .folder__icon--closed[data-v-5d991c21] { display: blo=
+ck; }
+------MultipartBoundary--TgLpSPrmdhER7W876d65mMbln3K3i2nhWSm8R0yXwJ----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://developers.africastalking.com/css/chunk-6f40013b.57725244.css
+
+@charset "utf-8";
+
+:root { --sideBarWidth: 20rem; --sideBarWidthLg: 16rem; --sideBarWidthXl: 1=
+8rem; }
+
+.sidebar-pl { padding-left: 0px; }
+
+@media (min-width: 1200px) {
+  .sidebar-pl { padding-left: var(--sideBarWidthLg); }
+}
+
+@media (min-width: 1440px) {
+  .sidebar-pl { padding-left: var(--sideBarWidthXl); }
+}
+
+.sidebar--open .sidebar { pointer-events: auto; --tw-translate-x: 0px; opac=
+ity: 1; }
+
+.sidebar--open .sidebar__backpage { pointer-events: auto; opacity: 0.75; }
+
+.sidebar-link-active > .background { background-color: rgb(251, 211, 141); =
+opacity: 0.25; }
+
+.sidebar-link-active > .text { color: rgb(237, 137, 54); }
+------MultipartBoundary--TgLpSPrmdhER7W876d65mMbln3K3i2nhWSm8R0yXwJ----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://developers.africastalking.com/css/app.4d1cca98.css
+
+@charset "utf-8";
+
+.visible[data-v-379ab511] { position: fixed; display: block; bottom: 20px; =
+left: 20px; margin: 0px; max-width: 300px; background: rgb(250, 250, 250); =
+padding: 0px; border-radius: 6px; -webkit-box-pack: justify; justify-conten=
+t: space-between; border: 0.5px solid rgb(204, 204, 204); box-shadow: rgba(=
+0, 0, 0, 0.035) 0px -2px 16px; line-height: 1.5; z-index: 9999; opacity: 1;=
+ transition: 0.3s; }
+
+.hidden[data-v-379ab511] { display: none; opacity: 0; transition: 200s; }
+
+.message[data-v-379ab511] { padding: 15px 20px; font-size: 0.9rem; max-heig=
+ht: 100px; overflow: auto; margin-bottom: 10px; color: rgb(0, 0, 0); }
+
+.buttons[data-v-379ab511] { text-align: center; min-height: 40px; margin-bo=
+ttom: 0px; }
+
+.btn[data-v-379ab511] { display: inline-block; padding: 10px 0px; width: 10=
+0%; font-size: 0.9rem; outline: none; color: rgb(76, 175, 80); font-weight:=
+ 700; white-space: nowrap; border-bottom-left-radius: 6px; border-bottom-ri=
+ght-radius: 6px; background-color: rgb(238, 238, 238); line-height: 1.5; cu=
+rsor: pointer; transition: 0.3s; }
+
+.btn[data-v-379ab511]:hover { background-color: rgb(64, 147, 67); color: rg=
+b(238, 238, 238); }
+
+.cls-1[data-v-806b1182] { isolation: isolate; }
+
+.cls-2[data-v-806b1182] { fill: rgb(233, 239, 245); }
+
+.cls-2[data-v-806b1182], .cls-3[data-v-806b1182] { opacity: 0.58; }
+
+.cls-3[data-v-806b1182] { fill: rgb(225, 229, 234); }
+
+.cls-4[data-v-806b1182] { fill: url("#linear-gradient"); }
+
+.cls-5[data-v-806b1182] { fill: url("#linear-gradient-2"); }
+
+.cls-6[data-v-806b1182] { fill: rgb(255, 255, 255); }
+
+.cls-7[data-v-806b1182] { fill: url("#linear-gradient-3"); }
+
+.cls-8[data-v-806b1182] { fill: url("#linear-gradient-4"); }
+
+.cls-9[data-v-806b1182] { fill: url("#linear-gradient-5"); }
+
+.cls-10[data-v-806b1182] { fill: url("#linear-gradient-6"); }
+
+.cls-11[data-v-806b1182] { fill: url("#linear-gradient-7"); }
+
+.cls-12[data-v-806b1182] { fill: url("#linear-gradient-8"); }
+
+.cls-13[data-v-806b1182] { fill: url("#linear-gradient-9"); }
+
+.cls-14[data-v-806b1182] { fill: url("#linear-gradient-10"); }
+
+.cls-15[data-v-806b1182] { fill: url("#linear-gradient-11"); }
+
+.cls-16[data-v-806b1182] { fill: url("#linear-gradient-12"); }
+
+.cls-17[data-v-806b1182] { fill: url("#linear-gradient-13"); }
+
+.cls-18[data-v-806b1182] { fill: url("#linear-gradient-14"); }
+
+.cls-19[data-v-806b1182] { fill: url("#linear-gradient-15"); }
+
+.cls-20[data-v-806b1182] { fill: url("#linear-gradient-16"); }
+
+.cls-21[data-v-806b1182] { fill: rgb(170, 118, 74); }
+
+.cls-22[data-v-806b1182] { fill: rgb(161, 109, 69); opacity: 0.7; }
+
+.cls-23[data-v-806b1182] { fill: rgb(224, 40, 50); }
+
+.cls-24[data-v-806b1182] { fill: rgb(28, 145, 73); }
+
+.cls-25[data-v-806b1182] { fill: rgb(10, 98, 63); }
+
+.cls-26[data-v-806b1182] { fill: rgb(237, 140, 49); }
+
+.cls-27[data-v-806b1182] { fill: rgb(144, 144, 144); }
+
+.cls-28[data-v-806b1182] { fill: rgb(208, 208, 208); }
+
+.cls-29[data-v-806b1182], .cls-30[data-v-806b1182] { fill: rgb(200, 200, 20=
+0); }
+
+.cls-30[data-v-806b1182] { opacity: 0.21; mix-blend-mode: multiply; }
+
+.cls-31[data-v-806b1182] { fill: rgb(179, 68, 20); }
+
+.cls-32[data-v-806b1182] { fill: rgb(35, 35, 35); }
+
+.cls-33[data-v-806b1182] { fill: rgb(48, 48, 48); opacity: 0.3; }
+
+.cls-34[data-v-806b1182], .cls-38[data-v-806b1182] { fill: none; stroke-lin=
+ecap: round; stroke-linejoin: round; }
+
+.cls-34[data-v-806b1182] { stroke: rgb(35, 31, 32); stroke-width: 9px; }
+
+.cls-35[data-v-806b1182] { fill: rgb(147, 95, 59); }
+
+.cls-36[data-v-806b1182] { fill: rgb(34, 145, 74); }
+
+.cls-37[data-v-806b1182] { fill: rgb(30, 145, 74); }
+
+.cls-38[data-v-806b1182] { stroke: rgb(251, 176, 59); stroke-width: 13px; }
+
+.cls-39[data-v-806b1182] { fill: rgb(43, 65, 114); }
+
+.cls-40[data-v-806b1182] { fill: rgb(77, 103, 152); }
+
+.four-oh-four { height: 10rem; }
+
+@media (min-width: 640px) {
+  .four-oh-four { height: 18rem; }
+}
+
+@media (min-width: 1024px) {
+  .four-oh-four { height: 24rem; }
+}
+
+.avatar-menu[data-v-1f1b4243] { top: 115%; opacity: 0; pointer-events: none=
+; }
+
+.avatar-menu.active[data-v-1f1b4243] { opacity: 1; pointer-events: auto; }
+
+.result-box-top[data-v-4c9c8330] { top: 110%; }
+
+.cls-1[data-v-0a35836a] { fill: rgb(245, 245, 247); }
+
+.cls-4[data-v-0a35836a] { opacity: 0.69; }
+
+.cls-5[data-v-0a35836a] { fill: rgb(218, 218, 229); }
+
+.cls-6[data-v-0a35836a] { fill: rgb(214, 214, 232); }
+
+.cls-7[data-v-0a35836a] { fill: rgb(239, 239, 249); }
+
+.cls-1[data-v-3e07dbc3] { fill: rgb(220, 227, 239); }
+
+.cls-2[data-v-3e07dbc3] { fill: rgb(214, 220, 229); }
+
+.cls-3[data-v-3e07dbc3] { fill: rgb(36, 48, 53); }
+
+.cls-4[data-v-3e07dbc3] { fill: rgb(255, 194, 0); }
+
+.cls-5[data-v-3e07dbc3] { fill: rgb(72, 84, 91); }
+
+.cls-6[data-v-3e07dbc3] { fill: rgb(47, 59, 64); }
+
+.cls-7[data-v-3e07dbc3] { fill: rgb(173, 119, 70); }
+
+.cls-8[data-v-3e07dbc3] { fill: rgb(61, 70, 77); }
+
+.cls-9[data-v-3e07dbc3] { fill: rgb(255, 0, 61); }
+
+.cls-10[data-v-3e07dbc3] { fill: rgb(255, 195, 144); }
+
+.cls-11[data-v-3e07dbc3] { fill: rgb(160, 107, 63); }
+
+.cls-12[data-v-3e07dbc3] { fill: rgb(232, 0, 72); }
+
+.cls-13[data-v-3e07dbc3] { fill: rgb(204, 5, 62); }
+
+.cls-2[data-v-d32fdc7a] { fill: rgb(234, 140, 17); }
+
+.cls-1[data-v-38cac92c] { fill: rgb(36, 48, 53); }
+
+.cls-2[data-v-38cac92c] { fill: rgb(188, 202, 211); }
+
+.cls-3[data-v-38cac92c] { fill: rgb(255, 62, 0); }
+
+.cls-4[data-v-38cac92c], .cls-6[data-v-38cac92c] { fill: rgb(72, 84, 91); }
+
+.cls-5[data-v-38cac92c] { fill: rgb(47, 59, 64); }
+
+.cls-6[data-v-38cac92c] { opacity: 0.45; }
+
+.cls-7[data-v-38cac92c] { fill: rgb(61, 70, 77); }
+
+.cls-8[data-v-38cac92c] { fill: rgb(173, 119, 70); }
+
+.cls-9[data-v-38cac92c] { fill: rgb(255, 0, 61); }
+
+.cls-10[data-v-38cac92c] { fill: rgb(255, 195, 144); }
+
+.cls-11[data-v-38cac92c] { fill: rgb(232, 0, 72); }
+
+.cls-12[data-v-38cac92c] { opacity: 0.51; }
+
+.cls-13[data-v-38cac92c] { fill: rgb(247, 129, 97); }
+
+.cls-14[data-v-38cac92c] { fill: rgb(204, 5, 62); }
+
+.cls-15[data-v-38cac92c] { fill: rgb(220, 227, 239); }
+
+.products-banner[data-v-6dc5659c] { margin-top: -8rem; top: 20rem; }
+
+.inner-banner[data-v-6dc5659c] { }
+
+@media (min-width: 640px) {
+  .products-banner[data-v-6dc5659c] { margin-top: -9rem; }
+  .ninja-svg[data-v-6dc5659c] { margin-left: 0px; margin-top: 0px; }
+}
+
+@media (min-width: 1024px) {
+  .ninja-svg[data-v-6dc5659c] { height: 15rem; --transform-translate-y: -2r=
+em; --transform-translate-x: -4rem; margin-left: 4rem; margin-top: 2rem; }
+}
+
+@media (min-width: 1200px) {
+  .ninja-svg[data-v-6dc5659c] { height: 13rem; --transform-translate-y: -1r=
+em; --transform-translate-x: -3rem; top: -0.5rem; margin-left: 4rem; margin=
+-top: 2rem; }
+}
+
+@media (min-width: 1440px) {
+  .products-banner[data-v-6dc5659c] { margin-top: -10rem; }
+  .ninja-svg[data-v-6dc5659c] { height: 14rem; --transform-translate-y: -8r=
+em; --transform-translate-x: -8rem; top: -0.5rem; margin-left: 4rem; margin=
+-top: 2rem; }
+}
+
+.banner-wrapper[data-v-1e6f4d24] { height: 38rem; }
+
+.banner-footer-elements[data-v-1e6f4d24] { bottom: -0.5rem; }
+
+.footer-wrapper[data-v-1e6f4d24] { height: 36rem; }
+
+@media (min-width: 640px) {
+  .banner-wrapper[data-v-1e6f4d24] { height: 40rem; }
+  .banner-footer-elements[data-v-1e6f4d24] { bottom: -4rem; }
+  .footer-curve-wrapper[data-v-1e6f4d24] { top: -8rem; }
+}
+
+@media (min-width: 1024px) {
+  .banner-wrapper[data-v-1e6f4d24] { height: 46rem; }
+  .banner-footer-elements[data-v-1e6f4d24] { bottom: -4rem; }
+  .code-cube-svg[data-v-1e6f4d24] { height: 7rem; }
+  .cube-svg[data-v-1e6f4d24] { height: 11rem; --transform-translate-x: -18r=
+em; right: 2rem; top: -3rem; }
+  .footer-cube[data-v-1e6f4d24] { height: 6rem; --transform-translate-y: 9r=
+em; }
+  .footer-ninja[data-v-1e6f4d24] { height: 16rem; --transform-translate-y: =
+-0.5rem; }
+  .footer-wrapper[data-v-1e6f4d24] { height: 32rem; }
+  .footer-curve-wrapper[data-v-1e6f4d24] { top: -1rem; }
+}
+
+@media (min-width: 1200px) {
+  .banner-wrapper[data-v-1e6f4d24] { height: 43rem; }
+  .banner-footer-elements[data-v-1e6f4d24] { bottom: -4rem; }
+  .thunder-left-svg[data-v-1e6f4d24] { left: 0px; }
+  .thunder-right-svg[data-v-1e6f4d24] { right: 0px; }
+  .triangle-right-svg[data-v-1e6f4d24] { height: 10rem; right: 0px; }
+  .code-cube-svg[data-v-1e6f4d24] { height: 8rem; --transform-translate-x: =
+14rem; left: 0px; }
+  .footer-cube[data-v-1e6f4d24] { height: 7rem; --transform-translate-y: 9r=
+em; }
+  .footer-ninja[data-v-1e6f4d24] { height: 18rem; --transform-translate-y: =
+-1.5rem; }
+  .footer-wrapper[data-v-1e6f4d24] { height: 36rem; }
+  .footer-curve-wrapper[data-v-1e6f4d24] { top: -4rem; }
+}
+
+@media (min-width: 1440px) {
+  .banner-wrapper[data-v-1e6f4d24] { height: 48rem; }
+  .banner-footer-elements[data-v-1e6f4d24] { bottom: -5rem; }
+  .thunder-left-svg[data-v-1e6f4d24] { height: 12rem; left: 0px; }
+  .triangle-left-svg[data-v-1e6f4d24] { height: 4rem; }
+  .thunder-right-svg[data-v-1e6f4d24] { right: 0px; }
+  .triangle-right-svg[data-v-1e6f4d24] { height: 10rem; right: 0px; }
+  .code-cube-svg[data-v-1e6f4d24] { height: 8rem; --transform-translate-x: =
+14rem; left: 0px; }
+  .cube-svg[data-v-1e6f4d24] { height: 12rem; --transform-translate-x: -18r=
+em; right: 0px; top: -2rem; }
+  .footer-cube[data-v-1e6f4d24] { height: 8rem; --transform-translate-y: 8r=
+em; }
+  .footer-ninja[data-v-1e6f4d24] { height: 18rem; --transform-translate-y: =
+-1.5rem; }
+  .footer-wrapper[data-v-1e6f4d24] { height: 37rem; }
+  .footer-curve-wrapper[data-v-1e6f4d24] { top: -5rem; }
+}
+
+pre code.hljs { display: block; overflow-x: auto; padding: 1em; }
+
+code.hljs { padding: 3px 5px; }
+
+.hljs { color: rgb(171, 178, 191); background: rgb(40, 44, 52); }
+
+.hljs-comment, .hljs-quote { color: rgb(92, 99, 112); font-style: italic; }
+
+.hljs-doctag, .hljs-formula, .hljs-keyword { color: rgb(198, 120, 221); }
+
+.hljs-deletion, .hljs-name, .hljs-section, .hljs-selector-tag, .hljs-subst =
+{ color: rgb(224, 108, 117); }
+
+.hljs-literal { color: rgb(86, 182, 194); }
+
+.hljs-addition, .hljs-attribute, .hljs-meta .hljs-string, .hljs-regexp, .hl=
+js-string { color: rgb(152, 195, 121); }
+
+.hljs-attr, .hljs-number, .hljs-selector-attr, .hljs-selector-class, .hljs-=
+selector-pseudo, .hljs-template-variable, .hljs-type, .hljs-variable { colo=
+r: rgb(209, 154, 102); }
+
+.hljs-bullet, .hljs-link, .hljs-meta, .hljs-selector-id, .hljs-symbol, .hlj=
+s-title { color: rgb(97, 174, 238); }
+
+.hljs-built_in, .hljs-class .hljs-title, .hljs-title.class_ { color: rgb(23=
+0, 192, 123); }
+
+.hljs-emphasis { font-style: italic; }
+
+.hljs-strong { font-weight: 700; }
+
+.hljs-link { text-decoration: underline; }
+
+:root { --balloon-border-radius: 2px; --balloon-color: rgba(16,16,16,0.95);=
+ --balloon-text-color: #fff; --balloon-font-size: 12px; --balloon-move: 4px=
+; }
+
+button[aria-label][data-balloon-pos] { overflow: visible; }
+
+[aria-label][data-balloon-pos] { position: relative; cursor: pointer; }
+
+[aria-label][data-balloon-pos]::after { text-indent: 0px; font-family: -app=
+le-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarel=
+l, "Open Sans", "Helvetica Neue", sans-serif; font-weight: 400; font-style:=
+ normal; text-shadow: none; font-size: var(--balloon-font-size); background=
+: var(--balloon-color); color: var(--balloon-text-color); border-radius: va=
+r(--balloon-border-radius); content: attr(aria-label); padding: 0.5em 1em; =
+white-space: nowrap; }
+
+[aria-label][data-balloon-pos]::after, [aria-label][data-balloon-pos]::befo=
+re { opacity: 0; pointer-events: none; transition: 0.18s ease-out 0.18s; po=
+sition: absolute; z-index: 10; }
+
+[aria-label][data-balloon-pos]::before { width: 0px; height: 0px; border-wi=
+dth: 5px; border-style: solid; border-right-color: transparent; border-bott=
+om-color: transparent; border-left-color: transparent; border-image: none; =
+border-top-color: var(--balloon-color); content: ""; }
+
+[aria-label][data-balloon-pos]:hover::after, [aria-label][data-balloon-pos]=
+:hover::before, [aria-label][data-balloon-pos]:not([data-balloon-nofocus]):=
+focus::after, [aria-label][data-balloon-pos]:not([data-balloon-nofocus]):fo=
+cus::before, [aria-label][data-balloon-pos][data-balloon-visible]::after, [=
+aria-label][data-balloon-pos][data-balloon-visible]::before { opacity: 1; p=
+ointer-events: none; }
+
+[aria-label][data-balloon-pos].font-awesome::after { font-family: FontAweso=
+me, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, =
+Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+
+[aria-label][data-balloon-pos][data-balloon-break]::after { white-space: pr=
+e; }
+
+[aria-label][data-balloon-pos][data-balloon-break][data-balloon-length]::af=
+ter { white-space: pre-line; word-break: break-word; }
+
+[aria-label][data-balloon-pos][data-balloon-blunt]::after, [aria-label][dat=
+a-balloon-pos][data-balloon-blunt]::before { transition: none; }
+
+[aria-label][data-balloon-pos][data-balloon-pos=3D"down"]:hover::after, [ar=
+ia-label][data-balloon-pos][data-balloon-pos=3D"down"]:hover::before, [aria=
+-label][data-balloon-pos][data-balloon-pos=3D"down"][data-balloon-visible]:=
+:after, [aria-label][data-balloon-pos][data-balloon-pos=3D"down"][data-ball=
+oon-visible]::before, [aria-label][data-balloon-pos][data-balloon-pos=3D"up=
+"]:hover::after, [aria-label][data-balloon-pos][data-balloon-pos=3D"up"]:ho=
+ver::before, [aria-label][data-balloon-pos][data-balloon-pos=3D"up"][data-b=
+alloon-visible]::after, [aria-label][data-balloon-pos][data-balloon-pos=3D"=
+up"][data-balloon-visible]::before { transform: translate(-50%); }
+
+[aria-label][data-balloon-pos][data-balloon-pos*=3D"-left"]::after { left: =
+0px; }
+
+[aria-label][data-balloon-pos][data-balloon-pos*=3D"-left"]::before { left:=
+ 5px; }
+
+[aria-label][data-balloon-pos][data-balloon-pos*=3D"-right"]::after { right=
+: 0px; }
+
+[aria-label][data-balloon-pos][data-balloon-pos*=3D"-right"]::before { righ=
+t: 5px; }
+
+[aria-label][data-balloon-pos][data-balloon-po*=3D"-left"]:hover::after, [a=
+ria-label][data-balloon-pos][data-balloon-po*=3D"-left"]:hover::before, [ar=
+ia-label][data-balloon-pos][data-balloon-po*=3D"-left"][data-balloon-visibl=
+e]::after, [aria-label][data-balloon-pos][data-balloon-po*=3D"-left"][data-=
+balloon-visible]::before, [aria-label][data-balloon-pos][data-balloon-pos*=
+=3D"-right"]:hover::after, [aria-label][data-balloon-pos][data-balloon-pos*=
+=3D"-right"]:hover::before, [aria-label][data-balloon-pos][data-balloon-pos=
+*=3D"-right"][data-balloon-visible]::after, [aria-label][data-balloon-pos][=
+data-balloon-pos*=3D"-right"][data-balloon-visible]::before { transform: tr=
+anslate(0px); }
+
+[aria-label][data-balloon-pos][data-balloon-pos^=3D"up"]::after, [aria-labe=
+l][data-balloon-pos][data-balloon-pos^=3D"up"]::before { bottom: 100%; tran=
+sform-origin: center top; transform: translateY(var(--balloon-move)); }
+
+[aria-label][data-balloon-pos][data-balloon-pos^=3D"up"]::after { margin-bo=
+ttom: 10px; }
+
+[aria-label][data-balloon-pos][data-balloon-pos=3D"up"]::after, [aria-label=
+][data-balloon-pos][data-balloon-pos=3D"up"]::before { left: 50%; transform=
+: translate(-50%,var(--balloon-move)); }
+
+[aria-label][data-balloon-pos][data-balloon-pos^=3D"down"]::after, [aria-la=
+bel][data-balloon-pos][data-balloon-pos^=3D"down"]::before { top: 100%; tra=
+nsform: translateY(calc(var(--balloon-move)*-1)); }
+
+[aria-label][data-balloon-pos][data-balloon-pos^=3D"down"]::after { margin-=
+top: 10px; }
+
+[aria-label][data-balloon-pos][data-balloon-pos^=3D"down"]::before { width:=
+ 0px; height: 0px; border-width: 5px; border-style: solid; border-top-color=
+: transparent; border-right-color: transparent; border-left-color: transpar=
+ent; border-image: none; border-bottom-color: var(--balloon-color); }
+
+[aria-label][data-balloon-pos][data-balloon-pos=3D"down"]::after, [aria-lab=
+el][data-balloon-pos][data-balloon-pos=3D"down"]::before { left: 50%; trans=
+form: translate(-50%,calc(var(--balloon-move)*-1)); }
+
+[aria-label][data-balloon-pos][data-balloon-pos=3D"left"]:hover::after, [ar=
+ia-label][data-balloon-pos][data-balloon-pos=3D"left"]:hover::before, [aria=
+-label][data-balloon-pos][data-balloon-pos=3D"left"][data-balloon-visible]:=
+:after, [aria-label][data-balloon-pos][data-balloon-pos=3D"left"][data-ball=
+oon-visible]::before, [aria-label][data-balloon-pos][data-balloon-pos=3D"ri=
+ght"]:hover::after, [aria-label][data-balloon-pos][data-balloon-pos=3D"righ=
+t"]:hover::before, [aria-label][data-balloon-pos][data-balloon-pos=3D"right=
+"][data-balloon-visible]::after, [aria-label][data-balloon-pos][data-balloo=
+n-pos=3D"right"][data-balloon-visible]::before { transform: translateY(-50%=
+); }
+
+[aria-label][data-balloon-pos][data-balloon-pos=3D"left"]::after, [aria-lab=
+el][data-balloon-pos][data-balloon-pos=3D"left"]::before { right: 100%; top=
+: 50%; transform: translate(var(--balloon-move),-50%); }
+
+[aria-label][data-balloon-pos][data-balloon-pos=3D"left"]::after { margin-r=
+ight: 10px; }
+
+[aria-label][data-balloon-pos][data-balloon-pos=3D"left"]::before { width: =
+0px; height: 0px; border-width: 5px; border-style: solid; border-top-color:=
+ transparent; border-right-color: transparent; border-bottom-color: transpa=
+rent; border-image: none; border-left-color: var(--balloon-color); }
+
+[aria-label][data-balloon-pos][data-balloon-pos=3D"right"]::after, [aria-la=
+bel][data-balloon-pos][data-balloon-pos=3D"right"]::before { left: 100%; to=
+p: 50%; transform: translate(calc(var(--balloon-move)*-1),-50%); }
+
+[aria-label][data-balloon-pos][data-balloon-pos=3D"right"]::after { margin-=
+left: 10px; }
+
+[aria-label][data-balloon-pos][data-balloon-pos=3D"right"]::before { width:=
+ 0px; height: 0px; border-width: 5px; border-style: solid; border-top-color=
+: transparent; border-bottom-color: transparent; border-left-color: transpa=
+rent; border-image: none; border-right-color: var(--balloon-color); }
+
+[aria-label][data-balloon-pos][data-balloon-length]::after { white-space: n=
+ormal; }
+
+[aria-label][data-balloon-pos][data-balloon-length=3D"small"]::after { widt=
+h: 80px; }
+
+[aria-label][data-balloon-pos][data-balloon-length=3D"medium"]::after { wid=
+th: 150px; }
+
+[aria-label][data-balloon-pos][data-balloon-length=3D"large"]::after { widt=
+h: 260px; }
+
+[aria-label][data-balloon-pos][data-balloon-length=3D"xlarge"]::after { wid=
+th: 380px; }
+
+@media screen and (max-width: 768px) {
+  [aria-label][data-balloon-pos][data-balloon-length=3D"xlarge"]::after { w=
+idth: 90vw; }
+}
+
+[aria-label][data-balloon-pos][data-balloon-length=3D"fit"]::after { width:=
+ 100%; }
+
+.xterm { cursor: text; position: relative; user-select: none; }
+
+.xterm.focus, .xterm:focus { outline: none; }
+
+.xterm .xterm-helpers { position: absolute; top: 0px; z-index: 5; }
+
+.xterm .xterm-helper-textarea { padding: 0px; border: 0px; margin: 0px; pos=
+ition: absolute; opacity: 0; left: -9999em; top: 0px; width: 0px; height: 0=
+px; z-index: -5; white-space: nowrap; overflow: hidden; resize: none; }
+
+.xterm .composition-view { background: rgb(0, 0, 0); color: rgb(255, 255, 2=
+55); display: none; position: absolute; white-space: nowrap; z-index: 1; }
+
+.xterm .composition-view.active { display: block; }
+
+.xterm .xterm-viewport { background-color: rgb(0, 0, 0); overflow-y: scroll=
+; cursor: default; position: absolute; inset: 0px; }
+
+.xterm .xterm-screen { position: relative; }
+
+.xterm .xterm-screen canvas { position: absolute; left: 0px; top: 0px; }
+
+.xterm .xterm-scroll-area { visibility: hidden; }
+
+.xterm-char-measure-element { display: inline-block; visibility: hidden; po=
+sition: absolute; top: 0px; left: -9999em; line-height: normal; }
+
+.xterm.enable-mouse-events { cursor: default; }
+
+.xterm.xterm-cursor-pointer, .xterm .xterm-cursor-pointer { cursor: pointer=
+; }
+
+.xterm.column-select.focus { cursor: crosshair; }
+
+.xterm .xterm-accessibility, .xterm .xterm-message { position: absolute; in=
+set: 0px; z-index: 10; color: transparent; pointer-events: none; }
+
+.xterm .live-region { position: absolute; left: -9999px; width: 1px; height=
+: 1px; overflow: hidden; }
+
+.xterm-dim { opacity: 1 !important; }
+
+.xterm-underline-1 { text-decoration: underline; }
+
+.xterm-underline-2 { text-decoration: underline double; }
+
+.xterm-underline-3 { text-decoration: underline wavy; }
+
+.xterm-underline-4 { text-decoration: underline dotted; }
+
+.xterm-underline-5 { text-decoration: underline dashed; }
+
+.xterm-overline { text-decoration: overline; }
+
+.xterm-overline.xterm-underline-1 { text-decoration: underline overline; }
+
+.xterm-overline.xterm-underline-2 { }
+
+.xterm-overline.xterm-underline-3 { }
+
+.xterm-overline.xterm-underline-4 { }
+
+.xterm-overline.xterm-underline-5 { }
+
+.xterm-strikethrough { text-decoration: line-through; }
+
+.xterm-screen .xterm-decoration-container .xterm-decoration { z-index: 6; p=
+osition: absolute; }
+
+.xterm-screen .xterm-decoration-container .xterm-decoration.xterm-decoratio=
+n-top-layer { z-index: 7; }
+
+.xterm-decoration-overview-ruler { z-index: 8; position: absolute; top: 0px=
+; right: 0px; pointer-events: none; }
+
+.xterm-decoration-top { z-index: 2; position: relative; }
+
+.shepherd-button { background: rgb(50, 136, 230); border: 0px; border-radiu=
+s: 3px; color: rgba(255, 255, 255, 0.75); cursor: pointer; margin-right: 0.=
+5rem; padding: 0.5rem 1.5rem; transition: 0.5s; }
+
+.shepherd-button:not(:disabled):hover { background: rgb(25, 111, 204); colo=
+r: rgba(255, 255, 255, 0.75); }
+
+.shepherd-button.shepherd-button-secondary { background: rgb(241, 242, 243)=
+; color: rgba(0, 0, 0, 0.75); }
+
+.shepherd-button.shepherd-button-secondary:not(:disabled):hover { backgroun=
+d: rgb(214, 217, 219); color: rgba(0, 0, 0, 0.75); }
+
+.shepherd-button:disabled { cursor: not-allowed; }
+
+.shepherd-footer { border-bottom-left-radius: 5px; border-bottom-right-radi=
+us: 5px; display: flex; -webkit-box-pack: end; justify-content: flex-end; p=
+adding: 0px 0.75rem 0.75rem; }
+
+.shepherd-footer .shepherd-button:last-child { margin-right: 0px; }
+
+.shepherd-cancel-icon { background: transparent; border-width: medium; bord=
+er-style: none; border-color: currentcolor; border-image: none; color: rgba=
+(128, 128, 128, 0.75); font-size: 2em; cursor: pointer; font-weight: 400; m=
+argin: 0px; padding: 0px; transition: color 0.5s; }
+
+.shepherd-cancel-icon:hover { color: rgba(0, 0, 0, 0.75); }
+
+.shepherd-has-title .shepherd-content .shepherd-cancel-icon { color: rgba(1=
+28, 128, 128, 0.75); }
+
+.shepherd-has-title .shepherd-content .shepherd-cancel-icon:hover { color: =
+rgba(0, 0, 0, 0.75); }
+
+.shepherd-title { color: rgba(0, 0, 0, 0.75); font-size: 1rem; font-weight:=
+ 400; -webkit-box-flex: 1; flex: 1 0 auto; margin: 0px; padding: 0px; }
+
+.shepherd-header, .shepherd-title { display: flex; }
+
+.shepherd-header { -webkit-box-align: center; align-items: center; border-t=
+op-left-radius: 5px; border-top-right-radius: 5px; -webkit-box-pack: end; j=
+ustify-content: flex-end; line-height: 2em; padding: 0.75rem 0.75rem 0px; }
+
+.shepherd-has-title .shepherd-content .shepherd-header { background: rgb(23=
+0, 230, 230); padding: 1em; }
+
+.shepherd-text { color: rgba(0, 0, 0, 0.75); font-size: 1rem; line-height: =
+1.3em; padding: 0.75em; }
+
+.shepherd-text p { margin-top: 0px; }
+
+.shepherd-text p:last-child { margin-bottom: 0px; }
+
+.shepherd-content { border-radius: 5px; outline: none; padding: 0px; }
+
+.shepherd-element { background: rgb(255, 255, 255); border-radius: 5px; box=
+-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px; max-width: 400px; opacity: 0; outl=
+ine: none; transition: opacity 0.3s, visibility 0.3s; visibility: hidden; w=
+idth: 100%; z-index: 9999; }
+
+.shepherd-enabled.shepherd-element { opacity: 1; visibility: visible; }
+
+.shepherd-element[data-popper-reference-hidden]:not(.shepherd-centered) { o=
+pacity: 0; pointer-events: none; visibility: hidden; }
+
+.shepherd-element, .shepherd-element *, .shepherd-element ::after, .shepher=
+d-element ::before { box-sizing: border-box; }
+
+.shepherd-arrow, .shepherd-arrow::before { position: absolute; width: 16px;=
+ height: 16px; z-index: -1; }
+
+.shepherd-arrow::before { content: ""; transform: rotate(45deg); background=
+: rgb(255, 255, 255); }
+
+.shepherd-element[data-popper-placement^=3D"top"] > .shepherd-arrow { botto=
+m: -8px; }
+
+.shepherd-element[data-popper-placement^=3D"bottom"] > .shepherd-arrow { to=
+p: -8px; }
+
+.shepherd-element[data-popper-placement^=3D"left"] > .shepherd-arrow { righ=
+t: -8px; }
+
+.shepherd-element[data-popper-placement^=3D"right"] > .shepherd-arrow { lef=
+t: -8px; }
+
+.shepherd-element.shepherd-centered > .shepherd-arrow { opacity: 0; }
+
+.shepherd-element.shepherd-has-title[data-popper-placement^=3D"bottom"] > .=
+shepherd-arrow::before { background-color: rgb(230, 230, 230); }
+
+.shepherd-target-click-disabled.shepherd-enabled.shepherd-target, .shepherd=
+-target-click-disabled.shepherd-enabled.shepherd-target * { pointer-events:=
+ none; }
+
+.shepherd-modal-overlay-container { height: 0px; left: 0px; opacity: 0; ove=
+rflow: hidden; pointer-events: none; position: fixed; top: 0px; transition:=
+ 0.3s ease-out, height 0.3s, opacity 0.3s; width: 100vw; z-index: 9997; }
+
+.shepherd-modal-overlay-container.shepherd-modal-is-visible { height: 100vh=
+; opacity: 0.5; transition: 0.3s ease-out, height, opacity 0.3s; }
+
+.shepherd-modal-overlay-container.shepherd-modal-is-visible path { pointer-=
+events: all; }
+
+html { tab-size: 4; line-height: 1.15; text-size-adjust: 100%; }
+
+body { margin: 0px; font-family: system-ui, -apple-system, "Segoe UI", Robo=
+to, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; }
+
+hr { height: 0px; color: inherit; }
+
+abbr[title] { text-decoration: underline dotted; }
+
+b, strong { font-weight: bolder; }
+
+code, kbd, pre, samp { font-family: ui-monospace, SFMono-Regular, Consolas,=
+ "Liberation Mono", Menlo, monospace; font-size: 1em; }
+
+small { font-size: 80%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-ali=
+gn: baseline; }
+
+sub { bottom: -0.25em; }
+
+sup { top: -0.5em; }
+
+table { text-indent: 0px; border-color: inherit; }
+
+button, input, optgroup, select, textarea { font-family: inherit; font-size=
+: 100%; line-height: 1.15; margin: 0px; }
+
+button, select { text-transform: none; }
+
+[type=3D"button"], [type=3D"submit"], button { appearance: button; }
+
+legend { padding: 0px; }
+
+progress { vertical-align: baseline; }
+
+::-webkit-inner-spin-button, ::-webkit-outer-spin-button { height: auto; }
+
+[type=3D"search"] { appearance: textfield; outline-offset: -2px; }
+
+::-webkit-search-decoration { appearance: none; }
+
+::-webkit-file-upload-button { appearance: button; font: inherit; }
+
+summary { display: list-item; }
+
+blockquote, dd, dl, figure, h1, h2, h3, h4, h5, h6, hr, p, pre { margin: 0p=
+x; }
+
+button { background-color: transparent; background-image: none; }
+
+fieldset, ol, ul { margin: 0px; padding: 0px; }
+
+ol, ul { list-style: none; }
+
+html { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystem=
+Font, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,=
+ "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoj=
+i"; line-height: 1.5; }
+
+body { font-family: inherit; line-height: inherit; }
+
+*, ::after, ::before { box-sizing: border-box; border-width: 0px; border-st=
+yle: solid; border-color: currentcolor; }
+
+hr { border-top-width: 1px; }
+
+img { border-style: solid; }
+
+textarea { resize: vertical; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { opa=
+city: 1; color: rgb(203, 213, 224); }
+
+input::placeholder, textarea::placeholder { opacity: 1; color: rgb(203, 213=
+, 224); }
+
+[role=3D"button"], button { cursor: pointer; }
+
+table { border-collapse: collapse; }
+
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+
+a { color: inherit; text-decoration: inherit; }
+
+button, input, optgroup, select, textarea { padding: 0px; line-height: inhe=
+rit; color: inherit; }
+
+code, kbd, pre, samp { font-family: ui-monospace, SFMono-Regular, Menlo, Mo=
+naco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+audio, canvas, embed, iframe, img, object, svg, video { display: block; ver=
+tical-align: middle; }
+
+img, video { max-width: 100%; height: auto; }
+
+[hidden] { display: none; }
+
+*, ::after, ::before { --tw-border-opacity: 1; border-color: rgba(237,242,2=
+47,var(--tw-border-opacity)); }
+
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0px; margi=
+n: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: now=
+rap; border-width: 0px; }
+
+.pointer-events-none { pointer-events: none; }
+
+.pointer-events-auto { pointer-events: auto; }
+
+.visible { visibility: visible; }
+
+.fixed { position: fixed; }
+
+.absolute { position: absolute; }
+
+.relative { position: relative; }
+
+.inset-0 { right: 0px; left: 0px; }
+
+.inset-0, .inset-y-0 { top: 0px; bottom: 0px; }
+
+.top-0 { top: 0px; }
+
+.top-6 { top: 1.5rem; }
+
+.top-12 { top: 3rem; }
+
+.top-24 { top: 6rem; }
+
+.top-32 { top: 8rem; }
+
+.-top-1 { top: -0.25rem; }
+
+.-top-2 { top: -0.5rem; }
+
+.-top-6 { top: -1.5rem; }
+
+.-top-12 { top: -3rem; }
+
+.-top-16 { top: -4rem; }
+
+.right-0 { right: 0px; }
+
+.right-2 { right: 0.5rem; }
+
+.right-3 { right: 0.75rem; }
+
+.-right-2 { right: -0.5rem; }
+
+.-right-6 { right: -1.5rem; }
+
+.-right-16 { right: -4rem; }
+
+.-right-56 { right: -14rem; }
+
+.bottom-0 { bottom: 0px; }
+
+.bottom-6 { bottom: 1.5rem; }
+
+.bottom-8 { bottom: 2rem; }
+
+.bottom-10 { bottom: 2.5rem; }
+
+.bottom-20 { bottom: 5rem; }
+
+.-bottom-8 { bottom: -2rem; }
+
+.-bottom-10 { bottom: -2.5rem; }
+
+.-bottom-32 { bottom: -8rem; }
+
+.left-0 { left: 0px; }
+
+.left-4 { left: 1rem; }
+
+.left-8 { left: 2rem; }
+
+.left-1\/2 { left: 50%; }
+
+.-left-1 { left: -0.25rem; }
+
+.-left-4 { left: -1rem; }
+
+.z-0 { z-index: 0; }
+
+.z-10 { z-index: 10; }
+
+.z-20 { z-index: 20; }
+
+.z-30 { z-index: 30; }
+
+.z-40 { z-index: 40; }
+
+.z-50 { z-index: 50; }
+
+.z-70 { z-index: 70; }
+
+.focus\:z-10:focus { z-index: 10; }
+
+.col-span-3 { grid-column: span 3 / span 3; }
+
+.m-auto { margin: auto; }
+
+.mx-2 { margin-left: 0.5rem; margin-right: 0.5rem; }
+
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+.-mx-2 { margin-left: -0.5rem; margin-right: -0.5rem; }
+
+.my-4 { margin-top: 1rem; margin-bottom: 1rem; }
+
+.my-6 { margin-top: 1.5rem; margin-bottom: 1.5rem; }
+
+.my-10 { margin-top: 2.5rem; margin-bottom: 2.5rem; }
+
+.mt-0 { margin-top: 0px; }
+
+.mt-1 { margin-top: 0.25rem; }
+
+.mt-2 { margin-top: 0.5rem; }
+
+.mt-3 { margin-top: 0.75rem; }
+
+.mt-4 { margin-top: 1rem; }
+
+.mt-6 { margin-top: 1.5rem; }
+
+.mt-8 { margin-top: 2rem; }
+
+.mt-10 { margin-top: 2.5rem; }
+
+.mt-12 { margin-top: 3rem; }
+
+.mt-16 { margin-top: 4rem; }
+
+.mt-20 { margin-top: 5rem; }
+
+.mt-24 { margin-top: 6rem; }
+
+.mt-32 { margin-top: 8rem; }
+
+.mt-40 { margin-top: 10rem; }
+
+.mt-auto { margin-top: auto; }
+
+.-mt-2 { margin-top: -0.5rem; }
+
+.-mt-3 { margin-top: -0.75rem; }
+
+.-mt-4 { margin-top: -1rem; }
+
+.-mt-10 { margin-top: -2.5rem; }
+
+.-mt-32 { margin-top: -8rem; }
+
+.mr-1 { margin-right: 0.25rem; }
+
+.mr-2 { margin-right: 0.5rem; }
+
+.mr-3 { margin-right: 0.75rem; }
+
+.mr-4 { margin-right: 1rem; }
+
+.mr-auto { margin-right: auto; }
+
+.mb-1 { margin-bottom: 0.25rem; }
+
+.mb-2 { margin-bottom: 0.5rem; }
+
+.mb-3 { margin-bottom: 0.75rem; }
+
+.mb-4 { margin-bottom: 1rem; }
+
+.mb-5 { margin-bottom: 1.25rem; }
+
+.mb-6 { margin-bottom: 1.5rem; }
+
+.mb-8 { margin-bottom: 2rem; }
+
+.mb-12 { margin-bottom: 3rem; }
+
+.mb-20 { margin-bottom: 5rem; }
+
+.mb-32 { margin-bottom: 8rem; }
+
+.ml-1 { margin-left: 0.25rem; }
+
+.ml-2 { margin-left: 0.5rem; }
+
+.ml-3 { margin-left: 0.75rem; }
+
+.ml-4 { margin-left: 1rem; }
+
+.ml-5 { margin-left: 1.25rem; }
+
+.ml-12 { margin-left: 3rem; }
+
+.ml-auto { margin-left: auto; }
+
+.block { display: block; }
+
+.inline-block { display: inline-block; }
+
+.inline { display: inline; }
+
+.flex { display: flex; }
+
+.inline-flex { display: inline-flex; }
+
+.table { display: table; }
+
+.grid { display: grid; }
+
+.hidden { display: none; }
+
+.h-0 { height: 0px; }
+
+.h-2 { height: 0.5rem; }
+
+.h-3 { height: 0.75rem; }
+
+.h-4 { height: 1rem; }
+
+.h-5 { height: 1.25rem; }
+
+.h-6 { height: 1.5rem; }
+
+.h-8 { height: 2rem; }
+
+.h-10 { height: 2.5rem; }
+
+.h-12 { height: 3rem; }
+
+.h-16 { height: 4rem; }
+
+.h-20 { height: 5rem; }
+
+.h-24 { height: 6rem; }
+
+.h-32 { height: 8rem; }
+
+.h-40 { height: 10rem; }
+
+.h-48 { height: 12rem; }
+
+.h-56 { height: 14rem; }
+
+.h-64 { height: 16rem; }
+
+.h-auto { height: auto; }
+
+.h-full { height: 100%; }
+
+.h-screen { height: 100vh; }
+
+.max-h-56 { max-height: 14rem; }
+
+.w-1 { width: 0.25rem; }
+
+.w-2 { width: 0.5rem; }
+
+.w-3 { width: 0.75rem; }
+
+.w-4 { width: 1rem; }
+
+.w-5 { width: 1.25rem; }
+
+.w-10 { width: 2.5rem; }
+
+.w-11 { width: 2.75rem; }
+
+.w-12 { width: 3rem; }
+
+.w-20 { width: 5rem; }
+
+.w-32 { width: 8rem; }
+
+.w-52 { width: 13rem; }
+
+.w-64 { width: 16rem; }
+
+.w-1\/3 { width: 33.3333%; }
+
+.w-2\/3 { width: 66.6667%; }
+
+.w-1\/4 { width: 25%; }
+
+.w-3\/4 { width: 75%; }
+
+.w-3\/5 { width: 60%; }
+
+.w-full { width: 100%; }
+
+.w-screen { width: 100vw; }
+
+.w-sideBarWidth { width: 20rem; }
+
+.min-w-48 { min-width: 12rem; }
+
+.max-w-2\/5 { max-width: 40%; }
+
+.max-w-4\/12 { max-width: 33.3333%; }
+
+.flex-1 { -webkit-box-flex: 1; flex: 1 1 0%; }
+
+.flex-shrink-0 { flex-shrink: 0; }
+
+.flex-grow { -webkit-box-flex: 1; flex-grow: 1; }
+
+.transform { --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw=
+-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; transform: tr=
+anslateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(va=
+r(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(=
+--tw-scale-x)) scaleY(var(--tw-scale-y)); }
+
+.translate-x-0 { --tw-translate-x: 0px; }
+
+.translate-x-4 { --tw-translate-x: 1rem; }
+
+.translate-x-5 { --tw-translate-x: 1.25rem; }
+
+.translate-x-32 { --tw-translate-x: 8rem; }
+
+.-translate-x-4 { --tw-translate-x: -1rem; }
+
+.-translate-x-8 { --tw-translate-x: -2rem; }
+
+.-translate-x-20 { --tw-translate-x: -5rem; }
+
+.-translate-x-64 { --tw-translate-x: -16rem; }
+
+.translate-x-full { --tw-translate-x: 100%; }
+
+.-translate-x-1\/2 { --tw-translate-x: -50%; }
+
+.-translate-x-full { --tw-translate-x: -100%; }
+
+.translate-y-8 { --tw-translate-y: 2rem; }
+
+.translate-y-10 { --tw-translate-y: 2.5rem; }
+
+.translate-y-16 { --tw-translate-y: 4rem; }
+
+.translate-y-20 { --tw-translate-y: 5rem; }
+
+.translate-y-24 { --tw-translate-y: 6rem; }
+
+.-translate-y-1 { --tw-translate-y: -0.25rem; }
+
+.-translate-y-6 { --tw-translate-y: -1.5rem; }
+
+.-translate-y-12 { --tw-translate-y: -3rem; }
+
+.-translate-y-16 { --tw-translate-y: -4rem; }
+
+.rotate-90 { --tw-rotate: 90deg; }
+
+.rotate-180 { --tw-rotate: 180deg; }
+
+.scale-75 { --tw-scale-x: .75; --tw-scale-y: .75; }
+
+.scale-90 { --tw-scale-x: .9; --tw-scale-y: .9; }
+
+@-webkit-keyframes spin {=20
+  100% { transform: rotate(1turn); }
+}
+
+@keyframes spin {=20
+  100% { transform: rotate(1turn); }
+}
+
+@-webkit-keyframes ping {=20
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+
+@keyframes ping {=20
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+
+@-webkit-keyframes pulse {=20
+  50% { opacity: 0.5; }
+}
+
+@keyframes pulse {=20
+  50% { opacity: 0.5; }
+}
+
+@-webkit-keyframes bounce {=20
+  0%, 100% { transform: translateY(-25%); animation-timing-function: cubic-=
+bezier(0.8, 0, 1, 1); }
+  50% { transform: none; animation-timing-function: cubic-bezier(0, 0, 0.2,=
+ 1); }
+}
+
+@keyframes bounce {=20
+  0%, 100% { transform: translateY(-25%); animation-timing-function: cubic-=
+bezier(0.8, 0, 1, 1); }
+  50% { transform: none; animation-timing-function: cubic-bezier(0, 0, 0.2,=
+ 1); }
+}
+
+.cursor-default { cursor: default; }
+
+.cursor-pointer { cursor: pointer; }
+
+.cursor-wait { cursor: wait; }
+
+.cursor-not-allowed { cursor: not-allowed; }
+
+.select-none { user-select: none; }
+
+.resize-none { resize: none; }
+
+.resize { resize: both; }
+
+.list-none { list-style-type: none; }
+
+.appearance-none { appearance: none; }
+
+.grid-cols-1 { grid-template-columns: repeat(1, minmax(0px, 1fr)); }
+
+.grid-cols-3 { grid-template-columns: repeat(3, minmax(0px, 1fr)); }
+
+.grid-rows-3 { grid-template-rows: repeat(3, minmax(0px, 1fr)); }
+
+.flex-row { -webkit-box-direction: normal; flex-direction: row; }
+
+.flex-row, .flex-row-reverse { -webkit-box-orient: horizontal; }
+
+.flex-row-reverse { -webkit-box-direction: reverse; flex-direction: row-rev=
+erse; }
+
+.flex-col { -webkit-box-orient: vertical; -webkit-box-direction: normal; fl=
+ex-direction: column; }
+
+.flex-col-reverse { -webkit-box-orient: vertical; -webkit-box-direction: re=
+verse; flex-direction: column-reverse; }
+
+.flex-wrap { flex-wrap: wrap; }
+
+.content-center { align-content: center; }
+
+.items-start { -webkit-box-align: start; align-items: flex-start; }
+
+.items-center { -webkit-box-align: center; align-items: center; }
+
+.justify-start { -webkit-box-pack: start; justify-content: flex-start; }
+
+.justify-end { -webkit-box-pack: end; justify-content: flex-end; }
+
+.justify-center { -webkit-box-pack: center; justify-content: center; }
+
+.justify-between { -webkit-box-pack: justify; justify-content: space-betwee=
+n; }
+
+.justify-around { justify-content: space-around; }
+
+.gap-12 { gap: 3rem; }
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) { --tw-space-x-reverse: 0; mar=
+gin-right: calc(0.5rem*var(--tw-space-x-reverse)); margin-left: calc(0.5rem=
+*(1 - var(--tw-space-x-reverse))); }
+
+.space-x-3 > :not([hidden]) ~ :not([hidden]) { --tw-space-x-reverse: 0; mar=
+gin-right: calc(0.75rem*var(--tw-space-x-reverse)); margin-left: calc(0.75r=
+em*(1 - var(--tw-space-x-reverse))); }
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) { --tw-space-y-reverse: 0; mar=
+gin-top: calc(0.5rem*(1 - var(--tw-space-y-reverse))); margin-bottom: calc(=
+0.5rem*var(--tw-space-y-reverse)); }
+
+.self-start { align-self: flex-start; }
+
+.self-end { align-self: flex-end; }
+
+.self-center { align-self: center; }
+
+.overflow-auto { overflow: auto; }
+
+.overflow-hidden { overflow: hidden; }
+
+.overflow-y-auto { overflow-y: auto; }
+
+.overflow-x-hidden { overflow-x: hidden; }
+
+.overscroll-contain { overscroll-behavior: contain; }
+
+.truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap;=
+ }
+
+.rounded { border-radius: 0.25rem; }
+
+.rounded-md { border-radius: 0.375rem; }
+
+.rounded-lg { border-radius: 0.5rem; }
+
+.rounded-full { border-radius: 9999px; }
+
+.rounded-l-md { border-top-left-radius: 0.375rem; border-bottom-left-radius=
+: 0.375rem; }
+
+.rounded-tr-lg { border-top-right-radius: 0.5rem; }
+
+.rounded-br-lg { border-bottom-right-radius: 0.5rem; }
+
+.border-2 { border-width: 2px; }
+
+.border { border-width: 1px; }
+
+.border-t { border-top-width: 1px; }
+
+.border-r { border-right-width: 1px; }
+
+.border-b-2 { border-bottom-width: 2px; }
+
+.border-b { border-bottom-width: 1px; }
+
+.border-l-2 { border-left-width: 2px; }
+
+.border-l { border-left-width: 1px; }
+
+.border-transparent { border-color: transparent; }
+
+.border-white { --tw-border-opacity: 1; border-color: rgba(255,255,255,var(=
+--tw-border-opacity)); }
+
+.border-gray-200 { --tw-border-opacity: 1; border-color: rgba(237,242,247,v=
+ar(--tw-border-opacity)); }
+
+.border-gray-300 { --tw-border-opacity: 1; border-color: rgba(226,232,240,v=
+ar(--tw-border-opacity)); }
+
+.border-gray-400 { --tw-border-opacity: 1; border-color: rgba(203,213,224,v=
+ar(--tw-border-opacity)); }
+
+.border-gray-500 { --tw-border-opacity: 1; border-color: rgba(160,174,192,v=
+ar(--tw-border-opacity)); }
+
+.border-gray-600 { --tw-border-opacity: 1; border-color: rgba(113,128,150,v=
+ar(--tw-border-opacity)); }
+
+.border-red-500 { --tw-border-opacity: 1; border-color: rgba(245,101,101,va=
+r(--tw-border-opacity)); }
+
+.border-green-500 { --tw-border-opacity: 1; border-color: rgba(72,187,120,v=
+ar(--tw-border-opacity)); }
+
+.border-green-600 { --tw-border-opacity: 1; border-color: rgba(56,161,105,v=
+ar(--tw-border-opacity)); }
+
+.border-blue-500 { --tw-border-opacity: 1; border-color: rgba(66,153,225,va=
+r(--tw-border-opacity)); }
+
+.border-ide-gray { --tw-border-opacity: 1; border-color: rgba(53,53,53,var(=
+--tw-border-opacity)); }
+
+.focus\:border-gray-500:focus { --tw-border-opacity: 1; border-color: rgba(=
+160,174,192,var(--tw-border-opacity)); }
+
+.focus\:border-orange-500:focus { --tw-border-opacity: 1; border-color: rgb=
+a(237,137,54,var(--tw-border-opacity)); }
+
+.focus\:border-blue-300:focus { --tw-border-opacity: 1; border-color: rgba(=
+144,205,244,var(--tw-border-opacity)); }
+
+.focus\:border-indigo-700:focus { --tw-border-opacity: 1; border-color: rgb=
+a(76,81,191,var(--tw-border-opacity)); }
+
+.bg-transparent { background-color: transparent; }
+
+.bg-black { --tw-bg-opacity: 1; background-color: rgba(0,0,0,var(--tw-bg-op=
+acity)); }
+
+.bg-white { --tw-bg-opacity: 1; background-color: rgba(255,255,255,var(--tw=
+-bg-opacity)); }
+
+.bg-gray-100 { --tw-bg-opacity: 1; background-color: rgba(247,250,252,var(-=
+-tw-bg-opacity)); }
+
+.bg-gray-200 { --tw-bg-opacity: 1; background-color: rgba(237,242,247,var(-=
+-tw-bg-opacity)); }
+
+.bg-gray-400 { --tw-bg-opacity: 1; background-color: rgba(203,213,224,var(-=
+-tw-bg-opacity)); }
+
+.bg-gray-600 { --tw-bg-opacity: 1; background-color: rgba(113,128,150,var(-=
+-tw-bg-opacity)); }
+
+.bg-red-100 { --tw-bg-opacity: 1; background-color: rgba(255,245,245,var(--=
+tw-bg-opacity)); }
+
+.bg-red-200 { --tw-bg-opacity: 1; background-color: rgba(254,215,215,var(--=
+tw-bg-opacity)); }
+
+.bg-red-500 { --tw-bg-opacity: 1; background-color: rgba(245,101,101,var(--=
+tw-bg-opacity)); }
+
+.bg-red-600 { --tw-bg-opacity: 1; background-color: rgba(229,62,62,var(--tw=
+-bg-opacity)); }
+
+.bg-red-700 { --tw-bg-opacity: 1; background-color: rgba(197,48,48,var(--tw=
+-bg-opacity)); }
+
+.bg-orange-200 { --tw-bg-opacity: 1; background-color: rgba(254,235,200,var=
+(--tw-bg-opacity)); }
+
+.bg-orange-400 { --tw-bg-opacity: 1; background-color: rgba(246,173,85,var(=
+--tw-bg-opacity)); }
+
+.bg-orange-500 { --tw-bg-opacity: 1; background-color: rgba(237,137,54,var(=
+--tw-bg-opacity)); }
+
+.bg-green-100 { --tw-bg-opacity: 1; background-color: rgba(240,255,244,var(=
+--tw-bg-opacity)); }
+
+.bg-green-200 { --tw-bg-opacity: 1; background-color: rgba(198,246,213,var(=
+--tw-bg-opacity)); }
+
+.bg-green-500 { --tw-bg-opacity: 1; background-color: rgba(72,187,120,var(-=
+-tw-bg-opacity)); }
+
+.bg-green-600 { --tw-bg-opacity: 1; background-color: rgba(56,161,105,var(-=
+-tw-bg-opacity)); }
+
+.bg-blue-100 { --tw-bg-opacity: 1; background-color: rgba(235,248,255,var(-=
+-tw-bg-opacity)); }
+
+.bg-blue-200 { --tw-bg-opacity: 1; background-color: rgba(190,227,248,var(-=
+-tw-bg-opacity)); }
+
+.bg-blue-600 { --tw-bg-opacity: 1; background-color: rgba(49,130,206,var(--=
+tw-bg-opacity)); }
+
+.bg-blue-900 { --tw-bg-opacity: 1; background-color: rgba(42,67,101,var(--t=
+w-bg-opacity)); }
+
+.bg-codesample { --tw-bg-opacity: 1; background-color: rgba(45,55,72,var(--=
+tw-bg-opacity)); }
+
+.bg-ide-dock { --tw-bg-opacity: 1; background-color: rgba(47,47,47,var(--tw=
+-bg-opacity)); }
+
+.bg-ide-gray { --tw-bg-opacity: 1; background-color: rgba(30,30,30,var(--tw=
+-bg-opacity)); }
+
+.bg-ide-gray-900 { --tw-bg-opacity: 1; background-color: rgba(21,21,21,var(=
+--tw-bg-opacity)); }
+
+.bg-ide-file-browser-gray { --tw-bg-opacity: 1; background-color: rgba(37,3=
+7,37,var(--tw-bg-opacity)); }
+
+.bg-codesample-dark { --tw-bg-opacity: 1; background-color: rgba(33,41,53,v=
+ar(--tw-bg-opacity)); }
+
+.hover\:bg-gray-100:hover { --tw-bg-opacity: 1; background-color: rgba(247,=
+250,252,var(--tw-bg-opacity)); }
+
+.hover\:bg-gray-200:hover { --tw-bg-opacity: 1; background-color: rgba(237,=
+242,247,var(--tw-bg-opacity)); }
+
+.hover\:bg-red-600:hover { --tw-bg-opacity: 1; background-color: rgba(229,6=
+2,62,var(--tw-bg-opacity)); }
+
+.hover\:bg-orange-600:hover { --tw-bg-opacity: 1; background-color: rgba(22=
+1,107,32,var(--tw-bg-opacity)); }
+
+.hover\:bg-orange-700:hover { --tw-bg-opacity: 1; background-color: rgba(19=
+2,86,33,var(--tw-bg-opacity)); }
+
+.hover\:bg-green-500:hover { --tw-bg-opacity: 1; background-color: rgba(72,=
+187,120,var(--tw-bg-opacity)); }
+
+.hover\:bg-green-600:hover { --tw-bg-opacity: 1; background-color: rgba(56,=
+161,105,var(--tw-bg-opacity)); }
+
+.focus\:bg-codesample-dark:focus { --tw-bg-opacity: 1; background-color: rg=
+ba(33,41,53,var(--tw-bg-opacity)); }
+
+.fill-current { fill: currentcolor; }
+
+.stroke-current { stroke: currentcolor; }
+
+.p-2 { padding: 0.5rem; }
+
+.p-3 { padding: 0.75rem; }
+
+.p-4 { padding: 1rem; }
+
+.p-6 { padding: 1.5rem; }
+
+.px-1 { padding-left: 0.25rem; padding-right: 0.25rem; }
+
+.px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
+
+.px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+
+.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+
+.py-0 { padding-top: 0px; padding-bottom: 0px; }
+
+.py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+
+.py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+
+.py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+
+.py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+
+.py-10 { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+
+.py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+
+.pt-1 { padding-top: 0.25rem; }
+
+.pt-2 { padding-top: 0.5rem; }
+
+.pt-3 { padding-top: 0.75rem; }
+
+.pt-4 { padding-top: 1rem; }
+
+.pt-10 { padding-top: 2.5rem; }
+
+.pt-16 { padding-top: 4rem; }
+
+.pr-2 { padding-right: 0.5rem; }
+
+.pr-3 { padding-right: 0.75rem; }
+
+.pr-4 { padding-right: 1rem; }
+
+.pr-6 { padding-right: 1.5rem; }
+
+.pr-8 { padding-right: 2rem; }
+
+.pr-9 { padding-right: 2.25rem; }
+
+.pb-3 { padding-bottom: 0.75rem; }
+
+.pb-4 { padding-bottom: 1rem; }
+
+.pb-6 { padding-bottom: 1.5rem; }
+
+.pb-8 { padding-bottom: 2rem; }
+
+.pb-20 { padding-bottom: 5rem; }
+
+.pb-64 { padding-bottom: 16rem; }
+
+.pl-0 { padding-left: 0px; }
+
+.pl-2 { padding-left: 0.5rem; }
+
+.pl-3 { padding-left: 0.75rem; }
+
+.pl-4 { padding-left: 1rem; }
+
+.pl-8 { padding-left: 2rem; }
+
+.pl-10 { padding-left: 2.5rem; }
+
+.pl-16 { padding-left: 4rem; }
+
+.text-left { text-align: left; }
+
+.text-center { text-align: center; }
+
+.text-xs { font-size: 0.75rem; line-height: 1rem; }
+
+.text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+
+.text-base { font-size: 1rem; line-height: 1.5rem; }
+
+.text-lg { font-size: 1.125rem; }
+
+.text-lg, .text-xl { line-height: 1.75rem; }
+
+.text-xl { font-size: 1.25rem; }
+
+.text-2xl { font-size: 1.5rem; line-height: 2rem; }
+
+.text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+
+.font-normal { font-weight: 400; }
+
+.font-medium { font-weight: 500; }
+
+.font-semibold { font-weight: 600; }
+
+.font-bold { font-weight: 700; }
+
+.uppercase { text-transform: uppercase; }
+
+.leading-5 { line-height: 1.25rem; }
+
+.leading-6 { line-height: 1.5rem; }
+
+.leading-tight { line-height: 1.25; }
+
+.leading-relaxed { line-height: 1.625; }
+
+.tracking-wide { letter-spacing: 0.025em; }
+
+.text-white { --tw-text-opacity: 1; color: rgba(255,255,255,var(--tw-text-o=
+pacity)); }
+
+.text-gray-100 { --tw-text-opacity: 1; color: rgba(247,250,252,var(--tw-tex=
+t-opacity)); }
+
+.text-gray-300 { --tw-text-opacity: 1; color: rgba(226,232,240,var(--tw-tex=
+t-opacity)); }
+
+.text-gray-400 { --tw-text-opacity: 1; color: rgba(203,213,224,var(--tw-tex=
+t-opacity)); }
+
+.text-gray-500 { --tw-text-opacity: 1; color: rgba(160,174,192,var(--tw-tex=
+t-opacity)); }
+
+.text-gray-600 { --tw-text-opacity: 1; color: rgba(113,128,150,var(--tw-tex=
+t-opacity)); }
+
+.text-gray-700 { --tw-text-opacity: 1; color: rgba(74,85,104,var(--tw-text-=
+opacity)); }
+
+.text-gray-800 { --tw-text-opacity: 1; color: rgba(45,55,72,var(--tw-text-o=
+pacity)); }
+
+.text-gray-900 { --tw-text-opacity: 1; color: rgba(26,32,44,var(--tw-text-o=
+pacity)); }
+
+.text-red-400 { --tw-text-opacity: 1; color: rgba(252,129,129,var(--tw-text=
+-opacity)); }
+
+.text-red-600 { --tw-text-opacity: 1; color: rgba(229,62,62,var(--tw-text-o=
+pacity)); }
+
+.text-red-700 { --tw-text-opacity: 1; color: rgba(197,48,48,var(--tw-text-o=
+pacity)); }
+
+.text-red-900 { --tw-text-opacity: 1; color: rgba(116,42,42,var(--tw-text-o=
+pacity)); }
+
+.text-orange-500 { --tw-text-opacity: 1; color: rgba(237,137,54,var(--tw-te=
+xt-opacity)); }
+
+.text-yellow-500 { --tw-text-opacity: 1; color: rgba(236,201,75,var(--tw-te=
+xt-opacity)); }
+
+.text-green-500 { --tw-text-opacity: 1; color: rgba(72,187,120,var(--tw-tex=
+t-opacity)); }
+
+.text-green-600 { --tw-text-opacity: 1; color: rgba(56,161,105,var(--tw-tex=
+t-opacity)); }
+
+.text-green-700 { --tw-text-opacity: 1; color: rgba(47,133,90,var(--tw-text=
+-opacity)); }
+
+.text-blue-300 { --tw-text-opacity: 1; color: rgba(144,205,244,var(--tw-tex=
+t-opacity)); }
+
+.text-blue-600 { --tw-text-opacity: 1; color: rgba(49,130,206,var(--tw-text=
+-opacity)); }
+
+.text-blue-700 { --tw-text-opacity: 1; color: rgba(43,108,176,var(--tw-text=
+-opacity)); }
+
+.text-purple-600 { --tw-text-opacity: 1; color: rgba(128,90,213,var(--tw-te=
+xt-opacity)); }
+
+.text-ide-dock { --tw-text-opacity: 1; color: rgba(160,160,160,var(--tw-tex=
+t-opacity)); }
+
+.text-ide-gray-900 { --tw-text-opacity: 1; color: rgba(21,21,21,var(--tw-te=
+xt-opacity)); }
+
+.hover\:text-white:hover { --tw-text-opacity: 1; color: rgba(255,255,255,va=
+r(--tw-text-opacity)); }
+
+.hover\:text-gray-100:hover { --tw-text-opacity: 1; color: rgba(247,250,252=
+,var(--tw-text-opacity)); }
+
+.hover\:text-gray-700:hover { --tw-text-opacity: 1; color: rgba(74,85,104,v=
+ar(--tw-text-opacity)); }
+
+.hover\:text-gray-800:hover { --tw-text-opacity: 1; color: rgba(45,55,72,va=
+r(--tw-text-opacity)); }
+
+.hover\:text-gray-900:hover { --tw-text-opacity: 1; color: rgba(26,32,44,va=
+r(--tw-text-opacity)); }
+
+.hover\:text-red-500:hover { --tw-text-opacity: 1; color: rgba(245,101,101,=
+var(--tw-text-opacity)); }
+
+.hover\:text-orange-600:hover { --tw-text-opacity: 1; color: rgba(221,107,3=
+2,var(--tw-text-opacity)); }
+
+.hover\:text-orange-700:hover { --tw-text-opacity: 1; color: rgba(192,86,33=
+,var(--tw-text-opacity)); }
+
+.underline { text-decoration: underline; }
+
+.antialiased { -webkit-font-smoothing: antialiased; }
+
+.placeholder-gray-400::-webkit-input-placeholder { --tw-placeholder-opacity=
+: 1; color: rgba(203,213,224,var(--tw-placeholder-opacity)); }
+
+.placeholder-gray-400::placeholder { --tw-placeholder-opacity: 1; color: rg=
+ba(203,213,224,var(--tw-placeholder-opacity)); }
+
+.placeholder-gray-500::-webkit-input-placeholder { --tw-placeholder-opacity=
+: 1; color: rgba(160,174,192,var(--tw-placeholder-opacity)); }
+
+.placeholder-gray-500::placeholder { --tw-placeholder-opacity: 1; color: rg=
+ba(160,174,192,var(--tw-placeholder-opacity)); }
+
+.opacity-0 { opacity: 0; }
+
+.opacity-50 { opacity: 0.5; }
+
+.opacity-75 { opacity: 0.75; }
+
+.opacity-100 { opacity: 1; }
+
+*, ::after, ::before { --tw-shadow: 0 0 transparent; }
+
+.shadow-sm { --tw-shadow: 0 1px 2px 0 rgba(0,0,0,0.05); }
+
+.shadow, .shadow-sm { box-shadow: var(--tw-ring-offset-shadow,0 0 transpare=
+nt),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow); }
+
+.shadow { --tw-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0=
+.06); }
+
+.shadow-md { --tw-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgb=
+a(0,0,0,0.06); }
+
+.shadow-lg, .shadow-md { box-shadow: var(--tw-ring-offset-shadow,0 0 transp=
+arent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow); }
+
+.shadow-lg { --tw-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px r=
+gba(0,0,0,0.05); }
+
+.shadow-xl { --tw-shadow: 0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px=
+ rgba(0,0,0,0.04); }
+
+.shadow-2xl, .shadow-xl { box-shadow: var(--tw-ring-offset-shadow,0 0 trans=
+parent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow); }
+
+.shadow-2xl { --tw-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); }
+
+.shadow-inner { --tw-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.06); }
+
+.hover\:shadow-lg:hover, .shadow-inner { box-shadow: var(--tw-ring-offset-s=
+hadow,0 0 transparent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shado=
+w); }
+
+.hover\:shadow-lg:hover { --tw-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4=
+px 6px -2px rgba(0,0,0,0.05); }
+
+.focus\:shadow-md:focus { --tw-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),0 2px=
+ 4px -1px rgba(0,0,0,0.06); box-shadow: var(--tw-ring-offset-shadow,0 0 tra=
+nsparent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow); }
+
+.focus\:outline-none:focus, .outline-none { outline: transparent solid 2px;=
+ outline-offset: 2px; }
+
+*, ::after, ::before { --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/); --tw-r=
+ing-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(=
+66,153,225,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow=
+: 0 0 transparent; }
+
+.ring-0 { --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring=
+-offset-width) var(--tw-ring-offset-color); --tw-ring-shadow: var(--tw-ring=
+-inset) 0 0 0 calc(var(--tw-ring-offset-width)) var(--tw-ring-color); }
+
+.focus\:ring-2:focus, .ring-0 { box-shadow: var(--tw-ring-offset-shadow),va=
+r(--tw-ring-shadow),var(--tw-shadow,0 0 transparent); }
+
+.focus\:ring-2:focus { --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 =
+var(--tw-ring-offset-width) var(--tw-ring-offset-color); --tw-ring-shadow: =
+var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw=
+-ring-color); }
+
+.focus\:ring-green-500:focus { --tw-ring-opacity: 1; --tw-ring-color: rgba(=
+72,187,120,var(--tw-ring-opacity)); }
+
+.focus\:ring-offset-2:focus { --tw-ring-offset-width: 2px; }
+
+.filter { --tw-blur: var(--tw-empty,/*!*/ /*!*/); --tw-brightness: var(--tw=
+-empty,/*!*/ /*!*/); --tw-contrast: var(--tw-empty,/*!*/ /*!*/); --tw-grays=
+cale: var(--tw-empty,/*!*/ /*!*/); --tw-hue-rotate: var(--tw-empty,/*!*/ /*=
+!*/); --tw-invert: var(--tw-empty,/*!*/ /*!*/); --tw-saturate: var(--tw-emp=
+ty,/*!*/ /*!*/); --tw-sepia: var(--tw-empty,/*!*/ /*!*/); --tw-drop-shadow:=
+ var(--tw-empty,/*!*/ /*!*/); filter: var(--tw-blur) var(--tw-brightness) v=
+ar(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)=
+ var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow); }
+
+.invert { --tw-invert: invert(100%); }
+
+.transition { transition-property: background-color, border-color, color, f=
+ill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webk=
+it-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter; =
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-durati=
+on: 0.15s; }
+
+.transition-colors { transition-property: background-color, border-color, c=
+olor, fill, stroke; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1=
+); transition-duration: 0.15s; }
+
+.transition-opacity { transition-property: opacity; transition-timing-funct=
+ion: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 0.15s; }
+
+.duration-75 { transition-duration: 75ms; }
+
+.duration-100 { transition-duration: 0.1s; }
+
+.duration-150 { transition-duration: 0.15s; }
+
+.duration-200 { transition-duration: 0.2s; }
+
+.ease-in { transition-timing-function: cubic-bezier(0.4, 0, 1, 1); }
+
+.ease-out { transition-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+
+.ease-in-out { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+
+.w-screen-50 { width: 50vw; }
+
+.bg-orange-gradient { background: linear-gradient(to right top, rgb(242, 15=
+1, 39), rgb(255, 181, 39)); }
+
+.bg-green-gradient { background: linear-gradient(to right top, rgb(30, 159,=
+ 96), rgb(39, 181, 112)); }
+
+.bg-red-gradient { background: linear-gradient(to right top, rgb(243, 59, 7=
+0), rgb(230, 47, 58)); }
+
+.rounded-r-5xl { border-top-right-radius: 3rem; border-bottom-right-radius:=
+ 3rem; }
+
+.transform-center-x { left: 50%; transform: translateX(-50%); }
+
+@media (min-width: 640px) {
+  .sm\:top-16 { top: 4rem; }
+  .sm\:mt-8 { margin-top: 2rem; }
+  .sm\:-mt-32 { margin-top: -8rem; }
+  .sm\:mr-3 { margin-right: 0.75rem; }
+  .sm\:mb-0 { margin-bottom: 0px; }
+  .sm\:mb-2 { margin-bottom: 0.5rem; }
+  .sm\:mb-10 { margin-bottom: 2.5rem; }
+  .sm\:ml-3 { margin-left: 0.75rem; }
+  .sm\:block { display: block; }
+  .sm\:flex { display: flex; }
+  .sm\:hidden { display: none; }
+  .sm\:w-32 { width: 8rem; }
+  .sm\:w-40 { width: 10rem; }
+  .sm\:w-auto { width: auto; }
+  .sm\:w-3\/5 { width: 60%; }
+  .sm\:w-10\/12 { width: 83.3333%; }
+  .sm\:w-11\/12 { width: 91.6667%; }
+  .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0px, 1fr)); }
+  .sm\:flex-row { -webkit-box-orient: horizontal; flex-direction: row; }
+  .sm\:flex-col, .sm\:flex-row { -webkit-box-direction: normal; }
+  .sm\:flex-col { -webkit-box-orient: vertical; flex-direction: column; }
+  .sm\:flex-wrap { flex-wrap: wrap; }
+  .sm\:text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+  .sm\:text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+  .sm\:text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+  .sm\:leading-5 { line-height: 1.25rem; }
+}
+
+@media (min-width: 1024px) {
+  .md\:pointer-events-auto { pointer-events: auto; }
+  .md\:top-0 { top: 0px; }
+  .md\:top-8 { top: 2rem; }
+  .md\:top-16 { top: 4rem; }
+  .md\:-top-20 { top: -5rem; }
+  .md\:-top-32 { top: -8rem; }
+  .md\:bottom-16 { bottom: 4rem; }
+  .md\:-bottom-12 { bottom: -3rem; }
+  .md\:left-0 { left: 0px; }
+  .md\:z-70 { z-index: 70; }
+  .md\:col-span-2 { grid-column: span 2 / span 2; }
+  .md\:mt-0 { margin-top: 0px; }
+  .md\:mt-64 { margin-top: 16rem; }
+  .md\:-mt-48 { margin-top: -12rem; }
+  .md\:mr-0 { margin-right: 0px; }
+  .md\:mr-10 { margin-right: 2.5rem; }
+  .md\:mb-0 { margin-bottom: 0px; }
+  .md\:mb-4 { margin-bottom: 1rem; }
+  .md\:mb-32 { margin-bottom: 8rem; }
+  .md\:block { display: block; }
+  .md\:hidden { display: none; }
+  .md\:h-12 { height: 3rem; }
+  .md\:h-14 { height: 3.5rem; }
+  .md\:h-20 { height: 5rem; }
+  .md\:h-32 { height: 8rem; }
+  .md\:h-48 { height: 12rem; }
+  .md\:h-56 { height: 14rem; }
+  .md\:h-64 { height: 16rem; }
+  .md\:h-auto { height: auto; }
+  .md\:w-auto { width: auto; }
+  .md\:w-1\/3 { width: 33.3333%; }
+  .md\:w-2\/3 { width: 66.6667%; }
+  .md\:w-3\/4 { width: 75%; }
+  .md\:w-2\/5 { width: 40%; }
+  .md\:w-10\/12 { width: 83.3333%; }
+  .md\:w-11\/12 { width: 91.6667%; }
+  .md\:w-full { width: 100%; }
+  .md\:flex-auto { -webkit-box-flex: 1; flex: 1 1 auto; }
+  .md\:translate-x-0 { --tw-translate-x: 0px; }
+  .md\:-translate-x-24 { --tw-translate-x: -6rem; }
+  .md\:translate-y-32 { --tw-translate-y: 8rem; }
+  .md\:-translate-y-12 { --tw-translate-y: -3rem; }
+  .md\:-translate-y-24 { --tw-translate-y: -6rem; }
+  .md\:scale-75 { --tw-scale-x: .75; --tw-scale-y: .75; }
+  .md\:flex-row { -webkit-box-orient: horizontal; flex-direction: row; }
+  .md\:flex-col, .md\:flex-row { -webkit-box-direction: normal; }
+  .md\:flex-col { -webkit-box-orient: vertical; flex-direction: column; }
+  .md\:items-center { -webkit-box-align: center; align-items: center; }
+  .md\:justify-center { -webkit-box-pack: center; justify-content: center; =
+}
+  .md\:justify-between { -webkit-box-pack: justify; justify-content: space-=
+between; }
+  .md\:py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+  .md\:py-10 { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+  .md\:pr-20 { padding-right: 5rem; }
+  .md\:text-base { font-size: 1rem; line-height: 1.5rem; }
+  .md\:text-2xl { font-size: 1.5rem; line-height: 2rem; }
+  .md\:text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+  .md\:opacity-100 { opacity: 1; }
+  .md\:shadow-none { --tw-shadow: 0 0 transparent; box-shadow: var(--tw-rin=
+g-offset-shadow,0 0 transparent),var(--tw-ring-shadow,0 0 transparent),var(=
+--tw-shadow); }
+}
+
+@media (min-width: 1200px) {
+  .lg\:pointer-events-auto { pointer-events: auto; }
+  .lg\:top-16 { top: 4rem; }
+  .lg\:-top-40 { top: -10rem; }
+  .lg\:z-60 { z-index: 60; }
+  .lg\:col-auto { grid-column: auto; }
+  .lg\:mx-0 { margin-left: 0px; margin-right: 0px; }
+  .lg\:mt-48 { margin-top: 12rem; }
+  .lg\:-mt-12 { margin-top: -3rem; }
+  .lg\:-mt-24 { margin-top: -6rem; }
+  .lg\:mb-0 { margin-bottom: 0px; }
+  .lg\:mb-2 { margin-bottom: 0.5rem; }
+  .lg\:mb-10 { margin-bottom: 2.5rem; }
+  .lg\:block { display: block; }
+  .lg\:flex { display: flex; }
+  .lg\:hidden { display: none; }
+  .lg\:h-20 { height: 5rem; }
+  .lg\:h-32 { height: 8rem; }
+  .lg\:h-48 { height: 12rem; }
+  .lg\:h-56 { height: 14rem; }
+  .lg\:h-72 { height: 20rem; }
+  .lg\:w-48 { width: 12rem; }
+  .lg\:w-1\/2 { width: 50%; }
+  .lg\:w-2\/3 { width: 66.6667%; }
+  .lg\:w-11\/12 { width: 91.6667%; }
+  .lg\:w-full { width: 100%; }
+  .lg\:w-sideBarWidthLg { width: 16rem; }
+  .lg\:flex-none { -webkit-box-flex: 0; flex: 0 0 auto; }
+  .lg\:translate-x-0 { --tw-translate-x: 0px; }
+  .lg\:translate-x-10 { --tw-translate-x: 2.5rem; }
+  .lg\:translate-x-48 { --tw-translate-x: 12rem; }
+  .lg\:grid-cols-1 { grid-template-columns: repeat(1, minmax(0px, 1fr)); }
+  .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0px, 1fr)); }
+  .lg\:justify-center { -webkit-box-pack: center; justify-content: center; =
+}
+  .lg\:bg-none { background-image: none; }
+  .lg\:py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+  .lg\:text-left { text-align: left; }
+  .lg\:text-xs { font-size: 0.75rem; line-height: 1rem; }
+  .lg\:text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+  .lg\:opacity-100 { opacity: 1; }
+  .lg\:shadow-none { --tw-shadow: 0 0 transparent; }
+  .lg\:hover\:shadow-2xl:hover, .lg\:shadow-none { box-shadow: var(--tw-rin=
+g-offset-shadow,0 0 transparent),var(--tw-ring-shadow,0 0 transparent),var(=
+--tw-shadow); }
+  .lg\:hover\:shadow-2xl:hover { --tw-shadow: 0 25px 50px -12px rgba(0,0,0,=
+0.25); }
+  .lg\:bg-none { background: none; }
+}
+
+@media (min-width: 1440px) {
+  .xl\:w-10\/12 { width: 83.3333%; }
+  .xl\:w-11\/12 { width: 91.6667%; }
+  .xl\:w-sideBarWidthXl { width: 18rem; }
+}
+------MultipartBoundary--TgLpSPrmdhER7W876d65mMbln3K3i2nhWSm8R0yXwJ----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-9cb5b27b-4933-47c7-9c9d-61b5fce57be4@mhtml.blink
+
+@charset "utf-8";
+
+@keyframes intercom-lightweight-app-launcher {=20
+  0% { opacity: 0; transform: scale(0.5); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes intercom-lightweight-app-gradient {=20
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes intercom-lightweight-app-messenger {=20
+  0% { opacity: 0; transform: scale(0); }
+  40% { opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+.intercom-lightweight-app { position: fixed; z-index: 2147483001; width: 0p=
+x; height: 0px; font-family: system-ui, "Segoe UI", Roboto, Helvetica, Aria=
+l, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+.intercom-lightweight-app-gradient { position: fixed; z-index: 2147483002; =
+width: 500px; height: 500px; bottom: 0px; right: 0px; pointer-events: none;=
+ background: radial-gradient(at right bottom, rgba(29, 39, 54, 0.16) 0%, rg=
+ba(29, 39, 54, 0) 72%); animation: 200ms ease-out 0s 1 normal none running =
+intercom-lightweight-app-gradient; }
+
+.intercom-lightweight-app-launcher { position: fixed; z-index: 2147483003; =
+border-width: medium; border-style: none; border-color: currentcolor; borde=
+r-image: none; bottom: 20px; right: 20px; max-width: 48px; width: 48px; max=
+-height: 48px; height: 48px; border-radius: 50%; background: rgb(28, 134, 5=
+1); cursor: pointer; box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 6px 0px, rgba(=
+0, 0, 0, 0.16) 0px 2px 32px 0px; transition: transform 167ms cubic-bezier(0=
+.33, 0, 0, 1); box-sizing: content-box; padding: 0px !important; margin: 0p=
+x !important; }
+
+.intercom-lightweight-app-launcher:hover { transition: transform 250ms cubi=
+c-bezier(0.33, 0, 0, 1); transform: scale(1.1); }
+
+.intercom-lightweight-app-launcher:active { transform: scale(0.85); transit=
+ion: transform 134ms cubic-bezier(0.45, 0, 0.2, 1); }
+
+.intercom-lightweight-app-launcher:focus { outline: none; }
+
+.intercom-lightweight-app-launcher-icon { display: flex; align-items: cente=
+r; justify-content: center; position: absolute; top: 0px; left: 0px; width:=
+ 48px; height: 48px; transition: transform 100ms linear, opacity 80ms linea=
+r; }
+
+.intercom-lightweight-app-launcher-icon-open { opacity: 1; transform: rotat=
+e(0deg) scale(1); }
+
+.intercom-lightweight-app-launcher-icon-open svg { width: 24px; height: 24p=
+x; }
+
+.intercom-lightweight-app-launcher-icon-open svg path { fill: rgb(255, 255,=
+ 255); }
+
+.intercom-lightweight-app-launcher-icon-self-serve { opacity: 1; transform:=
+ rotate(0deg) scale(1); }
+
+.intercom-lightweight-app-launcher-icon-self-serve svg { height: 44px; }
+
+.intercom-lightweight-app-launcher-icon-self-serve svg path { fill: rgb(255=
+, 255, 255); }
+
+.intercom-lightweight-app-launcher-custom-icon-open { max-height: 24px; max=
+-width: 24px; opacity: 1; transform: rotate(0deg) scale(1); }
+
+.intercom-lightweight-app-launcher-icon-minimize { opacity: 0; transform: r=
+otate(-60deg) scale(0); }
+
+.intercom-lightweight-app-launcher-icon-minimize svg path { fill: rgb(255, =
+255, 255); }
+
+.intercom-lightweight-app-launcher.intercom-launcher-extended { width: calc=
+(150px); max-width: calc(150px); height: calc(19px); max-height: calc(19px)=
+; border-radius: 12px; display: flex; align-items: center; justify-content:=
+ flex-start; gap: 6px; background: rgb(28, 134, 51); border: 1px solid rgba=
+(255, 255, 255, 0.15); box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 50px; paddin=
+g: 12px 16px 12px 12px !important; }
+
+.intercom-lightweight-app-launcher.intercom-launcher-extended .intercom-lig=
+htweight-app-launcher-icon { position: relative; width: 24px; height: 24px;=
+ }
+
+.intercom-lightweight-app-launcher-text { color: rgb(255, 255, 255); font-s=
+ize: 14px; font-weight: 600; line-height: 1.5; white-space: nowrap; overflo=
+w: hidden; text-overflow: ellipsis; max-width: 140px; opacity: 1; transitio=
+n: opacity 80ms linear; }
+
+.intercom-lightweight-app-messenger { position: fixed; z-index: 2147483003;=
+ overflow: hidden; background-color: rgb(255, 255, 255); animation: 250ms c=
+ubic-bezier(0, 1, 1, 1) 0s 1 normal none running intercom-lightweight-app-m=
+essenger; transform-origin: right bottom; width: 400px; height: calc(100% -=
+ 104px); max-height: 704px; min-height: 250px; right: 20px; bottom: 84px; b=
+ox-shadow: rgba(0, 0, 0, 0.16) 0px 5px 40px; border-radius: 24px; }
+
+.intercom-lightweight-app-messenger-header { height: 64px; border-bottom-wi=
+dth: medium; border-bottom-style: none; border-bottom-color: currentcolor; =
+background: rgb(255, 255, 255); }
+
+.intercom-lightweight-app-messenger-footer { position: absolute; bottom: 0p=
+x; width: 100%; height: 80px; background: rgb(255, 255, 255); font-size: 14=
+px; line-height: 21px; border-top: 1px solid rgba(0, 0, 0, 0.05); box-shado=
+w: rgba(0, 0, 0, 0.05) 0px 0px 25px; }
+
+@media print {
+  .intercom-lightweight-app { display: none; }
+}
+------MultipartBoundary--TgLpSPrmdhER7W876d65mMbln3K3i2nhWSm8R0yXwJ----
+Content-Type: text/html
+Content-ID: <frame-CDA8CC9ACF02BE88325CFAF9343E198C@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+
+<html lang=3D"en"><head><meta http-equiv=3D"Content-Type" content=3D"text/h=
+tml; charset=3DUTF-8"></head>
+      <body>
+     =20
+    </body></html>
+------MultipartBoundary--TgLpSPrmdhER7W876d65mMbln3K3i2nhWSm8R0yXwJ------

@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { StudentUser, ClothingItem, SwapProposal, SwapReview, PerkItem } from '../types';
-import { MOCK_STUDENTS, MOCK_ITEMS, MOCK_SWAPS, MOCK_REVIEWS, MOCK_PERKS, CAMPUS_LOCATIONS } from '../data/mockData';
+import { StudentUser, ClothingItem, SwapProposal, SwapReview, PerkItem, UserPreferences, ChatMessage } from '../types';
+import { MOCK_STUDENTS, MOCK_ITEMS, MOCK_SWAPS, MOCK_REVIEWS, MOCK_PERKS, CAMPUS_LOCATIONS, INITIAL_CHAT_MESSAGES } from '../data/mockData';
 
 interface SwapContextType {
   currentUser: StudentUser;
@@ -10,6 +10,18 @@ interface SwapContextType {
   swaps: SwapProposal[];
   reviews: SwapReview[];
   perks: PerkItem[];
+  userPreferences: UserPreferences;
+  isPreferencesModalOpen: boolean;
+  setIsPreferencesModalOpen: (open: boolean) => void;
+  savePreferences: (prefs: UserPreferences) => void;
+  messages: ChatMessage[];
+  isChatOpen: boolean;
+  activeChatPeerId: string | null;
+  activeChatItemId: string | null;
+  openChat: (peerId?: string, relatedItemId?: string) => void;
+  closeChat: () => void;
+  sendMessage: (receiverId: string, text: string, relatedItemId?: string, attachment?: string) => void;
+  unreadChatCount: number;
   notification: { message: string; type: 'success' | 'info' | 'points' } | null;
   setCurrentCampus: (campus: string) => void;
   switchUser: (userId: string) => void;
@@ -19,18 +31,27 @@ interface SwapContextType {
     offeredItemId: string;
     requestedItemId: string;
     pointsBonus: number;
+    cashAmount?: number;
     meetupLocation: string;
     meetupTime: string;
+    exchangeDate?: string;
     notes: string;
     agreedFabric: boolean;
   }) => SwapProposal;
   agreeFabric: (swapId: string, isProposer: boolean) => void;
-  agreeMeetup: (swapId: string, isProposer: boolean, location?: string, time?: string) => void;
+  agreeMeetup: (swapId: string, isProposer: boolean, location?: string, time?: string, date?: string) => void;
   acceptSwap: (swapId: string) => void;
   declineSwap: (swapId: string) => void;
+  submitMpesaPayment: (swapId: string, data: { mpesaCode: string; screenshotUrl: string; amount: number }) => void;
+  verifyMpesaPayment: (swapId: string) => void;
+  scheduleExchange: (swapId: string, data: { exchangeDate: string; meetupTime: string; meetupLocation: string }) => void;
+  confirmHandover: (swapId: string, isProposer: boolean) => void;
   completeSwap: (swapId: string) => void;
   submitReview: (swapId: string, params: {
     rating: number;
+    cleanlinessRating: number;
+    fabricQualityRating: number;
+    punctualityRating: number;
     tags: string[];
     comment: string;
   }) => void;
@@ -41,12 +62,44 @@ interface SwapContextType {
   toggleTheme: () => void;
 }
 
+const DEFAULT_PREFERENCES: UserPreferences = {
+  vibes: [],
+  genderStyle: 'All',
+  primaryCampus: 'University of Nairobi (UoN Main)',
+  onboardingCompleted: false
+};
+
 const SwapContext = createContext<SwapContextType | undefined>(undefined);
 
 export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  // Load and migrate students with authentic Kenyan photos & scores
   const [allStudents, setAllStudents] = useState<StudentUser[]>(() => {
-    const saved = localStorage.getItem('unithread_students');
-    return saved ? JSON.parse(saved) : MOCK_STUDENTS;
+    const saved = localStorage.getItem('unithread_students_v5');
+    if (!saved) return MOCK_STUDENTS;
+    try {
+      const parsed: StudentUser[] = JSON.parse(saved);
+      // Ensure avatars and Kenyan details are synchronized with real photography
+      return MOCK_STUDENTS.map(mockStudent => {
+        const savedStudent = parsed.find(s => s.id === mockStudent.id);
+        if (!savedStudent) return mockStudent;
+        return {
+          ...savedStudent,
+          avatar: mockStudent.avatar, // Always ensure high-res Kenyan photography
+          name: mockStudent.name,
+          campus: mockStudent.campus,
+          dorm: mockStudent.dorm,
+          major: mockStudent.major,
+          year: mockStudent.year,
+          cleanlinessScore: savedStudent.cleanlinessScore || mockStudent.cleanlinessScore || 4.95,
+          fabricQualityScore: savedStudent.fabricQualityScore || mockStudent.fabricQualityScore || 4.92,
+          punctualityScore: savedStudent.punctualityScore || mockStudent.punctualityScore || 4.95,
+          phoneNumber: savedStudent.phoneNumber || mockStudent.phoneNumber,
+          mpesaNumber: savedStudent.mpesaNumber || mockStudent.mpesaNumber,
+        };
+      }).concat(parsed.filter(p => !MOCK_STUDENTS.some(m => m.id === p.id)));
+    } catch {
+      return MOCK_STUDENTS;
+    }
   });
 
   const [currentUserId, setCurrentUserId] = useState<string>(() => {
@@ -56,23 +109,58 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const [currentCampus, setCurrentCampus] = useState<string>(() => {
     const saved = localStorage.getItem('unithread_current_campus');
-    return saved || 'University of Nairobi (UoN Main)';
+    return saved || 'All Campuses';
   });
 
+  // User Preferences (TikTok style)
+  const [userPreferences, setUserPreferences] = useState<UserPreferences>(() => {
+    const saved = localStorage.getItem('unithread_user_preferences');
+    if (!saved) return DEFAULT_PREFERENCES;
+    try {
+      const parsed = JSON.parse(saved) as Partial<UserPreferences>;
+      return { ...DEFAULT_PREFERENCES, ...parsed, vibes: Array.isArray(parsed.vibes) ? parsed.vibes : [] };
+    } catch {
+      return DEFAULT_PREFERENCES;
+    }
+  });
+
+  const [isPreferencesModalOpen, setIsPreferencesModalOpen] = useState<boolean>(() => {
+    try {
+      const saved = localStorage.getItem('unithread_user_preferences');
+      return !saved || !JSON.parse(saved).onboardingCompleted;
+    } catch {
+      return true;
+    }
+  });
+
+  // Items - ensures local photos and photography are loaded for all 6 universities
   const [items, setItems] = useState<ClothingItem[]>(() => {
-    const saved = localStorage.getItem('unithread_items');
-    if (!saved) return MOCK_ITEMS;
+    const saved = localStorage.getItem('unithread_items_v7');
+    if (!saved) {
+      try {
+        localStorage.removeItem('unithread_items_v6');
+        localStorage.removeItem('unithread_items_v5');
+        localStorage.removeItem('unithread_items_v4');
+        localStorage.removeItem('unithread_items');
+      } catch {}
+      return MOCK_ITEMS;
+    }
     try {
       const parsed: ClothingItem[] = JSON.parse(saved);
-      // Migrate any previously cached broken image URLs
-      return parsed.map(item => ({
-        ...item,
-        images: (item.images || []).map(img =>
-          img.includes('photo-1542272604-780c96856592')
-            ? 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80'
-            : img
-        )
-      }));
+      // Ensure all 30 mock items are up-to-date with their photography and university mapping
+      const updatedMockItems = MOCK_ITEMS.map(mockItem => {
+        const savedItem = parsed.find(item => item.id === mockItem.id);
+        if (!savedItem) return mockItem;
+        return {
+          ...mockItem,
+          images: mockItem.images, // Always sync the latest priority images
+          isAvailable: savedItem.isAvailable !== undefined ? savedItem.isAvailable : true,
+          estMarketValue: savedItem.estMarketValue || mockItem.estMarketValue
+        };
+      });
+      // Plus any custom items added by the student
+      const customItems = parsed.filter(item => !MOCK_ITEMS.some(m => m.id === item.id));
+      return [...updatedMockItems, ...customItems];
     } catch {
       return MOCK_ITEMS;
     }
@@ -80,18 +168,46 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const [swaps, setSwaps] = useState<SwapProposal[]>(() => {
     const saved = localStorage.getItem('unithread_swaps');
-    return saved ? JSON.parse(saved) : MOCK_SWAPS;
+    if (!saved) return MOCK_SWAPS;
+    try {
+      const parsed: SwapProposal[] = JSON.parse(saved);
+      // Ensure Binance P2P swap-102 demo is present
+      if (!parsed.some(s => s.id === 'swap-102')) {
+        const demo102 = MOCK_SWAPS.find(s => s.id === 'swap-102');
+        if (demo102) parsed.unshift(demo102);
+      }
+      return parsed;
+    } catch {
+      return MOCK_SWAPS;
+    }
   });
 
   const [reviews, setReviews] = useState<SwapReview[]>(() => {
     const saved = localStorage.getItem('unithread_reviews');
-    return saved ? JSON.parse(saved) : MOCK_REVIEWS;
+    if (!saved) return MOCK_REVIEWS;
+    try {
+      return (JSON.parse(saved) as SwapReview[]).map(review => {
+        const student = MOCK_STUDENTS.find(candidate => candidate.id === review.reviewerId);
+        return student ? { ...review, reviewerAvatar: student.avatar } : review;
+      });
+    } catch {
+      return MOCK_REVIEWS;
+    }
   });
 
   const [perks, setPerks] = useState<PerkItem[]>(() => {
     const saved = localStorage.getItem('unithread_perks');
     return saved ? JSON.parse(saved) : MOCK_PERKS;
   });
+
+  // Chatroom State
+  const [messages, setMessages] = useState<ChatMessage[]>(() => {
+    const saved = localStorage.getItem('unithread_chat_messages');
+    return saved ? JSON.parse(saved) : INITIAL_CHAT_MESSAGES;
+  });
+  const [isChatOpen, setIsChatOpen] = useState(false);
+  const [activeChatPeerId, setActiveChatPeerId] = useState<string | null>('user-brian');
+  const [activeChatItemId, setActiveChatItemId] = useState<string | null>(null);
 
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     const saved = localStorage.getItem('unithread_theme');
@@ -101,7 +217,7 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const [notification, setNotification] = useState<{ message: string; type: 'success' | 'info' | 'points' } | null>(null);
 
-  // Sync theme to localStorage and document.documentElement class
+  // Sync theme
   useEffect(() => {
     localStorage.setItem('unithread_theme', theme);
     if (theme === 'dark') {
@@ -115,9 +231,9 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setTheme(prev => (prev === 'dark' ? 'light' : 'dark'));
   };
 
-  // Sync to localStorage
+  // Sync localStorage
   useEffect(() => {
-    localStorage.setItem('unithread_students', JSON.stringify(allStudents));
+    localStorage.setItem('unithread_students_v5', JSON.stringify(allStudents));
   }, [allStudents]);
 
   useEffect(() => {
@@ -129,7 +245,7 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, [currentCampus]);
 
   useEffect(() => {
-    localStorage.setItem('unithread_items', JSON.stringify(items));
+    localStorage.setItem('unithread_items_v7', JSON.stringify(items));
   }, [items]);
 
   useEffect(() => {
@@ -143,6 +259,14 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
   useEffect(() => {
     localStorage.setItem('unithread_perks', JSON.stringify(perks));
   }, [perks]);
+
+  useEffect(() => {
+    localStorage.setItem('unithread_user_preferences', JSON.stringify(userPreferences));
+  }, [userPreferences]);
+
+  useEffect(() => {
+    localStorage.setItem('unithread_chat_messages', JSON.stringify(messages));
+  }, [messages]);
 
   const currentUser = allStudents.find(s => s.id === currentUserId) || allStudents[0];
 
@@ -163,7 +287,16 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   };
 
-  // Add new garment or shoe to closet
+  // Save Preferences
+  const savePreferences = (prefs: UserPreferences) => {
+    setUserPreferences(prefs);
+    if (prefs.primaryCampus && prefs.primaryCampus !== currentCampus) {
+      setCurrentCampus(prefs.primaryCampus);
+    }
+    showNotification('Saved your campus style vibes & preferences!', 'success');
+  };
+
+  // Add Item to closet
   const addItem = (itemData: Omit<ClothingItem, 'id' | 'ownerId' | 'ownerName' | 'ownerAvatar' | 'ownerCampus' | 'ownerDorm' | 'dateListed' | 'isAvailable'>) => {
     const newItem: ClothingItem = {
       ...itemData,
@@ -189,18 +322,76 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
     showNotification(`Listed "${newItem.title}" to Campus Rack! +10 Points Earned!`, 'points');
   };
 
-  // Propose a swap
+  // Chatroom methods
+  const openChat = (peerId?: string, relatedItemId?: string) => {
+    if (peerId) setActiveChatPeerId(peerId);
+    if (relatedItemId) setActiveChatItemId(relatedItemId);
+    setIsChatOpen(true);
+  };
+
+  const closeChat = () => {
+    setIsChatOpen(false);
+  };
+
+  const sendMessage = (receiverId: string, text: string, relatedItemId?: string, attachment?: string) => {
+    if (!text.trim() && !attachment) return;
+    const now = new Date();
+    const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+    const newMsg: ChatMessage = {
+      id: `msg-${Date.now()}`,
+      senderId: currentUser.id,
+      receiverId,
+      text: text.trim(),
+      timestamp: timeString,
+      relatedItemId: relatedItemId || activeChatItemId || undefined,
+      attachment
+    };
+
+    setMessages(prev => [...prev, newMsg]);
+
+    // Optional simulated peer reply for smooth interactive demonstration
+    const targetPeer = allStudents.find(s => s.id === receiverId);
+    if (targetPeer) {
+      setTimeout(() => {
+        const replyText = text.toLowerCase().includes('mpesa') || text.toLowerCase().includes('pay')
+          ? `Nimeona! Let me check the M-Pesa balance on my phone and approve it on UniThreads right away.`
+          : text.toLowerCase().includes('meet') || text.toLowerCase().includes('time')
+          ? `Sawa! Sounds good. Let's meet at ${targetPeer.campus.split(' ')[0]} campus on the scheduled exchange date!`
+          : `Habari ${currentUser.name.split(' ')[0]}! Got your message about the swap. Looking forward to our exchange!`;
+
+        const replyMsg: ChatMessage = {
+          id: `msg-${Date.now() + 1}`,
+          senderId: receiverId,
+          receiverId: currentUser.id,
+          text: replyText,
+          timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+          relatedItemId: relatedItemId || activeChatItemId || undefined
+        };
+        setMessages(prev => [...prev, replyMsg]);
+      }, 1400);
+    }
+  };
+
+  const unreadChatCount = messages.filter(m => m.receiverId === currentUser.id && m.senderId !== currentUser.id).length;
+
+  // Propose Swap
   const proposeSwap = (params: {
     receiverId: string;
     offeredItemId: string;
     requestedItemId: string;
     pointsBonus: number;
+    cashAmount?: number;
     meetupLocation: string;
     meetupTime: string;
+    exchangeDate?: string;
     notes: string;
     agreedFabric: boolean;
   }) => {
     const code = `UNISWAP-${Math.floor(1000 + Math.random() * 9000)}`;
+    const receiver = allStudents.find(s => s.id === params.receiverId);
+    const hasCash = (params.cashAmount || 0) > 0;
+
     const newSwap: SwapProposal = {
       id: `swap-${Date.now()}`,
       proposerId: currentUser.id,
@@ -208,20 +399,27 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
       offeredItemId: params.offeredItemId,
       requestedItemId: params.requestedItemId,
       pointsBonus: params.pointsBonus,
+      cashAmount: params.cashAmount || 0,
       status: 'pending',
+      paymentRequired: hasCash,
+      paymentAmount: params.cashAmount,
+      paymentStatus: hasCash ? 'pending_payment' : 'not_required',
+      mpesaRecipientPhone: receiver?.mpesaNumber || receiver?.phoneNumber || '0722 000 000',
+      mpesaRecipientName: receiver?.name,
       proposerAgreedFabric: params.agreedFabric,
       receiverAgreedFabric: false,
       proposerAgreedMeetup: true,
       receiverAgreedMeetup: false,
       meetupLocation: params.meetupLocation,
       meetupTime: params.meetupTime,
+      exchangeDate: params.exchangeDate || '2026-10-31',
       meetupVerificationCode: code,
       notes: params.notes,
       createdAt: 'Just now'
     };
 
     setSwaps(prev => [newSwap, ...prev]);
-    showNotification(`Swap proposed to @${params.receiverId}! Waiting for both to agree on fabric & meetup.`, 'success');
+    showNotification(`Swap proposed to ${receiver?.name || 'peer'}! Waiting for fabric agreement & Binance-style verification.`, 'success');
     return newSwap;
   };
 
@@ -234,7 +432,6 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
           proposerAgreedFabric: isProposer ? true : s.proposerAgreedFabric,
           receiverAgreedFabric: !isProposer ? true : s.receiverAgreedFabric,
         };
-        // Check if both agreed on fabric & meetup
         if (updated.proposerAgreedFabric && updated.receiverAgreedFabric && updated.proposerAgreedMeetup && updated.receiverAgreedMeetup) {
           updated.status = 'meetup_scheduled';
         }
@@ -242,17 +439,18 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
       }
       return s;
     }));
-    showNotification('Fabric quality and wear inspection agreed!', 'info');
+    showNotification('Fabric quality & clean condition agreed by both students!', 'info');
   };
 
   // Agree on Meetup Spot & Time
-  const agreeMeetup = (swapId: string, isProposer: boolean, location?: string, time?: string) => {
+  const agreeMeetup = (swapId: string, isProposer: boolean, location?: string, time?: string, date?: string) => {
     setSwaps(prev => prev.map(s => {
       if (s.id === swapId) {
         const updated = {
           ...s,
           meetupLocation: location || s.meetupLocation,
           meetupTime: time || s.meetupTime,
+          exchangeDate: date || s.exchangeDate,
           proposerAgreedMeetup: isProposer ? true : s.proposerAgreedMeetup,
           receiverAgreedMeetup: !isProposer ? true : s.receiverAgreedMeetup,
         };
@@ -263,7 +461,7 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
       }
       return s;
     }));
-    showNotification('Campus meetup location & time agreed!', 'info');
+    showNotification('Campus meetup location & exchange date agreed!', 'info');
   };
 
   // Accept a proposal
@@ -279,7 +477,7 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
       }
       return s;
     }));
-    showNotification('Exchange accepted! Both agreed on fabric & meetup spot. Meetup Pass generated.', 'success');
+    showNotification('Exchange accepted! Ready for M-Pesa verification & physical campus handover.', 'success');
   };
 
   // Decline proposal
@@ -288,7 +486,117 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
     showNotification('Exchange proposal declined.', 'info');
   };
 
-  // Mark swap complete (in-person meetup finished)
+  // Binance P2P: Submit M-Pesa Payment with Screenshot Proof
+  const submitMpesaPayment = (swapId: string, data: { mpesaCode: string; screenshotUrl: string; amount: number }) => {
+    setSwaps(prev => prev.map(s => {
+      if (s.id === swapId) {
+        return {
+          ...s,
+          paymentStatus: 'payment_sent',
+          mpesaTransactionCode: data.mpesaCode,
+          mpesaScreenshot: data.screenshotUrl,
+          paymentAmount: data.amount,
+          paymentSentAt: 'Just now'
+        };
+      }
+      return s;
+    }));
+
+    showNotification('📸 M-Pesa payment screenshot & code submitted! Notified seller to verify.', 'success');
+
+    // Also add automated system message in chat
+    const targetSwap = swaps.find(s => s.id === swapId);
+    if (targetSwap) {
+      sendMessage(
+        targetSwap.receiverId === currentUser.id ? targetSwap.proposerId : targetSwap.receiverId,
+        `✅ I have sent the M-Pesa payment of KSh ${data.amount}. Transaction Code: ${data.mpesaCode}. Screenshot uploaded for verification!`,
+        targetSwap.requestedItemId,
+        data.screenshotUrl
+      );
+    }
+  };
+
+  // Binance P2P: Seller verifies M-Pesa funds and confirms item release
+  const verifyMpesaPayment = (swapId: string) => {
+    const targetSwap = swaps.find(s => s.id === swapId);
+    if (!targetSwap || targetSwap.receiverId !== currentUser.id || targetSwap.paymentStatus !== 'payment_sent' || !targetSwap.mpesaScreenshot || !targetSwap.mpesaTransactionCode) {
+      showNotification('Only the seller can verify a submitted payment proof.', 'info');
+      return;
+    }
+    setSwaps(prev => prev.map(s => {
+      if (s.id === swapId) {
+        return {
+          ...s,
+          paymentStatus: 'payment_verified',
+          paymentVerifiedAt: 'Just now',
+          status: 'meetup_scheduled'
+        };
+      }
+      return s;
+    }));
+
+    showNotification('🔒 M-Pesa payment verified! Item is locked for scheduled campus handover.', 'success');
+  };
+
+  // Schedule Exchange Date & Location
+  const scheduleExchange = (swapId: string, data: { exchangeDate: string; meetupTime: string; meetupLocation: string }) => {
+    setSwaps(prev => prev.map(s => {
+      if (s.id === swapId) {
+        return {
+          ...s,
+          exchangeDate: data.exchangeDate,
+          meetupTime: data.meetupTime,
+          meetupLocation: data.meetupLocation,
+          status: 'meetup_scheduled'
+        };
+      }
+      return s;
+    }));
+
+    showNotification(`📅 Exchange scheduled for ${data.exchangeDate} at ${data.meetupLocation}!`, 'success');
+  };
+
+  // Confirm Physical Handover at Campus Meetup
+  const confirmHandover = (swapId: string, isProposer: boolean) => {
+    const targetSwap = swaps.find(s => s.id === swapId);
+    if (!targetSwap) return;
+    if (targetSwap.paymentRequired && targetSwap.paymentStatus !== 'payment_verified') {
+      showNotification('Seller verification is required before handover can be confirmed.', 'info');
+      return;
+    }
+    if ((isProposer && targetSwap.proposerId !== currentUser.id) || (!isProposer && targetSwap.receiverId !== currentUser.id)) {
+      showNotification('You can only confirm your own side of the handover.', 'info');
+      return;
+    }
+
+    let willComplete = false;
+
+    setSwaps(prev => prev.map(s => {
+      if (s.id === swapId) {
+        const updated = {
+          ...s,
+          handoverConfirmedByProposer: isProposer ? true : s.handoverConfirmedByProposer,
+          handoverConfirmedByReceiver: !isProposer ? true : s.handoverConfirmedByReceiver,
+        };
+
+        if (updated.handoverConfirmedByProposer && updated.handoverConfirmedByReceiver) {
+          updated.status = 'completed';
+          updated.completedAt = 'Just now';
+          willComplete = true;
+        }
+        return updated;
+      }
+      return s;
+    }));
+
+    if (willComplete) {
+      completeSwap(swapId);
+    } else {
+      showNotification('Handover confirmed on your side! Waiting for peer confirmation.', 'info');
+    }
+  };
+
+  // Mark swap complete
   const completeSwap = (swapId: string) => {
     const targetSwap = swaps.find(s => s.id === swapId);
     if (!targetSwap) return;
@@ -304,20 +612,19 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
       return s;
     }));
 
-    // Award +50 base virtual points to both parties for cycling wardrobes!
-    // Also transfer pointsBonus from proposer to receiver
+    // Award +50 base virtual points to both parties
     setAllStudents(prev => prev.map(s => {
       if (s.id === targetSwap.proposerId) {
         return {
           ...s,
-          points: s.points + 50 - targetSwap.pointsBonus,
+          points: s.points + 50 - (targetSwap.pointsBonus || 0),
           tradesCompleted: s.tradesCompleted + 1
         };
       }
       if (s.id === targetSwap.receiverId) {
         return {
           ...s,
-          points: s.points + 50 + targetSwap.pointsBonus,
+          points: s.points + 50 + (targetSwap.pointsBonus || 0),
           tradesCompleted: s.tradesCompleted + 1
         };
       }
@@ -327,9 +634,12 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
     showNotification('🎉 Exchange completed! +50 Virtual Exchange Points awarded to both students!', 'points');
   };
 
-  // Rate exchange and provide recommendation -> upgrades virtual exchange points!
+  // Submit Review with Comprehensive Cleanliness, Fabric Quality & Punctuality Rating
   const submitReview = (swapId: string, params: {
     rating: number;
+    cleanlinessRating: number;
+    fabricQualityRating: number;
+    punctualityRating: number;
     tags: string[];
     comment: string;
   }) => {
@@ -339,13 +649,17 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const isProposer = currentUser.id === targetSwap.proposerId;
     const revieweeId = isProposer ? targetSwap.receiverId : targetSwap.proposerId;
 
-    // Calculate recommendation bonus points based on rating
+    // Calculate comprehensive rating: 40% Cleanliness + 45% Fabric Quality + 15% Punctuality
+    const compScore = Number((
+      params.cleanlinessRating * 0.40 +
+      params.fabricQualityRating * 0.45 +
+      params.punctualityRating * 0.15
+    ).toFixed(2));
+
     let bonusPoints = 0;
-    if (params.rating >= 4.5) {
-      bonusPoints = 35; // Great recommendation bonus
-    } else if (params.rating >= 4.0) {
-      bonusPoints = 20; // Good recommendation bonus
-    }
+    if (compScore >= 4.7) bonusPoints = 40;
+    else if (compScore >= 4.3) bonusPoints = 25;
+    else if (compScore >= 4.0) bonusPoints = 15;
 
     const newReview: SwapReview = {
       id: `rev-${Date.now()}`,
@@ -354,7 +668,10 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
       reviewerName: currentUser.name,
       reviewerAvatar: currentUser.avatar,
       revieweeId,
-      rating: params.rating,
+      rating: compScore,
+      cleanlinessRating: params.cleanlinessRating,
+      fabricQualityRating: params.fabricQualityRating,
+      punctualityRating: params.punctualityRating,
       tags: params.tags,
       comment: params.comment,
       bonusPointsAwarded: bonusPoints,
@@ -375,13 +692,24 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
       return s;
     }));
 
-    // Upgrade the reviewee's points & reputation!
+    // Upgrade reviewee's points & reputation
     setAllStudents(prev => prev.map(s => {
       if (s.id === revieweeId) {
         const newReviewCount = s.reviewCount + 1;
-        const newRating = Number(((s.rating * s.reviewCount + params.rating) / newReviewCount).toFixed(2));
+        const newOverallRating = Number(((s.rating * s.reviewCount + compScore) / newReviewCount).toFixed(2));
+        const newCleanliness = Number((((s.cleanlinessScore || 4.9) * s.reviewCount + params.cleanlinessRating) / newReviewCount).toFixed(2));
+        const newFabric = Number((((s.fabricQualityScore || 4.9) * s.reviewCount + params.fabricQualityRating) / newReviewCount).toFixed(2));
+        const newPunctuality = Number((((s.punctualityScore || 5.0) * s.reviewCount + params.punctualityRating) / newReviewCount).toFixed(2));
         const newPoints = s.points + bonusPoints;
-        
+
+        const updatedBadges = [...s.badges];
+        if (params.cleanlinessRating >= 4.8 && !updatedBadges.includes('Spotless Laundry Certified')) {
+          updatedBadges.push('Spotless Laundry Certified');
+        }
+        if (params.fabricQualityRating >= 4.8 && !updatedBadges.includes('Top Fabric Grader')) {
+          updatedBadges.push('Top Fabric Grader');
+        }
+
         let newTitle = s.reputationTitle;
         if (newPoints >= 350) newTitle = 'VIP Wardrobe Master';
         else if (newPoints >= 220) newTitle = 'Campus Trendsetter';
@@ -389,9 +717,13 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
         return {
           ...s,
-          rating: newRating,
+          rating: newOverallRating,
+          cleanlinessScore: newCleanliness,
+          fabricQualityScore: newFabric,
+          punctualityScore: newPunctuality,
           reviewCount: newReviewCount,
           points: newPoints,
+          badges: updatedBadges,
           reputationTitle: newTitle
         };
       }
@@ -399,12 +731,12 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }));
 
     showNotification(
-      `Recommendation submitted! ${bonusPoints > 0 ? `🌟 Upgraded peer with +${bonusPoints} bonus points!` : ''}`,
+      `Comprehensive rating submitted! (${compScore}/5.0) ${bonusPoints > 0 ? `🌟 Awarded +${bonusPoints} bonus points to peer!` : ''}`,
       'points'
     );
   };
 
-  // Claim perks using points
+  // Claim perks
   const claimPerk = (perkId: string): boolean => {
     const perk = perks.find(p => p.id === perkId);
     if (!perk) return false;
@@ -414,7 +746,6 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
       return false;
     }
 
-    // Deduct points
     setAllStudents(prev => prev.map(s => {
       if (s.id === currentUser.id) {
         return { ...s, points: s.points - perk.costPoints };
@@ -432,10 +763,12 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setAllStudents(MOCK_STUDENTS);
     setCurrentUserId('user-amani');
     setCurrentCampus('University of Nairobi (UoN Main)');
+    setUserPreferences(DEFAULT_PREFERENCES);
     setItems(MOCK_ITEMS);
     setSwaps(MOCK_SWAPS);
     setReviews(MOCK_REVIEWS);
     setPerks(MOCK_PERKS);
+    setMessages(INITIAL_CHAT_MESSAGES);
     showNotification('Reset community to fresh Kenyan campus demo state.', 'info');
   };
 
@@ -449,6 +782,18 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
         swaps,
         reviews,
         perks,
+        userPreferences,
+        isPreferencesModalOpen,
+        setIsPreferencesModalOpen,
+        savePreferences,
+        messages,
+        isChatOpen,
+        activeChatPeerId,
+        activeChatItemId,
+        openChat,
+        closeChat,
+        sendMessage,
+        unreadChatCount,
         notification,
         setCurrentCampus,
         switchUser,
@@ -458,6 +803,10 @@ export const SwapProvider: React.FC<{ children: React.ReactNode }> = ({ children
         agreeMeetup,
         acceptSwap,
         declineSwap,
+        submitMpesaPayment,
+        verifyMpesaPayment,
+        scheduleExchange,
+        confirmHandover,
         completeSwap,
         submitReview,
         claimPerk,
